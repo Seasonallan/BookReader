@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content" >
+	<ImageView
+		android:id="@+id/notification_download_img_lay"
+		android:layout_width="35dp"
+		android:layout_height="35dp"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+		android:scaleType="fitCenter"
+		android:src="@drawable/ic_launcher" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_toRightOf="@id/notification_download_img_lay"
+		android:gravity="center_vertical"
+		android:orientation="vertical" >
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="bottom" >
+			<TextView
+				android:id="@+id/notification_download_time_tv"
+				style="@android:style/TextAppearance.StatusBar.EventContent"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="10dip" />
+			<TextView
+				android:id="@+id/notification_download_title_tv"
+				style="@android:style/TextAppearance.StatusBar.EventContent.Title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@id/notification_download_time_tv"
+				android:ellipsize="end"
+				android:singleLine="true" />
+		</RelativeLayout>
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="top" >
+			<TextView
+				android:id="@+id/notification_download_content_tv"
+				style="@android:style/TextAppearance.StatusBar.EventContent"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:paddingBottom="3dip"
+				android:singleLine="true" />
+			<TextView
+				android:id="@+id/notification_download_restart_tv"
+				style="@android:style/TextAppearance.StatusBar.EventContent"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="10dip"
+				android:gravity="center_vertical"
+				android:paddingBottom="3dip"
+				android:singleLine="true"
+				android:text="重新下载"
+				android:visibility="gone" />
+			<!-- android:text="@string/notification_download_restart_tip"  -->
+		</RelativeLayout>
+		<ProgressBar
+			android:id="@+id/notification_download_progress"
+			style="@style/loading_progress"
+			android:layout_width="match_parent"
+			android:layout_height="12dip"
+			android:layout_gravity="top"
+			android:layout_marginRight="10dip"
+			android:maxHeight="4dip"
+			android:minHeight="4dip"
+			android:progressDrawable="@drawable/download_progress_horizontal_full" />
+	</LinearLayout>
+</RelativeLayout>

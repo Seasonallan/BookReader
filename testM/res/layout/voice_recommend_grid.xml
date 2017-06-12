@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingBottom="8dip"
+	android:paddingLeft="3dip"
+	android:paddingRight="3dip"
+	android:paddingTop="8dip" >
+	<!-- 图片 -->
+	<com.lectek.android.widget.QuickImageView
+		android:id="@+id/common_logo"
+		android:layout_width="@dimen/common_cover_width"
+		android:layout_height="@dimen/common_cover_height"
+		android:layout_gravity="center"
+		android:adjustViewBounds="true"
+		android:background="@drawable/book_item_frame_bg"
+		android:scaleType="fitXY"
+		android:src="@drawable/book_default" />
+	<!-- 第一行文字 -->
+	<TextView
+		android:id="@+id/common_frist_line"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:ellipsize="end"
+		android:singleLine="true"
+		android:textColor="#fff"
+		android:textSize="14dip" />
+</LinearLayout>

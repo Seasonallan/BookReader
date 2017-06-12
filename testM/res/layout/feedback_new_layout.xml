@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:text="@string/feedback_title_tip"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textColor="#969696"
+        android:textSize="16dp"
+        />
+
+    <ImageView 
+        android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:background="#DEDEDE"
+        />
+    
+    <EditText 
+        android:id="@+id/et_feedback_content"
+        android:layout_height="200dp"
+        android:layout_width="fill_parent"
+        android:hint="@string/feedback_text_lint"
+        android:background="@color/white"
+        android:padding="20dp"
+        android:textColor="@color/color_414141"
+        android:textColorHint="@color/common_15"
+        android:gravity="left|top"
+        android:textSize="16sp"
+        binding:text="bFeedBackText"
+        />
+    
+    <ImageView 
+        android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:background="#DEDEDE"
+        />
+    
+    <EditText 
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:hint="@string/feedback_your_communication_tip"
+        android:background="@color/white"
+        android:textSize="16sp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/color_414141"
+        android:textColorHint="@color/common_15"
+        binding:text="bCommunicationText"
+        />
+    
+    <ImageView 
+        android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:background="#DEDEDE"
+        />
+
+</LinearLayout>

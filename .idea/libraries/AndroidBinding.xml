@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AndroidBinding">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/testM/libs/AndroidBinding.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

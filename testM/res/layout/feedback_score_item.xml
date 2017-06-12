@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+	   <LinearLayout 
+	       android:id="@+id/feedback_bottom_layout"
+	       android:orientation="vertical"
+	       android:gravity="center_vertical"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:padding="10dip"
+	       android:background="@android:color/darker_gray"
+	       android:layout_alignParentBottom="true">
+	       <LinearLayout 
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:orientation="horizontal">
+	       <EditText 
+	           android:id="@+id/feedback_edit"
+	           android:layout_width="0dip"
+	           android:layout_weight="1"
+	           android:layout_height="wrap_content"
+	           binding:text="bFeedBackEditContent"
+	           android:textSize="18sp"
+	           />
+	       <Button 
+	           android:id="@+id/feedback_send_btn"
+	           android:layout_marginLeft="20dp"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:textSize="20sp"
+	           binding:onClick="bFeedbackSendClick"
+	           android:text="@string/btn_text_submit_countdown"
+	           />
+	       </LinearLayout>
+	   </LinearLayout>
+	   
+	   <ListView 
+	       android:id="@+id/feedback_list"
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent"
+	       android:layout_above="@id/feedback_bottom_layout"
+	       android:listSelector="@null" 
+	       android:transcriptMode="alwaysScroll" 
+	       android:cacheColorHint="#00000000" 
+	       android:divider="@null"/>
+</RelativeLayout>

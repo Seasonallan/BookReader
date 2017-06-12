@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/search_root_view">
+		
+     <RelativeLayout
+         android:id="@+id/header_bar"
+         android:layout_width="fill_parent"
+         android:layout_height="50dp"
+         android:background="@color/common_14"
+         android:gravity="center_vertical"
+         >
+
+         <TextView android:id="@+id/cancle_btn"
+             android:layout_width="wrap_content" 
+             android:layout_height="match_parent"
+             android:layout_alignParentRight="true"
+             android:layout_centerInParent="true"
+             android:gravity="center_vertical"
+             android:textSize="@dimen/font_common_num0" 
+             android:textColor="@color/white"
+             android:layout_marginRight="@dimen/common_padding_18" 
+             android:text="@string/btn_text_cancel" 
+             binding:onClick="bCancleClick"
+             />
+
+         <AutoCompleteTextView android:id="@+id/EditText01"
+             android:layout_width="fill_parent" android:layout_height="wrap_content"
+             android:gravity="center_vertical" android:layout_toLeftOf="@id/cancle_btn"
+             android:layout_centerInParent="true"
+             android:layout_marginLeft="@dimen/common_padding_18" android:layout_marginRight="@dimen/common_padding_15"
+             android:completionThreshold="1" android:drawableRight="@drawable/search_clear_unpress_nobg"
+             android:drawableLeft="@drawable/icon_search"
+             android:imeOptions="actionSearch" android:singleLine="true"
+             android:textColor="@color/common_5" android:textSize="@dimen/font_common_num5" 
+             binding:text="bSearchBoxContent" binding:onTextChanged="TextChanging"
+             android:hint="@string/search_read_book_hint" android:background="@drawable/search_box_bg"
+             binding:onTouch="bOnTouchEvent"/>
+
+         <ImageView 
+             android:layout_width="wrap_content" android:layout_height="wrap_content"
+             android:layout_alignRight="@id/EditText01" android:layout_centerVertical="true"
+             binding:src="bClearBtnImageResourceId" binding:onClick="bClearTextClick"
+             binding:visibility="bClearBtnVisible" android:layout_marginRight="5dp"/>
+         
+     </RelativeLayout>
+    
+    <ScrollView 
+        android:id="@+id/local_search_result_lay"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/header_bar"
+		binding:visibility = "bLocalBookListVisible"
+        >
+        <RelativeLayout 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		    >
+			<com.lectek.android.widget.ReaderListView 
+	    		android:id="@+id/local_search_list"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:cacheColorHint="@color/transparent"
+				android:divider="@drawable/line" 
+				android:scrollbars="none" 
+				binding:itemSource="bLocalSearchItems" 
+				binding:itemTemplate="@layout/listview_second_view_item_layout"
+				binding:onItemClicked="bLocalItemClickCommand"
+	    	/>
+	      
+			<Button 
+				android:layout_width="200dp"
+				android:layout_height="40dp"
+				android:id="@+id/go_bookcity"
+				android:layout_below="@id/local_search_list"
+				android:layout_margin="@dimen/common_padding_20"
+				android:text="@string/go_to_book_city"
+				android:background="@drawable/btn_go_to_bookcity_bg"
+				android:layout_centerHorizontal="true"
+				binding:onClick = "bGoToBookCity"
+				/>
+			
+			<FrameLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="30dp"
+			    android:layout_below="@id/go_bookcity"
+			    >
+			</FrameLayout>
+	  	</RelativeLayout>
+    </ScrollView> 
+	
+    <include android:id="@+id/bookcity_search_list"
+        android:layout_below="@id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/bookcity_common_listview"/>
+	
+	<TextView 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:text="@string/bookcity_search_not_found_tip"
+         android:textSize="@dimen/font_common_num0"
+         android:gravity="center"
+         binding:visibility="bNotFoundTipVisiblity"
+         />
+</RelativeLayout>

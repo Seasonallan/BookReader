@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/account_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadeScrollbars="true"
+        android:scrollbarThumbVertical="@drawable/scroll" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical" >
+
+                <!--
+                     <TextView
+					android:id="@+id/account_cutoff_date_tv"
+					style="@style/commonPersonInfoText"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:text="@string/account_cutoff_date" />
+                -->
+
+                <TextView
+                    android:id="@+id/account_balance_tv"
+                    style="@style/commonPersonInfoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="16dip"
+                     />
+                
+                <TextView
+                    android:id="@+id/overReadPoint_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="2dip"
+                    android:layout_toRightOf="@+id/account_balance_tv"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="13dip"
+                    android:visibility="gone" />
+                <!--
+                     <TextView
+					android:id="@+id/account_accumulated_points_tv"
+					style="@style/commonPersonInfoText"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_below="@id/account_balance_tv" />
+                -->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/account_recharge_third_party_btn"
+                    style="@style/commonPersonInfoText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_top_bg"
+                    android:drawableRight="@drawable/person_arrow"
+                    android:gravity="fill_vertical"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:text="@string/account_recharge_alipay_tip"
+                    android:textSize="16dip" 
+                    android:textColor="#444444"/>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/account_recharge_yi_pay_btn"
+                        style="@style/commonPersonInfoText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_middle_bg"
+                        android:drawableRight="@drawable/person_arrow"
+                        android:gravity="fill_vertical"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:text="@string/account_recharge_yi_pay_tip" 
+                        android:textSize="16dip"
+                        android:textColor="#444444"/>
+
+              <!--       <TextView
+                        android:id="@+id/new_version_ib2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dip"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="30dip"
+                        android:background="@drawable/new_function_tip"
+                        android:textSize="18dip"
+                        android:visibility="gone" /> -->
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/account_recharge_sms_btn"
+                        style="@style/commonPersonInfoText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom_bg"
+                        android:drawableRight="@drawable/person_arrow"
+                        android:gravity="fill_vertical"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:text="@string/account_recharge_sms_title" 
+                        android:textSize="16dip"
+                        android:textColor="#444444"/>
+
+                   <!--  <TextView
+                        android:id="@+id/new_version_ib3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dip"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="30dip"
+                        android:background="@drawable/new_function_tip"
+                        android:textSize="18dip"
+                        android:visibility="gone" /> -->
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/account_points_to_readticket_btn"
+                        style="@style/commonPersonInfoText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_top_bg"
+                        android:drawableRight="@drawable/person_arrow"
+                        android:gravity="fill_vertical"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:text="@string/account_points_to_readticket"
+                        android:textSize="16dip"
+                        android:textColor="#444444" />
+
+                    <!-- <TextView
+                        android:id="@+id/new_version_ib1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dip"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="30dip"
+                        android:background="@drawable/new_function_tip"
+                        android:textSize="18dip"
+                        android:visibility="gone" /> -->
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/account_readticket_recharge_btn"
+                    style="@style/commonPersonInfoText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_bottom_bg"
+                    android:drawableRight="@drawable/person_arrow"
+                    android:gravity="fill_vertical"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:text="@string/account_readticket_recharge"
+                    android:textSize="16dip"
+                    android:textColor="#444444" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

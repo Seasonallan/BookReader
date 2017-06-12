@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/menu_child_background"
+	android:gravity="center"
+	android:paddingBottom="10dip"
+	android:paddingTop="10dip" >
+	<ImageButton
+		android:id="@+id/menu_reader_voice_state_but"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@null"
+		android:paddingLeft="10dip"
+		android:scaleType="center"
+		android:src="@drawable/ic_menu_reader_voice_play" />
+	<LinearLayout
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:orientation="vertical" >
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="5dip" >
+			<TextView
+				android:id="@+id/menu_reader_voice_progress_tv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="10dip"
+				android:text="00:00"
+				android:textColor="@color/common_white_2"
+				android:textSize="@dimen/font_common_num5" />
+			<View
+				android:layout_width="0dip"
+				android:layout_height="0dip"
+				android:layout_weight="1" />
+			<TextView
+				android:id="@+id/menu_reader_voice_max_progress_tv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingRight="10dip"
+				android:text="00:00"
+				android:textColor="@color/common_white_2"
+				android:textSize="@dimen/font_common_num5" />
+		</LinearLayout>
+		<SeekBar
+			android:id="@+id/menu_reader_voice_seek"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" 
+			android:paddingLeft="10dip"
+			android:paddingRight="10dip"/>
+	</LinearLayout>
+	<ImageView
+		android:layout_width="1dip"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="5dip"
+		android:layout_marginTop="5dip"
+		android:background="@drawable/ic_menu_reader_voice_line" />
+	<ImageButton
+		android:id="@+id/menu_reader_voice_close_but"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:background="@null"
+		android:paddingLeft="10dip"
+		android:paddingRight="10dip"
+		android:scaleType="center"
+		android:src="@drawable/ic_menu_reader_voice_close" />
+</LinearLayout>

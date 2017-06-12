@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_header_background"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="15dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="15dip" >
+
+    <Button
+        android:id="@+id/menu_catalog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/menu_icon_mark"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/menu_body_title"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/app_label"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_system_title_bar"
+            android:visibility="gone" />
+        
+        <Button 
+            android:id="@+id/menu_bookinfo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/menu_head_btn_left"
+            android:gravity="center"
+            android:text="@string/reader_menu_bookinfo"
+            android:textSize="16dip"
+            android:textColor="#ACACAC"
+            />
+        <Button 
+            android:id="@+id/menu_buy_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_head_btn_right"
+            android:text="@string/tools_buy"
+            android:textSize="16dip"
+            android:textColor="#ACACAC"
+            android:gravity="center"
+            />
+        
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/menu_pull_lights_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/ic_reader_menu_light"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/menu_voice_read_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="26dip"
+        android:background="@drawable/ic_voice_read"
+        android:visibility="gone" />
+    
+    <Button
+        android:id="@+id/menu_add_bookmark_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/bookmark_icon"
+        android:visibility="gone" />
+    
+    <Button 
+        android:id="@+id/menu_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_icon_settings"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

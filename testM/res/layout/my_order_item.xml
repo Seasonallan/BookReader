@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通用的Grid的Item布局，用于显示书、分类、专区等等 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dip" 
+    >
+
+    <!-- 图片 -->
+    <com.lectek.android.binding.widget.BAsyncImageView
+        android:id="@+id/book_cover_iv"
+        android:layout_width="@dimen/common_cover_width"
+        android:layout_height="@dimen/common_cover_height"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@drawable/book_shelf_item_bg"
+        android:scaleType="fitXY"
+        android:layout_marginRight="10dip"
+        binding:defaultImgRes="@drawable/book_default"
+        binding:imageUrl="bCoverUrl"
+        />
+    <!-- 书名  -->
+    <TextView
+        android:id="@+id/book_name_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="book name"
+        android:textColor="@color/common_1"
+        android:layout_toRightOf="@id/book_cover_iv"
+        android:textSize="@dimen/font_common_num2"
+        android:layout_marginTop="5dip"
+        binding:text="bBookName"
+        />
+    <!-- 作者 -->
+    <TextView
+        android:id="@+id/author_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="author name"
+        android:textColor="@color/common_5"
+        android:layout_toRightOf="@id/book_cover_iv"
+        android:layout_below="@id/book_name_tv"
+        android:textSize="@dimen/font_common_num6"
+        android:layout_marginTop="3dip"
+        binding:text="bAuthorName"
+        />
+    
+    <!-- 介绍 -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_below="@id/author_tv"
+        android:layout_toRightOf="@id/book_cover_iv"
+        android:textColor="@color/common_5"
+        android:textSize="@dimen/font_common_num6"
+        android:maxLines="2"
+        android:layout_marginTop="3dip"
+        binding:text="bIntroduce" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tonlin="http://schemas.android.com/apk/res/com.lectek.android.LYReader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.lectek.android.lereader.widgets.ReaderGallery
+        android:id="@+id/cover_subject_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:animationDuration="500"
+        android:fadingEdge="none"
+        android:spacing="0dip" >
+    </com.lectek.android.lereader.widgets.ReaderGallery>
+
+    <ImageButton
+        android:id="@+id/cover_finish_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/icon_cover_arrow" />
+
+    <ImageButton
+        android:id="@+id/cover_share_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/icon_cover_share" />
+
+</RelativeLayout>

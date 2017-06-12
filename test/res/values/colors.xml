@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="window_bg">#f7f7f7</color>
+	<color name="transparent">#00000000</color>
+	<color name="black">#000</color>
+	<color name="dialog_content">@color/black</color>
+	<color name="white">#FFFFFF</color>
+	<!-- 颜色规范start -->
+	<color name="common_blue_4">#04aeda</color>
+	<color name="common_yellow_3">#dd9025</color>
+	<color name="common_light_yellow">#f9e2be</color>
+	<color name="common_white_2">#ffffff</color>
+	<color name="common_grad_7">#b4b4b4</color>
+	<color name="common_pink_8">#fa4198</color>
+	<color name="common_black_6">#333333</color>
+	<color name="common_brown_1">#546570</color>
+	<color name="common_light_black_5">#afb8bd</color>
+	<!-- 颜色规范end -->
+</resources>

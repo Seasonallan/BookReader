@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="8dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_digest_item_bg"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/bookdigests_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:singleLine="true"
+            android:text="章节"
+            android:textColor="@color/common_5"
+            android:textSize="@dimen/font_common_num2" />
+
+        <TextView
+            android:id="@+id/bookdigests_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:text="内容"
+            android:textColor="@color/common_5"
+            android:textSize="@dimen/font_common_num4" />
+
+        <TextView
+            android:id="@+id/bookdigests_msg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingTop="6dp"
+            android:text="笔记"
+            android:textColor="@color/common_10"
+            android:textSize="@dimen/font_common_num4" />
+
+        <TextView
+            android:id="@+id/bookdigests_time_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingTop="6dp"
+            android:text="时间"
+            android:textColor="@color/common_5"
+            android:textSize="@dimen/font_common_num4" />
+    </LinearLayout>
+
+</LinearLayout>

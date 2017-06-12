@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="yixin_thridpart_app_sdk_v2.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/testM/libs/yixin_thridpart_app_sdk_v2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

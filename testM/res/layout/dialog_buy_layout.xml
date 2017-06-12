@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dip"
+    android:background="@color/window_bg" >
+
+    <!-- 书名 -->
+    <TextView 
+        android:id="@+id/book_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="@dimen/font_common_num4"
+  		android:textColor="@color/common_6"
+  		android:gravity="center_vertical"
+  		android:text="乔布斯"
+        />
+    
+    <!-- 原价 -->
+    <LinearLayout 
+        android:id="@+id/original_price_lay"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dip">
+	     <TextView
+	        android:id="@+id/original_price_tag"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:autoLink="web"
+	        android:gravity="center_vertical"
+	        android:textSize="@dimen/font_common_num4"
+  			android:textColor="@color/common_6"
+	        android:text="@string/buy_price_tag"/>
+	     
+	    <TextView
+	        android:id="@+id/original_price_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:autoLink="web"
+	        android:gravity="center_vertical"
+	        android:textSize="@dimen/font_common_num4"
+  			android:textColor="@color/common_6" />
+    </LinearLayout>
+    
+    <!-- 优惠价 -->
+    <TextView
+        android:id="@+id/preferential_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:autoLink="web"
+        android:gravity="center_vertical"
+        android:text="@string/promotion_price"
+        android:textColor="@color/common_6"
+        android:textSize="@dimen/font_common_num4"
+        android:visibility="gone" />
+    
+    <!-- 支付宝支付 -->
+    <Button 
+        android:id="@+id/alipay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/button_blue"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="15dip"
+        android:text="@string/pay_mode_alipay"
+        />
+
+    <!-- 电信话费支付 -->
+    <Button 
+        android:id="@+id/chinatelecom_phone_money_pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/button_blue"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="10dip"
+        android:text="@string/pay_mode_fee_pay"
+        />
+    
+    <!-- 电信短代支付 -->
+    <Button 
+        android:id="@+id/chinatelecom_message_pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/button_blue"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="10dip"
+        android:text="@string/pay_mode_fee_pay"
+        />
+    
+    <!-- 天翼阅点支付 -->
+  	<Button 
+        android:id="@+id/surfing_read_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/button_blue"
+        android:gravity="center"
+        android:layout_marginTop="10dip"
+        android:visibility="gone"
+        android:text="@string/pay_mode_surfing_read_point"
+        />  
+</LinearLayout>

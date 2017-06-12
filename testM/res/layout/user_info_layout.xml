@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/user_center_bg" />
+            
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/user_login_btn"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"
+                    binding:visibility="bLoginBtnVisibility"
+                    binding:onClick="bLoginClick"
+                    android:textSize="32dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                binding:visibility="bShowUserInfoVisibility" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="nickname"
+                    android:textColor="@color/white"
+                    android:textSize="32dip"
+                    binding:text="bUserName" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="sina"
+                    android:textColor="@color/white"
+                    android:textSize="32dip"
+                    binding:text="bFromThridParty" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_top_bg"
+                android:clickable="true"
+                android:drawableLeft="@drawable/person_info"
+                android:drawableRight="@drawable/arrow_left_account"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="@string/user_info_person_info"
+                android:textColor="@color/black"
+                binding:onClick="bMyPersonInfoClick" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_top_bg"
+                android:clickable="true"
+                android:drawableLeft="@drawable/my_order"
+                android:drawableRight="@drawable/arrow_left_account"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="@string/user_info_my_order"
+                android:textColor="@color/black"
+                binding:onClick="bMyOrderClick" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_bottom_bg"
+                android:clickable="true"
+                android:drawableRight="@drawable/arrow_left_account"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="@string/user_info_my_package"
+                android:textColor="@color/black"
+                binding:onClick="bMyPackageClick" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/border_single_bg"
+                android:clickable="true"
+                android:drawableRight="@drawable/arrow_left_account"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="@string/user_info_read_point_manager"
+                android:textColor="@color/black"
+                binding:onClick="bReadPointManageClick" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_top_bg"
+                android:clickable="true"
+                android:drawableLeft="@drawable/feedback"
+                android:drawableRight="@drawable/arrow_left_account"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="@string/menu_feedback_view_title"
+                android:textColor="@color/black"
+                binding:onClick="bFeedbackClick" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_bottom_bg"
+                android:clickable="true"
+                android:drawableLeft="@drawable/about_us"
+                android:drawableRight="@drawable/arrow_left_account"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="@string/user_info_about"
+                android:textColor="@color/black"
+                binding:onClick="bAboutClick" />
+
+            <Button
+                style="@style/button_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginTop="15dip"
+                android:gravity="center"
+                android:text="@string/user_info_logout"
+                binding:onClick="bLogoutClick"
+                binding:visibility="bLogoutBtnVisibility" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

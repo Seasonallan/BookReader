@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:background="@drawable/list_selector_background"
+    >
+    
+	<com.lectek.android.binding.widget.BAsyncImageView
+	    android:id="@+id/book_cover_iv"
+	    android:layout_width="@dimen/common_cover_width"
+        android:layout_height="@dimen/common_cover_height"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/common_padding_15"
+        android:layout_marginTop="@dimen/common_padding_15"
+        android:layout_marginBottom="@dimen/common_padding_10"
+        binding:defaultImgRes="@drawable/book_default" 
+        android:scaleType="fitXY"
+        binding:imageUrl="bRecommendedCoverUrl"
+        android:src="@drawable/book_default" 
+	    />
+	
+	<ImageView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@id/book_cover_iv"
+	    android:layout_alignTop="@id/book_cover_iv"
+	    binding:src="bTopThreeIV"
+	    binding:visibility = "bTopThreeIVVisibility"
+	    />
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:layout_below="@id/book_cover_iv"
+	    />
+	
+
+    <RelativeLayout 
+	    android:id="@+id/book_info_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/book_cover_iv"
+		android:layout_toLeftOf="@+id/add_btn"
+	    android:layout_marginLeft="@dimen/common_padding_15"
+	    android:layout_marginTop="@dimen/common_padding_15"
+	    android:layout_marginRight="@dimen/common_padding_15"
+	    >
+	    <TextView
+	        android:id="@+id/book_title_tv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_common_num4" 
+	        android:textColor="@color/common_text"
+	        android:singleLine="true"
+	        binding:text="bBookName"
+	        android:text="书名"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/book_author_tv"
+	        android:layout_below="@id/book_title_tv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="7dp"
+	        android:textColor="@color/common_17"
+            android:textSize="@dimen/font_common_num7"
+            binding:text="bAuthorName" 
+            android:text="作者"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/book_state_tv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/book_author_tv"
+	        android:layout_marginTop="13dp"
+	        android:textColor="@color/common_17"
+            android:textSize="@dimen/font_common_num7"
+            binding:text="bReadState" 
+            binding:visibility = "bReadStateVisibility"
+            android:text="状态"
+	        />
+	    
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/book_author_tv"
+	        android:layout_marginTop="13dp"
+	        android:maxLines="3"
+	        android:ellipsize="end"
+	        android:textColor="@color/common_17"
+            android:textSize="@dimen/font_common_num7"
+            binding:text="bDecContent" 
+            binding:visibility = "bDecContentVisibility"
+            android:text="简介"
+	        />
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/book_author_tv"
+	        android:layout_marginTop="12dp"
+	        android:textColor="@color/common_17"
+            android:textSize="@dimen/font_common_num7"
+            binding:visibility = "bReadedVisibility"
+            binding:text="bReadedText"
+	        />
+		</RelativeLayout>
+		
+		<ImageView
+	     	android:layout_toRightOf="@+id/book_cover_iv"
+	  		android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		android:layout_marginLeft="4dp"
+	    	android:layout_marginTop="4dp"
+	    	android:layout_alignTop="@id/book_info_view"
+	   		android:src="@drawable/icon_redot"
+	   		binding:visibility="bRedotVisibility"
+	   		/>
+		<TextView
+		    android:id="@+id/add_btn"
+	        android:layout_width="@dimen/add_btn_width"
+	        android:layout_height="35dip"
+	        android:layout_marginRight="@dimen/common_padding_15"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="center"
+	        android:text="添加"
+	        binding:onClick="bAddBookClick"
+	        binding:text="bAddBookBtn"
+	        binding:background ="bAddBtnBackGround"
+	        binding:textColor="bAddBookTextColor"
+	        binding:visibility="bAddBookVisibility" />
+
+</RelativeLayout>

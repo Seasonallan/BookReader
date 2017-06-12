@@ -1,0 +1,28 @@
+<resources>
+	<string name="app_name">天翼阅读Epub3.0</string>
+	<string name="btn_text_catalog">目录</string>
+	<string name="btn_text_bookmark">书签</string>
+	<string name="btn_text_bookdigest">笔记</string>
+	<string name="waitting_dialog_tip">正在处理数据，请稍候&#8230;</string>
+	<string name="reader_transition_tip">努力加载中，请稍候</string>
+	<string name="reader_menu_buy_tip">购买完整版</string>
+	<string name="reader_menu_item_catalog_tip">目录</string>
+	<string name="reader_menu_item_font_tip">文字</string>
+	<string name="reader_menu_item_theme_tip">主题</string>
+	<string name="reader_menu_item_brightness_tip">亮度</string>
+	<string name="reader_menu_item_brightness_auto_tip">自动调节亮度</string>
+	<string name="reader_menu_item_setting_tip">设置</string>
+	<string name="reader_menu_item_more_tip">更多</string>
+	<string name="reader_menu_item_seek_layouting_tip">正在排版中...%1$s</string>
+	<string name="reader_menu_item_seek_page_tip">%1$s/%2$s</string>
+	<string name="reader_menu_item_pre_chapter_tip">上一章</string>
+	<string name="reader_menu_item_next_chapter_tip">下一章</string>
+	<string name="reader_menu_item_line_spacing_tip">阅读行间距</string>
+	<string name="reader_menu_item_line_spacing_type1_tip">紧凑</string>
+	<string name="reader_menu_item_line_spacing_type2_tip">标准</string>
+	<string name="reader_menu_item_line_spacing_type3_tip">宽松</string>
+	<string name="reader_menu_item_font_size_tip">字体大小</string>
+	<string name="reader_menu_item_font_size_max_tip">当前为最大字体</string>
+	<string name="reader_menu_item_font_size_min_tip">当前为最小字体</string>
+	<string name="reader_menu_automatic_brightness_tip">若调节失败，请禁用系统自动亮度调节</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="300dip"
+	android:layout_height="wrap_content"
+	android:gravity="center" 
+	android:orientation="vertical"
+	android:padding="10dip" >
+	<TextView
+		android:id="@+id/update_client_title"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dip"
+		android:layout_marginTop="10dip"
+		android:gravity="center"
+		android:textSize="@dimen/font_common_num1"
+		android:textColor="@color/dialog_title"
+		android:text="@string/app_download" />
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/line"
+		android:layout_marginTop="5dip"
+		android:layout_marginBottom="10dip"/>
+	<TextView
+		android:id="@+id/update_content_tv"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:maxLines="6"
+		android:scrollbars="vertical"
+		android:textColor="@color/common_6"
+		android:textSize="@dimen/font_dialog_text" />
+	<TextView
+		android:id="@+id/update_client_tip"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dip"
+		android:layout_marginTop="10dip"
+		android:text="@string/app_download_tip"
+		android:textColor="@color/common_6"
+		android:textSize="@dimen/font_dialog_tip" />
+	<ProgressBar
+		android:id="@+id/update_pb"
+		style="@style/loading_progress"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:max="100" />
+	<TextView
+		android:id="@+id/update_tv"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dip"
+		android:textColor="@color/common_6"
+		android:textSize="@dimen/font_dialog_tip" />
+	<CheckBox
+		android:id="@+id/no_ask_cb"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:checked="false"
+		android:text="@string/no_ask_again"
+		android:textColor="@color/common_6"
+		android:textSize="@dimen/font_dialog_text"
+		android:visibility="gone" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dip"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:weightSum="10" >
+		<Button
+			android:id="@+id/update_cancel_btn"
+			style="@style/button_big_white"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="5dip"
+			android:paddingTop="5dip"
+			android:layout_marginRight="5dip"
+			android:textColor="@color/black"
+			android:text="@string/update_download_cancel_download" />
+		<Button
+			android:id="@+id/update_back_btn"
+			style="@style/button_big"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dip"
+			android:paddingBottom="5dip"
+			android:paddingTop="5dip"
+			android:text="@string/update_download_back_download" />
+	</LinearLayout>
+</LinearLayout>

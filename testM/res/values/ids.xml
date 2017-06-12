@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="headView">false</item>
+    <item type="id" name="footView">false</item>
+    <item type="id" name="contentView">false</item>
+    <item type="id" name="iconView">false</item>
+
+</resources>

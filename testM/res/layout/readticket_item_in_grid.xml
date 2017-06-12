@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:paddingBottom="4dip"
+	android:paddingTop="4dip" >
+	<com.lectek.android.lereader.widgets.ReadPointCoupons
+		android:id="@+id/read_ticket_logo"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_centerHorizontal="true" 
+		binding:text="bReadPoint"
+		/>
+	<TextView
+		android:id="@+id/convert_period_tv"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/read_ticket_logo"
+		android:layout_marginTop="5dip"
+		android:layout_centerHorizontal="true"
+		android:ellipsize="marquee"
+		android:singleLine="true"
+		android:textColor="#444444"
+		android:textSize="16dip" 
+		binding:text="bConvertPoint"
+		/>
+</RelativeLayout>

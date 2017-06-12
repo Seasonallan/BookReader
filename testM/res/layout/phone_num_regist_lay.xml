@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingLeft="20dip"
+	android:paddingRight="20dip" >
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginBottom="10dip"
+		android:layout_marginTop="15dip"
+		android:background="@drawable/edit_text"
+		android:gravity="center_vertical"
+		android:paddingLeft="5dip"
+		android:paddingRight="5dip" >
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/register_phone_num_lable"
+			android:textColor="@color/black"
+			android:textSize="18dip" />
+		<EditText
+			android:id="@+id/register_phone_et"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@null"
+			android:hint="@string/login_register_tip"
+			android:inputType="phone"
+			android:maxLength="11"
+			android:paddingLeft="5dip"
+			android:singleLine="true"
+			android:textColorHint="@color/regist_btn_hint_color" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dip"
+		android:layout_marginTop="10dip"
+		android:orientation="horizontal"
+		android:gravity="center_vertical" >
+		<Button
+			android:id="@+id/confirm_btn"
+			style="@style/button_normal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="20dip"
+			android:layout_weight="1"
+			android:padding="6dip"
+			android:text="@string/comfirm_registe_btn_tip" />
+		<Button
+			android:id="@+id/cancel_btn"
+			style="@style/button_normal_light_color"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dip"
+			android:layout_weight="1"
+			android:padding="6dip"
+			android:text="@string/btn_text_cancel" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="15dip"
+		android:layout_marginTop="10dip"
+		android:orientation="horizontal"
+		android:gravity="center_vertical">
+		<CheckBox
+			android:id="@+id/protocol_readed_cb"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="true"
+			android:textColor="@color/dialog_content"
+			android:textSize="16dip" />
+		<TextView
+			android:id="@+id/protocol_readed_tv"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip"
+			android:singleLine="false"
+			android:text="@string/login_protocol"
+			android:textColor="@color/black"
+			android:textSize="16dip" />
+	</LinearLayout>
+</LinearLayout>

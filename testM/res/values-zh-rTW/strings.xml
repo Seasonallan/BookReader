@@ -1,0 +1,1879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+		This file contains resource definitions for displayed strings,
+		allowing them to be changed based on the locale and options.
+
+
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Simple strings. -->
+
+    <string name="china_telecom_voice_buy_no_ctwap_tip">請先切換到CTWAP網路，再重啟天翼閱讀進行購買！</string>
+    <string name="voice_buy_no_ctwap_tip">目前該操作僅支持中國電信用戶，我們將很快就會推出相應的解決方案~敬請期待~</string>
+    <string name="china_telecom_voice_unsubscribe_no_ctwap_tip">您需要先切換到移動網路CTWAP模式再重啟天翼閱讀進行退訂。對給您造成的不便，我們深表歉意！後續我們會努力改進，望繼續支持！</string>
+    <string name="voice_unsubscribe_no_ctwap_tip">目前該操作僅支持中國電信用戶，我們將很快就會推出相應的解決方案~敬請期待~</string>
+
+    <!-- main menu -->
+    <string name="main_menu_feedback">意見回饋</string>
+    <string name="main_menu_software_share">軟體分享</string>
+    <string name="main_menu_delete">刪除</string>
+    <string name="main_menu_download">批量下載</string>
+    <string name="main_menu_list_switch">列表切換</string>
+    <string name="main_menu_setting">系統設定</string>
+    <string name="main_menu_help">幫助</string>
+    <string name="main_menu_upgrade">軟體升級</string>
+    <string name="main_menu_exit">退出</string>
+    <string name="setting_about_btn">關於</string>
+    <string name="main_bookshelf_btn">書架</string>
+    <string name="main_bookcity_btn">書城</string>
+    <string name="main_bookranking_btn">排行</string>
+    <string name="main_booksearch_btn">搜索</string>
+    <string name="main_usercenter_btn">中心</string>
+    <string name="main_menu_help_goto_read_tip">進入天翼閱讀</string>
+    <string name="software_name">天翼閱讀android客户端</string>
+    <string name="version_info">%s版本</string>
+
+    <!-- user info detail -->
+    <string name="my_info">我的資料 %s</string>
+    <string name="my_user_phonenum">153000*****</string>
+    <string name="my_complete_prompt">完善資料,讓好友更輕鬆地找到您</string>
+    <string name="my_complete_level">完善度: %s</string>
+    <string name="my_complete_percent">百分之(%s)</string>
+    <string name="my_tag_manager">我的標籤管理</string>
+    <string name="my_nick">昵稱: %s</string>
+    <string name="my_sex">性別: %s</string>
+    <string name="my_addr">所在地：%s</string>
+    <string name="my_email">郵箱：%s</string>
+    <string name="my_personaldetail">個人簡介：簡單的說些什麼吧，讓好友更好地瞭解您</string>
+    <string name="my_realname">真實姓名：%s</string>
+    <string name="my_realname_scan">僅主人可見</string>
+    <string name="my_birthdate">出生日期：%s</string>
+    <string name="my_company">公司：%s</string>
+    <string name="my_school">學校：%s</string>
+    <string name="my_psw_change">修改密碼</string>
+    <string name="my_screat_setting">隱私設定</string>
+    <string name="no_ask_again">一周內不再提醒</string>
+    <string name="update_text">升級</string>
+    <string name="skip_text">跳過</string>
+
+    <!-- welcome -->
+    <string name="wlecome_telecom_trick_info">增值電信業務經營許可證 浙B2-20120340</string>
+
+    <!-- user login state -->
+    <string name="user_login_state_unlogin"></string>
+    <string name="user_login_state_login">已登錄</string>
+    <string name="user_login_login_out_tip">確定退出當前帳號嗎？</string>
+    <string name="user_login_state_switch_accounts">切換帳號</string>
+    <string name="user_login_state_go_login">登錄</string>
+
+    <!-- 有聲訂購 -->
+    <string name="buy_success_tip">購買成功，感謝支持正版！</string>
+    <string name="voice_buy_success">購買成功！請繼續支持正版！</string>
+    <string name="voice_buy_fail">購買失敗，請稍後重試！</string>
+    <string name="voice_order_success">包月成功！請繼續支持正版！</string>
+    <string name="voice_unorder_success">成功退訂該包月專區！</string>
+    <string name="voice_order_fail">包月失敗，請稍後重試！</string>
+    <string name="voice_read_point_not_enough">賬戶余額不足，請先充值或切換成話費支付</string>
+    <string name="voice_order_relation_exist">購買失敗：你已經購買過</string>
+    <string name="voice_product_free">購買失敗：該作品爲免費作品，無法訂購</string>
+    <string name="voice_package_not_exit">購買失敗：該頻道包不存在</string>
+    <string name="voice_product_not_exit">購買失敗：該作品不存在</string>
+
+    <!-- 服務協定 -->
+    <string name="service_agreement_terms_title">提示</string>
+    <string name="btn_text_agree">\u0020同\u0020\u0020\u0020意\u0020</string>
+    <string name="btn_text_disagree">不同意</string>
+    <string name="service_number">10000</string>
+    <string name="service_content">天翼閱讀使用者服務協定</string>
+    <string name="service_agreement_terms_number">　　尊敬的使用者，本應用需要建立資料鏈接並提供資訊推送服務，所產生的流量費用將根據您的套餐資費標準收取，詳情請諮詢10000。</string>
+    <string name="service_agreement_terms_content">　　更多的協定說明，請參考《天翼閱讀使用者服務協定》，如果您確定使用本應用，即表明您同意接受此服務條款與協定。</string>
+
+    <!-- 下载有声客户端提示 -->
+    <string name="download_voice_title_tip">下載有聲版</string>
+    <string name="download_voice_content_tip">為了更好的享受聽書體驗，建議您下載天翼閱讀有聲版</string>
+
+    <!-- 通知欄 -->
+    <string name="notification_download_finish_title">《%s》下載完成</string>
+    <string name="notification_download_chapter_tip">\u0020第%s章</string>
+    <string name="notification_download_finish_title_pre">《%s</string>
+    <string name="notification_download_finish_title_post">》下載完成</string>
+    <string name="notification_download_finish_content">點擊打開</string>
+    <string name="notification_download_start_tip">正在下載%s個任務</string>
+    <string name="notification_download_start_single_tip">正在下載《%s》</string>
+    <string name="notification_download_start_single_tip_pre">正在下載《%s</string>
+    <string name="notification_download_start_single_tip_post">》</string>
+    <string name="notification_download_info_tip">已暫停%1$s個任務,下載失敗%2$s個任務,已完成%3$s個任務</string>
+    <string name="notification_download_unfinish_tip">已暫停%1$s個任務,下載失敗%2$s個任務</string>
+    <string name="notification_download_click_tip">點擊進入查看</string>
+    <string name="notification_resident_tip">天翼閱讀正在後臺運行</string>
+    <string name="notification_resident_click_tip">點擊進入天翼閱讀</string>
+    <string name="notification_software_recommend_tip">天翼閱讀軟體推薦</string>
+    <!-- appwidget -->
+    <string name="appwidget_not_net_work_read_book">當前無網路連接，無法進行線上閱讀！</string>
+    <string name="appwidget_not_net_work_book_info">當前無網路連接，無法進行查看書籍詳情！</string>
+    <string name="appwidget_not_net_work_msg">當前無網路連接，無法查看消息！</string>
+    <string name="appwidget_not_notice_tip">天翼閱讀為您打造絕佳的移動閱讀體驗!</string>
+    <string name="appwidget_not_notice">暫無公告！</string>
+    <string name="appwidget_notice_tip">公告:\n</string>
+    <string name="appwidget_last_read_bookshelf_not_data_tip">還沒有閱讀記錄，請先閱讀您喜歡的內容!</string>
+
+    <!-- 服務條款 -->
+    <string name="service_terms_title">天翼閱讀用戶端\n用戶須知</string>
+    <!--
+    <string name="service_terms_content">\t\t尊敬的使用者，本應用需要建立資料連接，聯網將產生流量費，由運營商收取，詳細資費請諮詢10000。\n\t\t按“確認”進入程式，按“取消”退出程式。</string>
+	<string name="service_terms_content">\t\t尊敬的用戶，在使用本應用過程中會因建立資料連接而產生資料流程量，資料流程量費用由網路運營商收取，費用標準請諮詢當地網路運營商。\n\t\t按“確認”進入程式，按“取消”退出程式。</string>
+
+
+    -->
+    <string name="service_terms_content">　　尊敬的用戶,您在使用本應用過程中會因建立資料連接而產生資料流程量,資料流程量費由網路運營商收取,具體資費標準請諮詢當地網路運營商。\n　　按\"確認\"進入程式,按\"取消\"退出程式。</string>
+
+    <!-- 幫助提示 -->
+    <string name="help_tip_local">常見問題</string>
+    <string name="help_tip_net">線上說明</string>
+    <string name="help_tip_title">幫助小貼士</string>
+    <string name="help_tip_text">下次不再提示</string>
+    <string name="help_tip_menu">1．	想查看或修改您的個人資訊嗎？請點擊進入‘個人資訊’。\n
+	2．	想查詢您的消費記錄和積分情況嗎？請點擊進入‘個人資訊’。\n
+	3．	想查詢您的評論記錄嗎？請點擊進入‘個人資訊’。\n
+	4．	想查詢當前是否有更新的用戶端版本供您升級嗎？請點擊‘軟體升級’查詢升級資訊。\n
+	5．	天翼用戶端希望您能留下您寶貴的意見，請點擊‘意見回饋’進入留言板。
+</string>
+    <string name="help_tip_system_msg">1.	想查看您的最新連載訂閱通知嗎？請點擊藍色欄目區的‘我的更新’查閱。\n
+	2.	想查看最新的系統公告嗎？請點擊藍色欄目區的‘中心’-‘我的消息’查閱。
+</string>
+    <string name="help_tip_search">想快速搜索您想閱讀的書籍，雜誌和漫畫嗎？請在搜索框中輸入搜索資訊，點擊‘搜索’即可。</string>
+    <string name="help_tip_ranking">您想查看更多排行嗎？請點擊圖書，連載，雜誌，漫畫的圖示，便可查看更多排行榜，查詢當前最火爆的內容。</string>
+    <string name="help_tip_city">1．	如何購買電子書？ 您只需點擊您希望購買的資源進入介紹頁面，點擊螢幕上的購買按鍵，選中購買方式並成功購買後，您就可以選擇下載閱讀或線上閱讀的兩種方式進行閱讀。同時，在您購買前也可以選擇免費試讀。\n
+	2．	如何訂購包月專區？您只需點擊藍色欄目區中的‘包月’，進入包月頁面，便可任意訂購您喜歡的包月欄目。
+</string>
+    <string name="help_tip_bookshelf">1．	想快速查看您所有已下載的圖書、雜誌、漫畫嗎？請點擊藍色欄目區的‘下載’進行查閱。\n
+	2．	想快速查看您最近閱讀過的書籍嗎？請點擊藍色欄目區的‘最近’進行查閱。\n
+</string>
+    <string name="help_tip_reader">1．	覺得現有字體閱讀起來不合適？您只需點擊‘字體’按鈕，設定最適合您的閱讀風格、字體大小、行間距和字間距。\n
+	2．	想保存此頁為書籤便於下次繼續閱讀嗎？您只需點擊‘功能表’按鈕中的‘書籤’選項，設定本頁為書籤，或者讀取您的其他書籤。\n
+	3．	想全屏閱讀嗎？您只需點擊‘功能表’按鈕中的‘全屏’選項，獲取更爽的閱讀體驗！\n
+	4．	想設定自動滾屏閱讀嗎？您只需點擊‘功能表’按鈕中的‘自動流覽’選項，讓閱讀更方便！\n
+	5．	想設定更炫的翻頁特效嗎？您只需點擊‘功能表’按鈕中的‘閱讀設定-基本設定’選項。\n
+	6．	想把這個書推薦給您的好友嗎？您只需點擊‘功能表’按鈕中的‘推薦’選項，輸入好友的手機號並留下您的推薦留言即可。\n
+	7．	快快與其他書友分享您的讀後感吧！您只需點擊‘功能表’按鈕中的‘評論管理-添加評論’選項。\n
+	8．	想看看其他書友對於此書的評論嗎？您只需點擊‘功能表’按鈕中的‘評論管理-流覽評論’選項。\n
+	9．	離開閱讀頁面，您只需點擊螢幕右上角的返回按鈕。
+</string>
+    <string name="help_read_tip_title">閱讀提示</string>
+    <string name="help_tip_read_control">天翼閱讀為您提供多種翻頁閱讀\n\n
+1. 左右滾動翻頁：點擊螢幕左右進行上下翻頁\n
+2. 上下滾動翻頁：點擊螢幕上下進行上下翻頁\n
+3. 紙質翻頁：點擊螢幕左右類比紙質上下翻頁\n
+翻頁特效設定入口：閱讀菜單-閱讀設定-基本設定\n\n
+可以試試看功能表鍵彈出快捷操作，讓您的閱讀更加便捷！
+</string>
+    <string name="help_tip_try_online">是否線上試讀?</string>
+    <string name="help_tip_change_setting">是否保存當前修改?</string>
+    <string name="new_message_tip">您有新的消息，請進入我的消息查看！</string>
+    <string name="wonderful_recommendation_tip">意見回饋</string>
+    <string name="sfreader_audio_name_tip">您的支持是我們最大的動力</string>
+    <string name="sfreader_audio_ad_tip">點此進入意見回饋</string>
+    <string name="connection_mode_wifi">友情提示：您當前使用的是WLAN無線網路，請關閉WLAN並切換為“CTWAP”接入點後登錄天翼閱讀！選擇“確定”進入離線登錄模式，選擇“取消”退出用戶端。</string>
+    <string name="connection_mode_no_cdma">友情提示：您當前使用的是"%s"，請切換為“CTWAP”接入點後登錄天翼閱讀！選擇“確定”進入離線登錄模式，選擇“取消”退出用戶端。</string>
+    <string name="connection_mode_no_cmda">友情提示：您的接入方式不是CDMA網路，請設定接入方式為“CTWAP”！選擇【確定】進入設定網路，選擇【取消】進入離線閱讀。</string>
+    <string name="connection_mode_no_ctwap">友情提示：您當前使用的是“CTNET“接入點，是否切換至“CTWAP”接入點後登錄天翼閱讀？選擇“確定”自動切換並登錄（退出後系統自動恢復原接入點），選擇“取消”後離線閱讀已下載內容。</string>
+    <string name="connection_mode_set_ctwap_falut">友情提示：設定“CTWAP”接入點失敗，請手動切換為“CTWAP”接入點後登錄天翼閱讀！選擇“確定”進入離線登錄模式，選擇“取消”退出用戶端。</string>
+    <string name="sdcard_no_exist_tip">友情提示：系統未找到存儲卡，您將不能閱讀本地書籍和下載書籍！插入存儲卡後可體驗更好的閱讀，是否繼續？</string>
+    <string name="sdcard_no_exist_local_tip">當前設備沒有存儲卡，不能流覽本機書籍，請插上存儲卡!</string>
+    <string name="sdcard_no_exist_download_tip">當前設備沒有存儲卡，不能下載書籍，請插上儲存卡!</string>
+    <string name="sdcard_no_exist_online_read_tip">當前設備存儲卡沒有裝載，不能線上閱讀，請插上儲存卡!</string>
+    <string name="sdcard_no_exist_Free_Not_Enough_tip">當前設備存儲卡沒有足夠的剩餘空間，無法下載書籍!</string>
+    <string name="sdcard_no_exist_save_photo">當前設備存儲卡沒有裝載，不能保存到相冊，請插上儲存卡!</string>
+    <string name="conection_no_network">設備當前無網路連接狀態，請確認是否欠費或網路連接沒打開。</string>
+
+    <!-- <string name="conection_unavailable">友情提示：您當前處於無網路連接狀態，請先確認是否欠費或網路連接未開啟，建議您在“CTWAP”接入點下聯網使用！選擇“取消”退出用戶端，選擇“確定”進入“離線”登錄閱讀。</string> -->
+    <!-- <string name="conection_unavailable">友情提示：無可用網路，請檢查您的網路狀況或設定。注：本軟體使用中國電信互聯星空設定。</string> -->
+    <string name="conection_unavailable">友情提示：當前無網路連接，請檢查您的網路狀況。</string>
+    <string name="connection_mode_change">正在初始化您的網路...</string>
+    <string name="conection_unavailable_coolpad">友情提示：沒有找到可用網路，選擇“取消”退出用戶端，選擇“確定”進入“離線模式”閱讀。</string>
+    <string name="connection_tip_wifi">友情提示：您當前使用的是WLAN無線網路，請關閉WLAN並切換為“CTWAP”接入點後登錄天翼閱讀繼續使用！</string>
+    <string name="connection_tip_no_ctwap">友情提示：您當前使用的不是“CTWAP”接入點，請切換為“CTWAP”接入點後登錄天翼閱讀繼續使用！</string>
+    <string name="connection_mode_no_ctwap_lenovo">友情提示：您當前使用的不是“CTWAP”接入點，請切換為“CTWAP”接入點後登錄天翼閱讀繼續使用！選擇“確定”進入離線登錄模式，選擇“取消”退出用戶端。</string>
+    <string name="please_select_chapter">請選擇至少一個章節</string>
+    <string name="exceed_selected_num">超過最大可選數量啦！</string>
+
+    <!-- 錯誤提示 -->
+    <string name="function_is_not_full">功能正在完善中，請稍候...</string>
+    <string name="err_tip_server_buy">網路不給力，請稍後重試！</string>
+    <string name="result_code_exits_in_favorite">內容已被收藏</string>
+    <string name="result_code_user_can_not_comment">用戶已被禁言</string>
+    <string name="result_code_comment_can_not_comment">內容禁止評論</string>
+    <string name="result_code_user_control_over_limit">操作已達到上限！</string>
+    <string name="result_code_add_favorite_over_limit">對不起，收藏達到上限！</string>
+    <string name="result_code_had_voted">不要太貪心哦，您今天已對本書評過分啦！</string>
+    <string name="result_code_voice_had_voted">不要太貪心哦，您今天已經評過分啦！</string>
+    <string name="result_code_had_commented">不要太貪心哦，您已經對本書評論過啦！</string>
+    <string name="result_code_server_err_other">網路不給力，請稍後再試！</string>
+    <string name="result_code_username_psw_error">您輸入的用戶名或密碼錯誤，請重新輸入！</string>
+    <string name="result_code_verify_send_failed">驗證碼發送失敗，請稍後重試！</string>
+    <string name="result_code_verify_error">您輸入的驗證碼錯誤，請重新輸入！</string>
+    <string name="result_code_user_unorder">您請求的章節需要付費，想要購買嗎？</string>
+    <string name="result_code_book_no_copyright">未知錯誤（錯誤碼：2221）</string>
+    <string name="result_code_no_serialbook">不好意思，該分欄暫時沒有書籍！</string>
+    <string name="result_code_have_been_gifted">您已給您的朋友（%s）贈送過該書，無需重複贈送！</string>
+    <string name="result_code_non_read_user">抱歉，您要贈送的好友還沒有註冊天翼閱讀帳號！</string>
+    <string name="result_code_user_name_or_psw_input_over_limit">抱歉，您輸入帳號或密碼輸入錯誤超過上限！</string>
+    <string name="login_fault_tip">登錄失敗，是否進入“離線模式”閱讀書籍？</string>
+    <string name="login_tip">本功能只有在中國電信CTWAP網路下才能使用！</string>
+    <string name="updata_failed_tip">安裝包下載失敗，請稍候重試。手機訪問http://wapread.189.cn/d 即刻進行下載！</string>
+    <string name="read_err_format">無法打開此電子書！</string>
+    <string name="system_unsupport_sms">當前設備不支援“發送短信”</string>
+    <string name="system_unsupport_dial">當前設備不支援“撥打電話”</string>
+    <string name="download_failed">下載失敗，請稍後再試！</string>
+    <string name="result_code_audio_auth_failed">數據簽名失敗！</string>
+    <string name="readticket_exceed">您已達到兌換上限！</string>
+    <string name="readticket_not_enough">您的積分餘額不足！</string>
+    <string name="points_to_readticket_sucess">兌換成功</string>
+    <string name="sucess_readticket_count">恭喜您成功兌換了%s個閱點!</string>
+    <string name="readticket_limit_date">閱點將在%s過期，請在過期前使用，過期作廢！</string>
+    <string name="convert_no_rule_8">積分兌換閱點活動正在緊鑼密鼓地籌備中\n\n還不趕快趁現在多屯點積分吧！\n閑來常翻書，積分任你淘\n每天來簽到，積分步步高</string>
+    <string name="convert_no_rule_6">積分兌換閱點活動正在緊鑼密鼓地籌備中\n還不趕快趁現在多屯點積分吧！\n閑來常翻書，積分任你淘\n每天來簽到，積分步步高</string>
+    <string name="convert_no_rule_12">積分兌換閱點活動正在緊鑼密鼓地籌備中\n還不趕快趁現在多屯點積分吧！\n閑來常翻書，積分任你淘\n每天來簽到，積分步步高</string>
+    <string name="upload_error_tip">提交資料失敗，請稍後重試！</string>
+    <string name="save_setting_success">設定修改成功！</string>
+
+    <!-- DRM錯誤 -->
+    <!-- <string name="drm_rc_service_unavaliable">您遇到了概率極低的異常錯誤，請稍後重試！若多次嘗試不成功，請聯繫10000客服幫您解決！</string> -->
+    <string name="drm_rc_service_unavaliable">閱讀許可證下載失敗，請稍後再試！</string>
+    <string name="drm_rc_order_no">訂購關係不存在</string>
+    <!-- <string name="drm_rc_system_err">您遇到了概率極低的異常錯誤，請稍後重試！若多次嘗試不成功，請聯繫10000客服幫您解決！</string> -->
+    <string name="drm_rc_system_err">閱讀許可證下載失敗，請稍後再試！</string>
+    <!-- <string name="drm_rc_other_err">您遇到了概率極低的異常錯誤，請稍後重試！若多次嘗試不成功，請聯繫10000客服幫您解決！</string> -->
+    <string name="drm_rc_other_err">閱讀許可證下載失敗，請稍後再試！</string>
+
+    <!-- BUTTON TEXT start -->
+    <string name="btn_text_show_next">顯示下一條</string>
+    <string name="btn_text_close">關閉</string>
+    <string name="btn_text_confirm">確定</string>
+    <string name="btn_text_cancel_next">下次吧</string>
+    <string name="btn_text_buy">購買</string>
+    <string name="btn_text_month_package">包月</string>
+    <string name="btn_text_do_next">下一步</string>
+    <string name="btn_text_save">保存</string>
+    <string name="btn_text_retry">重試</string>
+    <string name="btn_text_submit_countdown">提交</string>
+    <string name="btn_text_confirm_for_registsuccess">\u0020\u0020\u0020\u0020確定\u0020\u0020\u0020\u0020</string>
+    <string name="btn_text_time_confirm">設定</string>
+    <string name="btn_text_reset">重置</string>
+    <string name="btn_text_continue">繼續</string>
+    <string name="btn_text_try_onemore">再試一次</string>
+    <string name="btn_text_manually_register">手動註冊</string>
+    <string name="btn_text_cancel">取消</string>
+    <string name="btn_text_now_setting">網路設定</string>
+    <string name="btn_text_next_setting">稍後再說</string>
+    <string name="btn_text_outline_login">離線登錄</string>
+    <string name="btn_text_now_update">立即更新</string>
+    <string name="btn_text_next_update">稍後更新</string>
+    <string name="btn_text_send">發送</string>
+    <string name="btn_text_go_favorite">去收藏架</string>
+    <string name="btn_text_later">稍候再去</string>
+    <string name="btn_text_confirm_buy">話費支付</string>
+    <string name="btn_text_confirm_buy_money">話費支付：%s元</string>
+    <string name="btn_text_confirm_buy_privilege_money">話費支付：%s元(優惠價)</string>
+    <string name="btn_text_voice_single_set_book_privilege">話費支付：%s元/集(優惠價)</string>
+    <string name="btn_text_voice_single_set_book_yuan">話費支付：%s元/集</string>
+    <string name="btn_text_voice_single_set_book_read_point">閱點支付：%s点/集</string>
+    <string name="btn_text_read_point_buy_money">閱點支付：%s點</string>
+    <string name="btn_text_confirm_buy_privilege_money_chapter">話費支付：%s元(優惠價)/章</string>
+    <string name="btn_text_confirm_buy_money_chapter">話費支付：%s元/章</string>
+    <string name="btn_text_read_point_buy_money_chapter">閱點支付：%s点/章</string>
+    <string name="btn_text_confirm_buy_read_piont">確定</string>
+    <string name="btn_text_confirm_download">確認下載</string>
+    <string name="btn_text_download_manage">下載管理</string>
+    <string name="btn_text_read_right_now">馬上閱讀</string>
+    <string name="btn_text_come_on">繼續操作</string>
+    <string name="btn_text_go_read">繼續閱讀</string>
+    <string name="btn_text_buy_now">立即購買</string>
+    <string name="btn_text_try_again">重新操作</string>
+    <string name="btn_text_delete">刪除</string>
+    <string name="btn_text_download">立即下載</string>
+    <string name="btn_text_freedownload">立即下載</string>
+    <string name="btn_text_online">線上閱讀</string>
+    <string name="btn_text_more_notice">更多公告</string>
+    <string name="btn_text_confirm_yes">是</string>
+    <string name="btn_text_confirm_no">否</string>
+    <string name="btn_text_checkall">全選</string>
+    <string name="btn_text_anti_check">反選</string>
+    <string name="btn_text_order">我要包月</string>
+    <string name="btn_text_ordered">已包月</string>
+    <string name="btn_text_unorder">退訂</string>
+    <string name="btn_text_order_cancel">已退訂</string>
+    <string name="btn_text_edit_info">編輯資訊</string>
+    <string name="btn_text_modify_psw">修改密碼</string>
+    <string name="btn_text_signin">簽到有禮\u0020</string>
+    <string name="btn_text_signedin">已簽到\u0020</string>
+    <string name="btn_text_edit">編輯</string>
+    <string name="btn_text_clear_msg">清空</string>
+    <string name="btn_text_check_in">導入書架</string>
+    <string name="btn_text_new_feedback">我要回饋</string>
+    <string name="btn_text_more_order">更多包月</string>
+    <string name="btn_text_submit">提交</string>
+    <string name="btn_text_comment_publish">發表</string>
+    <string name="btn_text_submit_more_time">提交(%1$d分%2$d秒)</string>
+    <string name="btn_text_submit_more_time_secondlow">提交(%d秒)</string>
+    <string name="btn_text_get_sms_code">獲取驗證碼</string>
+    <string name="btn_text_login">登錄</string>
+    <string name="btn_text_download_mass">批量下載</string>
+    <string name="btn_text_check_user_score">查看明細</string>
+    <string name="btn_text_page_previous">上一頁</string>
+    <string name="btn_text_page_next">下一頁</string>
+    <string name="btn_text_recommend">推薦</string>
+    <string name="btn_text_comment">評論</string>
+    <string name="btn_text_share">分享</string>
+    <string name="btn_text_shortcut">添加到桌面快捷方式</string>
+    <string name="btn_text_change_account">切換帳號</string>
+    <string name="btn_text_my_feedback">查看回饋</string>
+    <string name="btn_text_catalog">目錄</string>
+    <string name="btn_text_bookmark">書籤</string>
+    <string name="btn_text_bookdigest">筆記</string>
+    <string name="btn_bookdigests_remark">編輯</string>
+    <string name="btn_bookdigests_share">分享</string>
+    <string name="btn_install_now">立即安裝</string>
+    <string name="btn_install_after">稍後安裝</string>
+    <string name="btn_text_voice_try_listent">免費試聽</string>
+    <string name="btn_text_voice_freelistent">免費收聽</string>
+    <string name="btn_text_voice_listent">收聽</string>
+    <string name="btn_text_i_see">我知道了</string>
+    <string name="btn_text_go_to_book_city">去書城逛逛</string>
+    <string name="expandable_fold">收起</string>
+    <string name="expandable_unfold">展開</string>
+    <string name="btn_text_recharge">充值</string>
+    <!-- BUTTON TEXT end -->
+
+
+    <!-- tab item text start -->
+    <string name="tab_item_laster">最近</string>
+    <string name="tab_item_order">訂購</string>
+    <string name="tab_item_download">下載</string>
+    <string name="tab_item_favoriter">收藏</string>
+    <string name="tab_item_local">本機</string>
+    <string name="tab_item_recommend_msg">推薦消息</string>
+    <string name="tab_item_my_update">我的更新</string>
+    <string name="tab_item_system_notcie">系統公告</string>
+    <string name="tab_item_frist_page">推薦</string>
+    <string name="tab_item_weekranking">排行版</string>
+    <string name="tab_item_books">圖書</string>
+    <string name="tab_item_reader">看書</string>
+    <string name="tab_item_free_reader">原創</string>
+    <string name="tab_item_free_public">出版</string>
+    <string name="tab_item_audios">聽書</string>
+    <string name="tab_item_free_audios">聽書</string>
+    <string name="tab_item_free_magazine">雜誌</string>
+    <string name="tab_item_free_cartoon">漫畫</string>
+    <string name="tab_item_open">開</string>
+    <string name="tab_item_close">關</string>
+    <string name="tab_item_publishing">出版</string>
+    <string name="tab_item_original">原創</string>
+    <string name="tab_item_magazine">雜誌</string>
+    <string name="tab_item_cartoon">漫畫</string>
+    <string name="tab_item_news">資訊</string>
+    <string name="tab_item_area">包月</string>
+    <string name="tab_item_recommend">推薦</string>
+    <string name="tab_item_channel">頻道</string>
+    <string name="tab_item_rank">排行</string>
+    <string name="tab_item_search">搜索</string>
+    <string name="tab_item_center">中心</string>
+    <string name="tab_item_catalog_fine">推薦</string>
+    <string name="tab_item_catalog_hot">人氣</string>
+    <string name="tab_item_catalog_all">綜合</string>
+    <string name="tab_item_catalog_total">全部</string>
+    <string name="tab_item_catalog_spread">展開</string>
+    <string name="tab_item_catalog_book">完本</string>
+    <string name="tab_item_catalog_serail">連載</string>
+    <string name="tab_item_catalog_free">免費</string>
+    <string name="tab_item_author_info">作者相關資訊</string>
+    <string name="tab_item_announcer_info">播音員相關資訊</string>
+    <!-- tab item text end -->
+
+    <string name="offline_login">離線模式</string>
+    <string name="create_shortcut_tip">“天翼閱讀”快捷方式已創建到桌面</string>
+    <string name="loading_tip">正在聯網，請稍候......</string>
+    <string name="loading_bookshell_tip">正在進入書架，請稍候......</string>
+    <string name="loading_sms_buy_generate_order_tip">正在生成訂單信息，請不要離開...</string>
+    <string name="order_generate_faild_title">訂單生成失敗</string>
+    <string name="order_generate_faild_tip">訂單生成失敗，請重試</string>
+    <string name="loading_sms_buy_send_sms_tip">短信發送中，請不要離開...</string>
+    <string name="loading_sms_receive_buy_result_tip">短信發送成功！正在獲取充值結果，請不要離開</string>
+    <string name="loading_buy_result_tip">短信發送成功！正在獲取購買結果，請不要離開</string>
+    <!-- 有聲閱讀 -->
+    <string name="notify_no_next_tip">沒有下一章！</string>
+    <string name="notify_no_prev_tip">沒有上一章！</string>
+    <string name="notify_buffering_tip">正在緩衝...%s</string>
+    <string name="notify_err_connection_tip">網路連接失敗！</string>
+    <string name="notify_err_file_tip">打開本地檔失敗！</string>
+    <string name="notify_err_init_tip">播放初始化失敗</string>
+    <string name="notify_err_player_tip">播放出現未知異常</string>
+    <string name="notify_voice_state_start">正在播放中...</string>
+    <string name="notify_voice_state_pause">已暫停播放...</string>
+    <string name="notify_voice_state_stop">已中止播放...</string>
+    <string name="notify_voice_remark_time_tip">設定成功!%s後暫停播放!</string>
+    <string name="audio_playnow_chapterName">正在播放:%s</string>
+    <string name="audio_playnext_chapterName">下一章:%s</string>
+    <string name="audio_remark_time">定時退出</string>
+    <string name="audio_remark_time_hour_tip">小時</string>
+    <string name="audio_remark_time_minute_tip">分鐘</string>
+    <string name="time_second_tip">秒</string>
+    <string name="dialog_audio_setting_style">定時暫停播放</string>
+    <string name="audio_run_in_background_tip">書籍已加入後臺播放</string>
+
+    <!-- catalog title start -->
+    <string name="free_area_title">免費書籍推薦</string>
+    <string name="area_title">包月專區</string>
+    <string name="order_book_type_book_title">看書包月</string>
+    <string name="order_book_type_voice_title">聽書包月</string>
+    <string name="whole_area_title">聽書全站包月區</string>
+    <string name="catalog_title_my_order">我的包月</string>
+    <string name="catalog_title_recommend_order">包月推薦</string>
+    <string name="catalog_title_author_works">作品清單</string>
+    <string name="catalog_title_new_books">新書首發</string>
+    <string name="area_package_des">簡介：%s</string>
+    <!-- catalog title end -->
+
+    <string name="voice_title_my_order">您已訂購以下包月區：</string>
+    <string name="voice_save_money_weapon">省錢支招：\n訂購全站包後，就不需要再浪費錢訂購其他包！</string>
+    <string name="voice_type_class_name_all">全部</string>
+    <string name="voice_type_class_name_free">免費</string>
+    <string name="resolve_err">獲取資料失敗！</string>
+    <string name="network_cut_down">正在斷開網路，請稍候...</string>
+    <string name="exit_show_audio_download_tip">解放雙手，釋放雙眼\n點擊下載天翼閱讀有聲用戶端</string>
+    <string name="exit_tip">您確定要退出天翼閱讀嗎？</string>
+    <string name="exit_toast_tip">天翼閱讀期待與您下次再見，Miss You！</string>
+    <string name="delete_data_current">刪除</string>
+    <string name="delete_data_all">刪除全部</string>
+    <string name="already_bottom_tip">已經到底了哦</string>
+    <string name="waitting_dialog_tip">正在處理資料，請稍候...</string>
+    <string name="waitting_dialog_load_tip">努力載入中，請稍候...</string>
+    <string name="waitting_dialog_reload_tip">世上沒有絕望的處境,只有對處境絕望的人</string>
+    <string name="waitting_reader_dialog_tip">正在讀取資料，請稍候...</string>
+    <string name="waitting_dialog_connect">努力載入中，請稍候...</string>
+    <string name="waitting_dialog_search_local_book">正在搜索書籍，請稍候...</string>
+    <string name="waitting_dialog_delete_book">正在刪除書籍，請稍候...</string>
+    <string name="waitting_dialog_new_tip">看法改變世界</string>
+    <string name="dialog_tip_connect">當前是“離線模式”，是否轉為“連接模式”？</string>
+    <string name="splash_login_tip">歡迎使用天翼閱讀\n正在登錄，請稍候...</string>
+    <string name="login_implicit_tip">親，本次登錄可能收取您一條文本短信費用，該費用由您的運營商收取，是否繼續？</string>
+    <string name="app_label">樂閱</string>
+    <string name="title_book_shelf">我的書架</string>
+    <string name="title_book_library">天翼書城</string>
+    <string name="title_book_rank">排行榜</string>
+    <string name="title_book_search">搜索</string>
+    <string name="title_system_msg">系統消息</string>
+    <string name="title_space">個人中心</string>
+    <string name="title_system_menu">菜單</string>
+    <string name="dialog_online_update_title">有新章節更新</string>
+    <string name="dialog_online_update_content">您可以選擇立即購買或繼續閱讀</string>
+
+    <!-- View empty tip -->
+    <string name="view_data_empty_tip">當前沒有資料\n更多無線精彩，盡在天翼書城！</string>
+    <string name="view_data_empty_tip_lastest">您還沒有閱讀記錄，\n請到書城閱讀喜歡的內容！</string>
+    <string name="view_data_empty_tip_order">您還沒有訂購記錄，\n請到書城購買喜歡的內容！</string>
+    <string name="view_data_empty_tip_download">您還沒有下載記錄，\n請到書城購買下載喜歡的內容！</string>
+    <string name="view_data_empty_tip_favorite">您還沒有收藏記錄，\n請到書城收藏喜歡的內容！</string>
+    <string name="view_data_empty_tip_subject">暫無專題信息！</string>
+    <string name="view_data_empty_tip_comment">該書暫無評論！</string>
+    <string name="view_data_empty_tip_serial">暫無連載信息！</string>
+    <string name="view_data_empty_tip_gift_record">暫無贈送記錄！</string>
+    <string name="favorite_data_empty_tip">暫無收藏書籍！</string>
+    <string name="peroid_magazine_data_empty_tip">暫無相關期刊！</string>
+    <string name="notice_text">公告</string>
+    <string name="more">更多 >></string>
+    <string name="subject_type_subject">專題介紹：</string>
+    <string name="subject_type_area">專區介紹：</string>
+    <string name="subject_type_activity">活動介紹：</string>
+
+    <!-- SDCARD導入CEB書籍 -->
+    <string name="import_ceb_dialog_title">從存儲卡導入</string>
+    <string name="import_ceb_dialog_content_detecting">正在檢測存儲卡...</string>
+    <string name="import_ceb_dialog_content_detect_result_have">發現%s本書籍，是否要導入？</string>
+    <string name="import_ceb_dialog_content_detect_result_none">沒有需要導入的書籍！</string>
+    <string name="import_ceb_dialog_content_importing">正在導入%1$s/%2$s</string>
+    <string name="import_ceb_dialog_content_import_done">恭喜！成功導入%s本書籍！</string>
+    <string name="import_ceb_dialog_content_import_interruption">導入中止，您已導入%s本書籍！</string>
+    <string name="import_ceb_dialog_content_not_support_voice">提示：僅支持導入在天翼閱讀書城訂購的書籍，聽書書籍暫不支持導入</string>
+
+    <!-- Grade Rule -->
+    <string name="grade_rule_title_tip">用戶等級規則</string>
+
+    <!-- account manage -->
+    <string name="account_score_help">？</string>
+    <string name="account_readticket_life">有效期至</string>
+    <string name="account_manage_title">賬戶管理</string>
+    <string name="account_query_title">賬戶查詢</string>
+    <string name="read_point_recharge_title">閱點充值</string>
+    <string name="account_greeting">尊敬的用戶，您好！</string>
+    <string name="account_cutoff_date">截至：%s</string>
+    <string name="account_level">等級：%s</string>
+    <string name="account_balance">賬戶餘額為：%s閱點</string>
+    <string name="account_accumulated_data">累計積分：%1$s分</string>
+    <string name="change_readpoint"><a href="#">【兌換閱點】</a></string>
+    <string name="account_recharge_record">充值記錄</string>
+    <string name="account_consume_record">消費記錄</string>
+    <string name="account_points_details">積分記錄</string>
+    <string name="account_gift_record">贈送記錄</string>
+    <string name="account_recharge_title">閱點充值</string>
+    <string name="account_points_to_readticket">積分兌換閱點</string>
+    <string name="account_readticket_recharge">閱點券充值</string>
+    <string name="account_recharge_third_party">快速充值</string>
+    <string name="account_recharge_alipay_tip">支付寶充值</string>
+    <string name="account_recharge_yi_pay_tip">翼支付充值</string>
+    <string name="account_recharge_yi_pay_phone">請輸入翼支付帳號</string>
+    <string name="account_recharge_yi_pay_goods_name">天翼閱讀%s閱點</string>
+    <string name="read_point_recharge_faild">充值失敗</string>
+    <string name="read_point_recharge_faild_tip">充值失敗，請稍後再試</string>
+    <string name="account_recharge_sms_tip">短信充值</string>
+    <string name="account_recharge_sms_title">短信充閱點</string>
+    <string name="account_note_title">注:點擊下方您的閱點券進行充值</string>
+    <string name="account_recharge_other_way">更多充值方式完善中，敬請期待</string>
+    <string name="account_recharge_alipay">去支付寶支付</string>
+    <string name="account_recharge_bestpay">去翼支付支付</string>
+    <string name="account_recharge_paypal">去快錢支付</string>
+    <string name="go_to_pay_by_sso">我想要話費支付</string>
+    <string name="account_recharge_alipay_manul_download">建議在wifi網路下安裝支付寶外掛程式</string>
+    <string name="account_readticket">閱點券</string>
+    <string name="account_unionpay">銀聯</string>
+    <string name="account_bestpay">翼支付</string>
+    <string name="account_paypal">支付寶</string>
+    <string name="account_sms_not_support_recharge">短信充閱點目前只支持電信手機卡!</string>
+    <string name="account_iptv_pay">IPTV</string>
+    <string name="account_itunes_pay">ITUNES</string>
+    <string name="account_sms_pay">短信充值</string>
+    <string name="account_confirmation_of_recharge">確認充值</string>
+    <string name="account_recharge_sms_my_phone">本機號碼</string>
+    <string name="account_recharge_for_number">充值帳號: %s</string>
+    <string name="account_recharge_from_number">付費手機號: %s</string>
+    <string name="account_recharge_readpoint_count">充值閱點數: %s閱點</string>
+    <string name="account_recharge_sms_price">價格: %s元</string>
+    <string name="account_recharge_sms_result_ok">恭喜您成功爲%1$s充值了%2$s閱點</string>
+    <string name="account_recharge_sms_result_failure">充值失敗，是否重試</string>
+    <string name="account_recharge_sms_result_ok_title">充值成功</string>
+    <string name="account_recharge_sms_result_failure_title">充值失敗</string>
+    <string name="account_recharge_sms_friendly_tips">友情提示: 話費支付需要通過發送普通短信才能完成，費用由運營商收取</string>
+    <string name="account_recharge_total">截至%1$s 您共充值: %2$s閱點</string>
+    <string name="account_recharge_total_tip">截至%1$s\n您近六個月暫無充值記錄！</string>
+    <string name="account_recharge_no_enough_total">賬戶餘額不足，請先充值或切換成話費支付</string>
+    <string name="account_no_readticket">暫無閱點券可供兌換</string>
+    <string name="account_readkpoint_total">當前閱點: %s閱點</string>
+    <string name="account_points_total">積分: %s</string>
+    <string name="account_points2readpoint_point">所需積分: %s</string>
+    <string name="account_points2ticket_guide">請選擇您要兌換的閱點</string>
+    <string name="account_recharge_sms_guide">請選擇充值面額</string>
+    <string name="account_readticket_id">券號充值</string>
+    <string name="account_readticket_hint_id">請輸入閱點券號</string>
+    <string name="account_readticket_hint_psw">請輸入閱點券密碼</string>
+    <string name="account_point2readpoint">兌換%1$s閱點將花你%2$s積分，是否兌換？</string>
+    <string name="account_recharge">充值</string>
+    <string name="account_query">查詢</string>
+    <string name="account_recharge_e_coupons">電子券充值：\n點擊您的電子券，即可充值</string>
+    <string name="account_recharge_no_e_coupons">提醒：若您當前沒有閱點券，可以通過天翼閱讀營銷活動獲取閱點券</string>
+    <string name="account_convent_point">%s閱點</string>
+    <string name="account_readticket_period"> 有效期至\n%s</string>
+    <string name="account_readticket_expired">已過期</string>
+    <string name="account_readticket_null">請輸入閱點券號和密碼！</string>
+    <string name="account_readerpoint_recharge_successed_with_date">您已成功充值%1$s閱點！閱點將在%2$s過期，請在過期前使用，過期作廢！</string>
+    <string name="account_readerpoint_recharge_successed">您已成功充值%1$s閱點！</string>
+    <string name="account_readticket_recharge_successed_with_date">您已成功兌換閱點券！閱點將在%s過期，請在過期前使用，過期作廢！</string>
+    <string name="account_readticket_recharge_successed">您已成功兌換閱點券！</string>
+    <string name="account_readerpoint_to_readticket_successed">您已經成功兌換%1$s閱點\n共消費%2$s積分！</string>
+    <string name="account_recharge_readticket_failed">您輸入的券號或密碼有誤，請重新輸入！</string>
+    <string name="account_recharge_readticket_exchanged">您的閱點券已被兌換，請輸入正確的閱點券和密碼！</string>
+    <string name="account_recharge_readticket_expired">您的閱點券已過期，請輸入正確的閱點券和密碼！</string>
+    <string name="account_recharge_rule">請輸入閱點充值數額(1元=100閱點)</string>
+    <string name="account_recharge_gain_point">您將獲得%s閱點</string>
+    <string name="account_recharge_read_point">閱點</string>
+    <string name="account_pay_money">您需支付：%s元</string>
+    <string name="recharge_text_submint_error">請輸入正確的閱點數!</string>
+    <string name="in_recharge">正在充值</string>
+    <string name="recharge_remote_failed">閱點充值失敗!</string>
+    <string name="ensure_recharge">確定</string>
+    <string name="check_sign_failed">您的訂單資訊已被非法篡改。</string>
+    <string name="confirm_install_hint">"安裝提示"</string>
+    <string name="alipay_confirm_install">"為保證您的交易安全，需要您安裝支付寶安全支付服務，才能進行付款。\n\n點擊確定，立即安裝。"</string>
+    <string name="tts_apk_confirm_install">天翼閱讀有聲版已下載完成。\r\n點擊確定，立即安裝！</string>
+    <string name="apk_downloading">天翼閱讀有聲版已在下載...</string>
+    <string name="tts_apk_installed">天翼閱讀有聲版已安裝！</string>
+    <string name="image_downloading_tip">正在下載圖片到相冊,請稍後...</string>
+    <string name="image_downloaded">圖片已下載，是否立即查看！</string>
+    <string name="image_failed_download">圖片下載失敗，請稍候再試！</string>
+    <string name="account_hint">登錄享受更多閱讀樂趣</string>
+    <string name="more_help_info">更多説明資訊點擊這裡</string>
+    <string name="bind_btn_sate_modify">修改</string>
+    <string name="bind_email_hint_tip">請輸入您要綁定的郵箱</string>
+    <string name="error_email_tip">請輸入正確的郵箱地址</string>
+    <string name="send_result_sms_tip">已向您的郵箱發送綁定驗證碼，請查收！</string>
+    <string name="comfirm_btn_tip">好的</string>
+    <string name="bind_phone_num_hint_tip">請輸入您要綁定的手機號碼</string>
+    <string name="error_phone_num_tip">請輸入正確的手機號碼</string>
+    <string name="send_check_code_success_tip">已向您的手機發送短綁定證碼，請查收！</string>
+    <string name="sms_check_code_tip">請輸入您收到的綁定驗證碼</string>
+    <string name="sms_check_code_email_tip">請輸入您收到的綁定驗證碼</string>
+    <string name="check_code_error_tip">驗證碼有誤，請重新輸入</string>
+    <string name="user_phone_num_has_exist_error_tip">該手機號碼已存在，請更換其他需要綁定的手機號碼</string>
+    <string name="user_email_has_exist_error_tip">該郵箱已存在，請更換其他需要綁定的郵箱</string>
+    <string name="check_faild_tip">驗證失敗，請重試</string>
+    <string name="error_commit_times">您提交太頻繁啦，休息一會吧</string>
+    <string name="phone_num_bind_success">手機號碼綁定成功</string>
+    <string name="email_bind_success">郵箱綁定成功</string>
+    <string name="submit_frequently_tip">您提交太頻繁啦，休息一會兒吧</string>
+
+    <!-- BeagleManage -->
+    <string name="beagle_manage_title">Beagle管理</string>
+    <string name="beagle_manage_upload_title">已上傳</string>
+    <string name="beagle_manage_unupload_title">未上傳</string>
+    <string name="beagle_manage_upload_empty_tip">您還沒有上傳過書籍，趕快選擇未上傳中的書籍進行上傳體驗吧！</string>
+    <string name="beagle_manage_unupload_empty_tip">當前沒有可以上傳的書籍，趕快先下載相應上傳的書籍吧！</string>
+    <string name="beagle_manage_upload_tip">是否將該書籍上傳到閱讀器?</string>
+    <string name="beagle_manage_instant_upload">立即上傳</string>
+    <string name="beagle_manage_upload_confirm">上傳</string>
+    <string name="beagle_manage_upload_cancel">取消</string>
+    <string name="beagle_manage_setting_preview">設定預覽</string>
+    <string name="beagle_manage_upload_preview">上傳預覽</string>
+    <string name="beagle_manage_setting_font">字體設定</string>
+    <string name="beagle_manage_connect_hint">尚未連接Beagle設備，請確保設備已啟動連接模式！</string>
+    <string name="beagle_manage_connecting">正在連接Beagle設備...</string>
+    <string name="beagle_manage_error">設備連接已斷開，請重連接後再試！</string>
+    <string name="beagle_manage_scanning_none">沒收搜索到Beagle設備</string>
+    <string name="beagle_manage_connect_failed">連接Beagle失敗！</string>
+    <string name="beagle_manage_get_book_failed">獲取資料失敗！</string>
+    <string name="beagle_manage_delete_book_failed">刪除書籍失敗！</string>
+
+    <!-- 正文閱讀 -->
+    <string name="reader_menu_bookinfo">簡介</string>
+    <string name="reader_bookdigest_msg">%1$s%2$s</string>
+    <string name="reader_bookdigest_msg_part1">筆記：</string>
+    <string name="reader_bookdigest_msg_none">無</string>
+    <string name="reader_menu_title_catalog_and_bookmark">目錄.書籤</string>
+    <string name="reader_menu_title_catalog_and_bookmark_and_bookdigests">目錄.書籤.筆記</string>
+    <string name="reader_menu_title_catalog">目錄</string>
+    <string name="reader_menu_title_font">字號:</string>
+    <string name="reader_menu_title_line_spacing">行距:</string>
+    <string name="reader_menu_title_bg">背景:</string>
+    <string name="reader_menu_title_brightness">亮度調節</string>
+    <string name="reader_menu_title_brightness_off">亮度變暗</string>
+    <string name="reader_menu_title_brightness_on">亮度變亮</string>
+    <string name="reader_menu_title_day_night">日夜開關</string>
+    <string name="reader_menu_title_anim_type">翻頁:</string>
+    <string name="reader_menu_title_background">閱讀背景</string>
+    <string name="reader_menu_title_self_style">自訂風格</string>
+    <string name="reader_menu_more_setting_style">更多設定</string>
+    <string name="reader_menu_title_gift">贈送</string>
+    <string name="reader_menu_title_comment">評論</string>
+    <string name="reader_menu_title_share">分享</string>
+    <string name="reader_menu_title_remind_update">更新提醒</string>
+    <string name="reader_menu_title_remind_cancle">關閉提醒</string>
+    <string name="reader_menu_title_more">更多設定</string>
+    <string name="reader_menu_more_anim_type">手動翻頁特效</string>
+    <string name="reader_menu_anim_type_zzfz">仿真</string>
+    <string name="reader_menu_anim_type_spgd">簡潔</string>
+    <string name="reader_menu_more_volume_but">音量鍵翻頁</string>
+    <string name="reader_menu_more_auto_start">自動流覽:</string>
+    <string name="reader_menu_more_auto_delayed">自動流覽時間</string>
+    <string name="reader_menu_auto_tip">上下滑動屏幕調節浏覽速度</string>
+    <string name="reader_menu_auto_cancel">關閉自動浏覽</string>
+    <string name="reader_menu_auto_close">關閉</string>
+    <string name="reader_menu_auto_lr">左右翻頁</string>
+    <string name="reader_menu_auto_ud">上下翻頁</string>
+    <string name="reader_menu_auto_redu_speed">減速-</string>
+    <string name="reader_menu_auto_add_speed">加速+</string>
+    <string name="reader_menu_more_timed_reminder">定時提醒模式</string>
+    <string name="reader_menu_more_timed_type">定時提醒時間</string>
+    <string name="reader_menu_self_style_text_color">字體顏色</string>
+    <string name="reader_menu_self_style_background_color">背景顏色</string>
+    <string name="reader_save_user_bookmark_success">添加書籤成功！</string>
+    <string name="reader_save_user_bookmark_had_exist">書籤已存在！</string>
+    <string name="reader_delete_user_bookmark_success">書籤刪除成功！</string>
+    <string name="reader_sync_user_bookmark_tip">努力同步書籤中,請稍後...</string>
+    <string name="reader_delete_user_bookdigests_success">筆記刪除成功！</string>
+    <string name="reader_delete_user_bookmark_is_empty">請選擇需要刪除的書籤！</string>
+    <string name="reader_delete_user_bookdigests_is_empty">請選擇需要刪除的筆記！</string>
+    <string name="reader_timed_reminder">您已連續閱讀%s分鐘，請扭扭脖子伸伸懶腰讓眼睛休息一下~</string>
+    <string name="reader_open_update_remind">您已開啟本書的更新提醒功能</string>
+    <string name="reader_close_update_remind">您已關閉本書的更新提醒功能</string>
+    <string name="reader_bookmark_prompt_part1">您還沒有書籤</string>
+    <string name="reader_bookmark_prompt_part2">點擊右上角圖標</string>
+    <string name="reader_bookmark_prompt_part3">可以添加書籤</string>
+    <string name="reader_bookdigest_prompt_part1">您還沒有筆記</string>
+    <string name="reader_bookdigest_prompt_part2">長按閱讀區域可以選擇文字并添加筆記</string>
+    <string name="page_count">%s頁</string>
+    <string name="pre_chapter">上一章</string>
+    <string name="next_chapter">下一章</string>
+    <string name="pre_page">上一頁</string>
+    <string name="next_page">下一頁</string>
+    <string name="witch_set">第%s集\u0020</string>
+    <string name="witch_period">第%s期\u0020</string>
+    <string name="book_toc">目 錄</string>
+    <string name="book_toc_no_support">此格式不支援目錄顯示</string>
+    <string name="auto_read">自動流覽</string>
+    <string name="anti_auto_read">停止滾動</string>
+    <string name="page_jump">頁面跳轉</string>
+    <string name="list_bookmark">書籤清單</string>
+    <string name="new_bookmark">添加書籤</string>
+    <string name="bookmark_not_null">您還沒有輸入書籤標題，請輸入！</string>
+    <string name="duplicate_new_bookmark">您已添加過該書籤，無需重複添加！</string>
+    <string name="new_bookmark_tip">添加書籤成功</string>
+    <string name="new_bookmark_fault_tip">添加書籤失敗</string>
+    <string name="not_bookmark_tip">暫無書籤!</string>
+    <string name="load_bookmark">讀取書籤</string>
+    <string name="remove_bookmark">刪除書籤</string>
+    <string name="remove_bookmark_tip">刪除書籤成功</string>
+    <string name="reading_config">閱讀設定</string>
+    <string name="basic_config">基本設定</string>
+    <string name="basic_config_toast">基本設定成功</string>
+    <string name="font_config">字體設定</string>
+    <string name="font_config_toast">字體設定成功</string>
+    <string name="font_size_tip">%s號</string>
+    <string name="comment_config">評論管理</string>
+    <string name="new_comment">添加評論</string>
+    <string name="comment_not_null">您還沒輸入評論內容呢，隨便說兩句吧！</string>
+    <string name="list_comment">流覽評論</string>
+    <string name="alert_dialog_delete">刪除</string>
+    <string name="alert_dialog_ok">確認</string>
+    <string name="alert_dialog_cancel">取消</string>
+    <string name="exit">退出天翼閱讀？</string>
+    <string name="sorry_tip">功能暫時不可用</string>
+    <string name="tip_help">幫助</string>
+    <!-- <string name="tip_recommend">推薦</string> -->
+    <string name="tip_share">分享</string>
+    <string name="tip_goto">跳轉</string>
+    <string name="tip_fullscreen">全屏</string>
+    <string name="tip_bookmark">書籤</string>
+    <string name="tip_bookinfo">書籍摘要</string>
+    <string name="tip_exit">退出</string>
+    <string name="app_name">com.ffcs.zlibrary.ui.android.library.ZLAndroidApplication
+</string>
+    <string name="tip_no_content">網路不給力，請稍後重試！</string>
+    <string name="confirm_pre_chapter">是否要閱讀上一章？</string>
+    <string name="confirm_next_chapter">是否要閱讀下一章？</string>
+    <string name="tip_new_chapter">已經為您切換至新章節...</string>
+    <string name="tip_reach_top">已翻至第一頁！</string>
+    <string name="tip_reach_bottom">已翻至最後頁！</string>
+    <string name="tip_flip_closed">翻頁特效已關</string>
+    <string name="tip_no_change">您請求的章節需要付費，請點擊購買！</string>
+    <string name="tip_want_order">本書下一章節需要付費，請點擊購買！</string>
+    <string name="tip_anto_order">開啟自動購買下一章節功能（僅限本次閱讀）</string>
+    <string name="tip_auto_order_voice_chapter">開啟自動購買下一集功能（僅限本次收聽）</string>
+    <string name="tip_automatic_brightness">若調節失敗，請禁用系統自動亮度調節</string>
+    <string name="reader_hot_key_menu">快顯功能表</string>
+    <string name="tip_save_system_bookmark">正在保存系統書籤...</string>
+    <string name="cartoon_toolbar_page_tv">%1$s/%2$s頁</string>
+    <string name="cartoon_auto_read_time_tv">翻頁時間：\n%ss</string>
+    <string name="cartoon_read_mode_auto_tv">自動翻頁</string>
+    <string name="cartoon_read_mode_hand_tv">手動翻頁</string>
+
+    <!-- 基本設定. -->
+    <string name="flip_effection">翻頁特效</string>
+    <string name="flip_volume">音效</string>
+    <string name="volume_key_control">音量鍵翻頁</string>
+    <string name="scroll_pattern">滾動方式</string>
+    <string name="spinner_prompt_scroll_pattern">請選擇一種滾動方式</string>
+    <string name="auto_read_frequency">自動流覽滾動時間</string>
+    <string name="spinner_prompt_auto_read_frequency">請選擇滾動時間</string>
+
+    <!-- 字體設定. -->
+    <string name="spinner_prompt_read_theme">請選擇閱讀風格</string>
+    <string name="spinner_prompt_font_size">請選擇字型大小</string>
+    <string name="spinner_prompt_font_spacing">請選擇行間距</string>
+    <string name="spinner_prompt_word_spacing">請選擇字間距</string>
+    <string name="read_font_setting_theme">閱讀風格</string>
+    <string name="read_font_setting_textsize">字型大小</string>
+    <string name="read_font_setting_linespace">行間距</string>
+    <string name="read_font_setting_text_color">字體顏色</string>
+    <string name="read_font_setting_bg_color">背景顏色</string>
+    <string name="read_font_test_text">閱讀風格預覽：\n天翼閱讀，看法改變世界</string>
+    <string name="dialog_pick_color_title">請選擇顏色</string>
+    <string name="font_size_setting_magazine">字體大小設定</string>
+
+    <!-- 書籍詳細介紹Activity. -->
+    <string name="book_sort">類別：</string>
+    <string name="book_author">作者：</string>
+    <string name="book_publish_time">發佈時間：</string>
+    <string name="book_price">原價：</string>
+    <string name="book_price1">積分價：</string>
+    <string name="book_price2">優惠價：</string>
+    <string name="wordCount">字數：</string>
+    <string name="chapterCount">章節：</string>
+    <string name="hitCount">點擊：</string>
+    <string name="praiseCount">推薦：</string>
+    <string name="fileSize">文件大小：</string>
+    <string name="book_desc">簡介：</string>
+    <string name="book_references">喜歡這本書的人還喜歡...</string>
+    <string name="also_like">您可能會喜歡...</string>
+    <string name="reader_next_period_tip">感謝您的閱讀!是否繼續閱讀下一期？</string>
+    <string name="reader_next_set_tip">感謝您的閱讀!是否繼續閱讀下一集？</string>
+    <string name="book_name_tip">書名：%s</string>
+    <string name="recommend_info_tip">推薦語：%s</string>
+    <string name="immediately_read_tip">馬上閱讀</string>
+    <string name="see_details_tip">查看詳情</string>
+    <string name="cartoon_vol_num">第%s集</string>
+    <string name="free_charpter_whole">全部免費</string>
+    <string name="free_charpter_count">免費試讀前%d章節</string>
+    <string name="free_charpter_page_count">免費試看前%d頁</string>
+    <string name="free_charpter_count_audio">免費試聽前%d章節</string>
+    <string name="reader_charpter_choised">已選:%s章節</string>
+    <string name="reader_charpter_total">合計:%s章節</string>
+    <string name="reader_charpter_total_price">總價:%s閱點</string>
+    <string name="reader_charpter_price">價格:%s元</string>
+    <string name="reader_charpter_offer_price">優惠價:%s元</string>
+    <string name="reader_charpter_hint">本次消費將扣除您%s個閱點，是否購買?</string>
+    <string name="pack_product_order_hint">本書已加入包月區，只需%s元包月，即可免費暢讀該書所在包月區全部書籍。</string>
+    <string name="audio_pack_product_order_hint">本書已加入包月區，只需%s元包月，即可免費暢聽該書所在包月區全部書籍。</string>
+    <string name="tip_change_channel">溫馨提示：選擇藍色頻道標籤，切換頻道</string>
+    <string name="tip_change_channel_gold">溫馨提示：選擇白色頻道標籤，切換頻道</string>
+    <string name="tip_change_channel_blue">溫馨提示：選擇灰藍色頻道標籤，切換頻道</string>
+    <string name="tip_change_channel_ranking">選擇分類圖示，查看詳細排序</string>
+    <string name="tip_change_channel_search">選擇熱詞或熱門作者，可快速搜索相關書籍</string>
+    <string name="tip_change_channel_menu">更多操作方法請查看説明資訊</string>
+
+    <!-- 線上 -->
+    <string name="online_new_chapter_title">有新章節更新</string>
+    <string name="online_new_chapter_content">您可以選擇立即購買或繼續閱讀</string>
+    <string name="online_title">訂購</string>
+    <string name="online_download_un_support_download">連載書籍不支持下載</string>
+    <string name="online_download_select_tip">請選擇要下載的書籍</string>
+    <string name="online_download_delete_tip">請選擇要刪除的書籍</string>
+    <string name="laster_title">最近</string>
+    <string name="order_item_status">狀態：%s</string>
+    <string name="online_serial_unsupport_download">連載書籍不支持下載！</string>
+    <string name="download_add_success">成功新增下載書籍</string>
+    <string name="download_add_has">正在下載書籍</string>
+    <string name="download_add_finished">已經下載完成書籍</string>
+    <string name="download_add_unit">本</string>
+    <!-- 本機 -->
+    <string name="unsupport_txt_or_umd">暫不支持TXT或UMD格式的書籍！</string>
+    <string name="up_to_super_dir">向上一級目錄...</string>
+    <string name="magazine_type_format">版式雜誌</string>
+    <string name="magazine_type_stream">流式雜誌</string>
+    <string name="paper_scroll_to_bottom_tip">已經到底了哦</string>
+
+    <!-- 書籤管理 -->
+    <string name="bookmarks_mng">書籤管理</string>
+    <string name="no_bookpath">系統無法找到該書的存放路徑</string>
+    <string name="tip_bookmarks_mng">您未添加任何書籤</string>
+    <string name="tip_bookmarks_nocheck">請選擇要刪除的書籤</string>
+    <string name="bookshelf_delete_book_and_mark_tip">將刪除本書的書簽及備註信息</string>
+	<string name="bookshelf_delete_book_file_tip">同時刪除分組內的圖書嗎 ？</string>
+	<string name="bookshelf_delete_book_group_tip">刪除分組</string>
+	<string name="bookshelf_delete_book_group_and_book_tip">刪除分組和圖書</string>
+
+    <!-- 圖書管理 -->
+    <string name="books_mng">圖書管理</string>
+    <string name="tip_books_nocheck">請選擇要刪除的書籍</string>
+
+    <!-- 我的書架->下載 -->
+    <string name="network_prompt">離線閱讀此書以節省上網費用，是否斷開網路？</string>
+    <string name="downlaod_tip_not_delete">書籍正在下載，無法刪除.</string>
+    <string name="bookshelf_tip_shortcut">您已創建了該書的快捷方式</string>
+    <string name="go_to_book_shelf">去書架</string>
+
+    <!-- 我的書架 收藏 -->
+    <string name="book_store_to_bookshelf">已收藏到書架</string>
+    <string name="have_store">您收藏了</string>
+    <string name="book_favourite_action_now">收藏</string>
+    <string name="favorite_read_books">本看書類書籍</string>
+    <string name="favorite_voice_books">本聽書類書籍</string>
+    <string name="book_type_read">看書</string>
+    <string name="book_type_voice">聽書</string>
+    <string name="have_order">您訂購了</string>
+    <string name="online_read_books">本看書類書籍</string>
+    <string name="online_voice_books">本聽書類書籍</string>
+    <!-- 天翼書城 -->
+    <string name="catalog_list_count">共%s本</string>
+    <string name="book_update_tip">有新章節</string>
+    <string name="book_ordered_tip">已購買</string>
+    <string name="book_online_tip">線上</string>
+    <string name="book_download_try_tip">下載試讀</string>
+    <string name="book_download_ed_tip">已下載</string>
+    <string name="notice_empty">暫無公告</string>
+    <string name="fast_seek_view_page">%1$s/%2$s</string>
+    <string name="new_channel_no_title">資訊頻道</string>
+    <string name="book_item_author">作者：%s</string>
+    <string name="book_item_announcer">播音員：%s</string>
+    <string name="no_author_info">暫無作者資訊</string>
+    <string name="author_description">簡介：%s</string>
+    <string name="weibo_sina_text">新浪微博</string>
+    <string name="weibo_qq_text">騰訊微博</string>
+    <string name="renren_text">人人網</string>
+    <string name="weibo_bind">綁定</string>
+    <string name="weibo_unbind">解綁</string>
+    <string name="weibo_setting">分享帳號管理</string>
+    <string name="weibo_empty_content">分享內容不能為空</string>
+    <string name="no_weibo">未選中任何微博</string>
+    <string name="column_setting_title">首頁欄目設定</string>
+    <string name="server_net_site_setting">服務器網絡地址設置</string>
+    <string name="reade_book_site">閱讀平臺地址</string>
+    <string name="voice_book_site">有聲平臺地址</string>
+    <string name="web_site">網頁平臺地址</string>
+
+    <!-- 書籍詳細內容 -->
+    <string name="book_no_graded">(暫無評分)</string>
+    <string name="book_title">%s</string>
+    <string name="book_content_catelog">分類：</string>
+    <string name="book_content_author">作者：</string>
+    <string name="book_content_date">發佈時間：%s</string>
+    <string name="book_content_price">價格：%s元</string>
+    <string name="book_content_price_serial">價格：%s元/章節</string>
+    <string name="book_content_offers_price_serial">優惠價：%s元/章節</string>
+    <string name="book_content_offers_price">優惠價：%1$s元/本</string>
+    <string name="content_price_serial">價格：%s元</string>
+    <string name="content_offers_price">優惠價：%1$s元</string>
+    <string name="book_content_read_point_price">閱點價：%1$s點</string>
+    <string name="book_content_offers_price_in_read">優惠價：%s元/本</string>
+    <string name="book_content_count">字數：%s</string>
+    <string name="book_content_total_chapter_count">章節：%s</string>
+    <string name="book_content_click_value">點擊：%s</string>
+    <string name="book_content_recommend_value">推薦：%s</string>
+    <string name="book_content_file_size">文件大小：%s</string>
+    <string name="book_content_description">簡介：%s</string>
+    <string name="book_content_description_tip">簡介</string>
+    <string name="book_content_kind">分類：%s</string>
+    <string name="book_content_kind_type">分類：%1$s-%2$s</string>
+    <string name="book_content_more_like">看過該書的人還看過</string>
+    <string name="book_content_similar">同類推薦</string>
+    <string name="voice_content_more_like">聽過該書的人還聽過</string>
+    <string name="book_content_comment_list_empty_tip">暫無評論！</string>
+    <string name="book_content_update_tip_open">開啟更新提醒</string>
+    <string name="book_content_update_tip_close">關閉更新提醒</string>
+    <string name="book_read_num">%s人讀過</string>
+    <string name="book_read_num_on_ten_thousand">%s萬人讀過</string>
+    <string name="book_listen_num">%s人聽過</string>
+    <string name="book_listen_num_on_ten_thousand">%s萬人聽過</string>
+    <string name="book_favorite_num">%s人收藏</string>
+    <string name="book_favorite_num_on_ten_thousand">%s萬人收藏</string>
+    <string name="tools_read_try">免費試讀</string>
+    <string name="tools_read">閱讀</string>
+    <string name="tools_read_right_now">免費閱讀</string>
+    <string name="tools_listen_try">語音</string>
+    <string name="tools_listen">語音</string>
+    <string name="tools_buy">購買</string>
+    <string name="tools_download">立即下載</string>
+    <string name="tools_download_rightnow">立即下載</string>
+    <string name="tools_share">分享</string>
+    <string name="tools_favorite">收藏</string>
+    <string name="tools_gift">贈送</string>
+    <string name="read_point">閱點</string>
+    <string name="yuan">元</string>
+    <string name="book_yuan">%s元/本</string>
+    <string name="chapter_book_yuan">%s元/章</string>
+    <string name="single_set_book_yuan">%s元/集</string>
+    <string name="book_price_order_area">已加入%1$s(%2$s元/月)</string>
+    <string name="book_publish_date">出版日期：%s</string>
+    <string name="book_size_data">大小：%s</string>
+    <string name="voice_book_area">包月</string>
+    <string name="voice_book_area_ordered">包月區</string>
+    <string name="voice_book_update_list_title">查看目錄 | 共%1$s集  總時長：%2$s</string>
+    <string name="voice_book_catalog_list_title">目錄</string>
+    <string name="voice_book_play_list_title">該作品章節列表</string>
+    <string name="voice_book_series_list_title">該系列全部書籍</string>
+    <string name="cartoon_book_list_title">分集列表</string>
+    <string name="voice_book_play_download_list_title">下載列表</string>
+    <string name="voice_book_play_list_more">查看全部>></string>
+    <string name="voice_book_sort">分類：</string>
+    <string name="voice_book_author_name">作者：</string>
+    <string name="voice_book_announcer_name">播音員：</string>
+    <string name="voice_book_state">%1$s 總時長：%2$s</string>
+    <string name="voice_book_listen_num">%1$s人聽過</string>
+    <string name="voice_book_listen_num_over_ten_thousand">%1$s萬人聽過</string>
+    <string name="voice_book_total_len">總時長：%1$s</string>
+    <string name="voice_book_price_buy">價格：%s元/本</string>
+    <string name="voice_book_price_free">免費</string>
+    <string name="voice_book_order_area">包月：</string>
+    <string name="voice_book_price_order_area">本書已加入%1$s\n%2$s元/月即可暢聽全部有聲作品</string>
+    <string name="book_package_action">立即包月</string>
+    <string name="voice_book_chapter_list_tab">該作品章節列表</string>
+    <string name="voice_book_other_book_tab">該系列其他書籍</string>
+    <string name="voice_book_tab_play_list_more">查看全部章節</string>
+    <string name="voice_book_play_series_more">查看全部書籍</string>
+    <string name="cartoon_vol">該漫畫其他集</string>
+    <string name="cartoon_vol_unknown">未知</string>
+    <string name="content_info_btn_download">下載</string>
+
+    <!-- 微博 -->
+    <string name="weibo_sina_title">綁定新浪微博</string>
+    <string name="weibo_qq_title">綁定騰訊微博</string>
+    <string name="attention_sfreader_weibo">關注天翼閱讀官方新浪微博</string>
+    <string name="no_account_goto_register">沒有微博帳號？註冊</string>
+    <string name="share_type_select_title">選擇分享方式</string>
+    <string name="share_to_phone_contact">分享給手機好友</string>
+    <string name="share_to_sina_weibo">新浪微博</string>
+    <string name="share_to_tencent_weibo">騰訊微博</string>
+    <string name="share_to_kaixin">分享到開心網</string>
+    <string name="share_to_netease_weibo">分享到網易微博</string>
+    <string name="share_to_renren">人人網</string>
+    <string name="share_successed">分享成功</string>
+    <string name="share_afresh">不要太貪心哦，發一次就夠啦！</string>
+    <string name="share_failed">分享失敗</string>
+    <string name="attention_failed">關注失敗</string>
+    <string name="weibo_not_authentication">沒有可用賬戶，請先登錄或註冊！</string>
+    <string name="weibo_auth_failed">微博鑒權失敗！</string>
+    <string name="weibo_init_failed">微博初始化失敗！</string>
+    <string name="suc">成功分享到</string>
+    <string name="unsuc">未分享到</string>
+    <string name="had_shared">已分享過</string>
+    <string name="msg_share">短信分享</string>
+    <string name="mult_msg_share">彩信分享</string>
+    <string name="pagenum_cover">封面</string>
+    <string name="pagenum_back_cover">封底</string>
+    <string name="pagenum_content">第%d頁</string>
+    <string name="share_content">我在#天翼閱讀#看到一本很精彩的圖書《%1$s》期待與您分享，您可以訪問http://wapread.189.cn/goBookInfo.action?bookId=%2$s</string>
+    <!-- <string name="share_pic_content">嗨，我發現一張不錯的圖片哦，這本書叫《%1$s》，快下載天翼閱讀來看一下吧：）http://wapread.189.cn/goBookInfo.action?bookId=%2$s</string> -->
+    <string name="share_pic_content">我在#天翼閱讀#看到一本《%1$s》，%2$s的圖片不錯哦，期待與您分享，您可以訪問http://wapread.189.cn/goBookInfo.action?bookId=%3$s</string>
+    <string name="share_web_content">我在#天翼閱讀#看到一本很精彩的圖書《%1$s》期待與您分享，您可以訪問%2$s進行閱讀</string>
+    <string name="share_app_content">嗨，我發現一款不錯的閱讀軟體，閱讀體驗好，圖書多更新快，快下載試用一下吧：）http://wapread.189.cn/d</string>
+    <string name="recommend_app_content">嗨，好友(%s)發現一款不錯的閱讀軟體，閱讀體驗好，圖書多更新快，快下載試用一下吧：）http://wapread.189.cn/d</string>
+    <string name="recommend_app_to_friend">嗨，我發現了一款不錯的閱讀軟體，閱讀體驗好，圖書多更新快，快來一起下載試用一下吧：http://wapread.189.cn/d</string>
+    <string name="recommend_app_to_no_user">好友（%s）還不是天翼閱讀用戶，我們將先通過短信進行軟體推薦，此消息免費！</string>
+    <string name="share_audio_content">我在#天翼閱讀#的聽書頻道收聽了《%1$s》期待與您分享，您可以訪問http://wapread.189.cn:8080/jb/AudioDetail.aspx?Id=%2$s 進行收聽</string>
+    <string name="share_bookdigests_content">#天翼閱讀#筆記分享：《%1$s》%2$s</string>
+    <string name="share_bookdigests_remark">\n備註：%s</string>
+    <string name="share_bookdigests_book_id">\n您可以訪問http://wapread.189.cn/goBookInfo.action?bookId=%s 進行閱讀</string>
+    <string name="check_author_other_works">看看%s的其它作品</string>
+    <string name="check_other_magezine">查看《%s》的其他期刊</string>
+    <string name="recommeded_success">推薦成功！</string>
+    <string name="recommeded_fault_soft">推薦失敗！</string>
+    <string name="recommeded_fault">發送失敗</string>
+    <string name="contact_empty">沒有連絡人</string>
+    <string name="select_type_title">選擇方式</string>
+    <string name="select_type_dial">撥打電話</string>
+    <string name="select_type_sms">發送短信</string>
+    <string name="graded">評分:</string>
+    <string name="no_graded_yet">(未評分)</string>
+    <string name="graded_value">(%s分)</string>
+    <string name="comment_count">評論(%s)</string>
+    <string name="comment_tip">評論 </string>
+    <string name="comment_tip_with_value">（%s條） </string>
+    <string name="comment_support_nums">（%s）</string>
+    <string name="comment_please_login">請先登錄！</string>
+    <string name="comment_go">我要評論>></string>
+    <string name="comment_success">評論提交成功，審核通過後即可查看!</string>
+    <string name="voice_comment_success">評論提交成功，審核通過後即可查看!</string>
+    <string name="comment_fault">提交資料失敗，請稍後重試！</string>
+    <string name="vote_success">評分成功！</string>
+    <string name="comment_content_limit">內容請控制在70個字以內</string>
+    <string name="comment_more">更多>></string>
+    <string name="comment_no_from_user">匿名</string>
+    <string name="catalog_more_text">更多 >></string>
+    <string name="book_content_update_chapter">查看目錄 | 共%s章</string>
+    <string name="magazine_history_title">往期雜誌</string>
+    <string name="book_content_buying_tip">數據正在處理中，請稍後</string>
+    <string name="book_content_buy_pre">優惠價購買</string>
+    <string name="book_content_buy_point">積分價購買</string>
+    <string name="book_content_buy_result_success">購買成功，感謝支持正版</string>
+    <string name="book_content_package_month_fault">包月失敗，請稍後重試！</string>
+    <string name="book_content_buy_result_fault_title">購買失敗</string>
+    <string name="book_content_buy_result_fault">購買失敗，請稍後重試！</string>
+    <string name="book_content_gift_result_fault">贈送失敗，請稍後重試！</string>
+    <string name="book_content_buy_no_enough_readpoint">訂購失敗\n您的閱點餘額不足，您可以進入【中心】-賬戶管理充值！</string>
+    <string name="book_content_gift_no_enough_readpoint">贈送失敗\n您的閱點餘額不足，您可以進入【中心】-賬戶管理充值！</string>
+    <string name="book_content_gift_user_not_exist">贈送失敗\n您所贈送的用戶不存在！</string>
+    <string name="book_content_buy_no_chapter">沒有可購買的章節！</string>
+    <string name="book_content_buy_ordered">用戶已訂購</string>
+    <string name="book_content_try_download">下載試讀</string>
+    <string name="book_content_try_online">線上試讀</string>
+    <string name="dialog_buy_chapter_name">章節：%s</string>
+    <string name="dialog_buy_offers_price">價格：%s元</string>
+    <string name="book_content_buy_ok">確認購買</string>
+    <string name="book_content_download_ok">確認下載</string>
+    <string name="book_content_pay_chapter_tip">當前章節"%s"是收費章節，是否購買？</string>
+    <string name="book_content_chapter_tip">友情提示： 本書籍只支援線上閱讀，並提供自動購買下一章能力，點擊直接線上閱讀</string>
+    <string name="book_content_buy_by_chapter_tip">請選擇需要購買的章節</string>
+    <string name="book_content_buy_result">購買成功！請繼續支持正版！\n您可以選擇線上閱讀或下載閱讀此書。</string>
+    <string name="book_content_buy_success">購買成功！恭喜您獲得%1$s積分！請繼續支持正版！</string>
+    <string name="book_content_buy_success_without_score">購買成功！請繼續支持正版！</string>
+    <string name="book_content_buy_success_with_auto_download">購買成功！請繼續支持正版！書籍已自動後臺下載，您可繼續其他操作。</string>
+    <string name="book_content_buy_by_chapter_result">購買成功！請繼續支持正版！\n您已經成功購買了該章節</string>
+    <string name="book_get_download_info_fault">獲取下載資訊失敗，請稍候重試！</string>
+    <string name="book_download_tip_title">該書正在下載中...</string>
+    <string name="book_download_tip_content">5秒後系統將自動跳轉到您的書架中</string>
+    <string name="book_download_add_tip">《%s》成功添加到下載列表</string>
+    <string name="download_fault">下載失敗</string>
+    <string name="download_status_ready">狀態：下載等待</string>
+    <string name="download_status_downloading">狀態：下載中 %s</string>
+    <string name="download_status_downloaded">狀態：下載完成</string>
+    <string name="download_status_downloaded_try">狀態：下載試讀</string>
+    <string name="download_status_fault">狀態：下載失敗</string>
+    <string name="download_status_pause">狀態：下載暫停</string>
+    <string name="download_voice_status_downloading">下載中...</string>
+    <string name="download_voice_status_downloading_pre">下載中:</string>
+    <string name="download_voice_status_downloaded_pre">下載完成:</string>
+    <string name="download_status_grid_ready">下載等待</string>
+    <string name="download_status_grid_downloaded">下載完成</string>
+    <string name="download_status_grid_downloaded_try">下載試讀</string>
+    <string name="download_status_grid_fault">下載失敗</string>
+    <string name="download_status_grid_pause">下載暫停</string>
+    <string name="book_download_success_tip">《%s》書籍下載成功！</string>
+    <string name="download_fault_by_sdcard_full">存儲卡空間不足，請清理存儲卡空間！</string>
+    <string name="download_statistics_tip">本地書籍(\u0020%1$s\u0020/\u0020%2$s\u0020)</string>
+    <string name="download_running">該書籍正在下載！</string>
+    <string name="download_complete_tip">該書籍已經下載完成，是否重新下載？</string>
+    <string name="download_paused_tip">該書籍已暫停下載，是否需要繼續下載？</string>
+    <string name="download_complete_delete_tip">是否刪除《%s》？</string>
+    <string name="download_reload_tip">《%s》已經損壞或不存在，是否重新下載？</string>
+    <string name="download_reload_no_title_tip">該書已經損壞或不存在，是否重新下載？</string>
+    <string name="download_complete_delete_all_tip">是否刪除所有下載的書籍？</string>
+    <string name="download_complete_deletes_tip">是否刪除所選的書籍？</string>
+    <string name="book_content_try_online_do_not">暫不支持漫畫雜誌線上閱讀，購買後請下載至本地閱讀！</string>
+    <string name="book_content_not_suppert">抱歉,暫不支持流式雜誌!</string>
+    <string name="book_is_no_exist_or_nocomplete">抱歉,不能閱讀不完整的書籍!</string>
+
+    <!-- 顯示評論 -->
+    <string name="comment_title">《%s》的更多評論</string>
+    <string name="area_price">價格：%s元/月</string>
+    <string name="area_read_point">(%s閱點/月)</string>
+
+    <!-- 用戶登陸註冊 -->
+    <string name="login_account_tianyi">天翼帳號</string>
+    <string name="login_by_account_tianyi">天翼帳號登錄</string>
+    <string name="login_account_qq">QQ帳號</string>
+    <string name="login_account_sina_weibo">微博帳號</string>
+    <string name="login_account_renren">人人帳號</string>
+    <string name="login_title">登  錄</string>
+    <string name="register">注  冊</string>
+    <string name="comfirm_registe_btn_tip">注冊</string>
+    <string name="register_phone_num_lable">手機號:</string>
+    <string name="login_user_name">手機號碼：</string>
+    <string name="login_user_name_hint">手機號碼/郵箱/用户名</string>
+    <string name="login_user_moretime_commit">您的操作太頻繁了！為了保證您的帳號安全，請稍後再試！</string>
+    <string name="login_user_validate_commit">請輸入正確的手機號碼或郵箱地址！</string>
+    <string name="login_account">帳號:</string>
+    <string name="login_psw">密碼:</string>
+    <string name="login_psw_forget">忘記密碼？</string>
+    <string name="login_regist_new_account">註冊新帳號</string>
+    <string name="login_get_psw">取回密碼</string>
+    <string name="login_auto">自動登錄</string>
+    <string name="login_implicit_toast">已進入後臺登錄！</string>
+    <string name="login_register">本機號碼免註冊一鍵登錄</string>
+    <string name="login_register_number">本機號碼</string>
+    <string name="login_register_no_logon">免注冊</string>
+    <string name="login_register_one_btn_login">一鍵登錄</string>
+    <string name="login_local_one_btn_login">本機號免注冊一键登录</string>
+    <string name="login_thrid_party_logo">使用以下帳號登錄</string>
+    <string name="login_hint">"      普通短信費用由運營商收取，本軟體不收取任何費用，請放心使用！"</string>
+    <string name="login_protocol">我已閱讀並同意《天翼閱讀使用者服務協定》</string>
+    <string name="login_protocol_unchecked">未勾選《天翼閱讀使用者服務協定》</string>
+    <string name="login_register_tip">請輸入11位手機號碼</string>
+    <string name="login_register_user_name_tip">至少4个字符</string>
+    <string name="login_register_user_psw_tip">至少6个字符</string>
+    <string name="login_register_same_psw_tip">重複上一行代碼</string>
+    <string name="login_register_user_email_tip">綁定郵箱找回密碼</string>
+    <string name="login_register_moretime_alert">您的操作太頻繁了！休息一會再試吧！</string>
+    <string name="login_register_user_name_illegality_alert">用戶名至少為4個字符！</string>
+    <string name="login_register_user_name_has_registed_alert">該用戶名已被註冊！</string>
+    <string name="login_register_user_psw_illegality_alert">　　　密碼至少為6個字符</string>
+    <string name="login_register_user_psw_illegal_words_alert">　　　密码只能为英文或数字</string>
+    <string name="login_register_same_psw_illegality_alert">兩次輸入的密碼不一致！</string>
+    <string name="login_register_user_email_illegality_alert">　　　請輸入正確的郵箱地址</string>
+    <string name="login_register_user_email_has_binded_alert">　　　該郵箱已被占用</string>
+    <string name="login_verify_code">請輸入下圖中的驗證碼</string>
+    <string name="login_verify_code_refresh">看不清</string>
+    <string name="login_register_confirm_title">註冊確認</string>
+    <string name="login_input_check_tip">手機號碼（用戶名）或密碼不能為空</string>
+    <string name="login_success_tip">登錄成功</string>
+    <string name="login_ing_text">登錄中...</string>
+    <string name="login_cancel_text">取消登錄</string>
+    <string name="login_manual_text">手動登錄</string>
+    <string name="login_suc_text">登錄成功!</string>
+    <string name="login_fail_text">登錄失敗!</string>
+    <string name="login_falut_tip">登錄失敗\n請檢查您輸入的資訊是否正確</string>
+    <string name="register_text_input_phone">請輸入您的手機號碼：</string>
+    <string name="register_phone_type_tip">1分鐘內未收到驗證碼短信，請重新提交！</string>
+    <string name="register_phone_success_tip">驗證碼已經成功發送，請注意查收</string>
+    <string name="register_phone_fault_tip">您輸入的手機號碼有誤，請填寫正確的手機號碼</string>
+    <string name="register_text_input_sms_code">請輸入短信驗證碼：</string>
+    <string name="register_success_auto_login">註冊成功後，開啟自動登錄</string>
+    <string name="register_sms_code_type_tip">若一分鐘內未收到短信，請重新獲取</string>
+    <string name="register_sms_code_type_tip_repeat">若一分鐘內未收到短信，請重新獲取(%d秒)</string>
+    <string name="register_confirm_title">註冊確認</string>
+    <string name="register_sms_code_fault_tip">您輸入的驗證碼有誤，請填寫正確的驗證碼</string>
+    <string name="register_text_submint_phone_null">請輸入正確的手機號碼（11位）!</string>
+    <string name="register_text_verity_code_error">驗證碼失效</string>
+    <string name="register_text_no_input_verify_code">請輸入驗證碼！</string>
+    <string name="register_text_wrong_verify_code">驗證碼有誤，請重試！</string>
+    <string name="register_text_submint_sms_code_null">請輸入6位短信驗證碼!</string>
+    <string name="register_success_title">註冊成功</string>
+    <string name="register_success_psw_modify_hint">請輸入您的新密碼</string>
+    <string name="register_success_tip">恭喜您成為天翼閱讀用戶！\n請記住您的密碼：%s</string>
+    <string name="forget_tip">我們會發送新的密碼給您的手機號或郵箱地址，如果未收到密碼，可能是網路原因，您可以重新提交申請\n收到新密碼後，您也可以到中心-修改密碼進行修改\n</string>
+    <string name="forget_input_check_tip">手機號碼（用戶名）不能為空</string>
+    <string name="forget_success_tip">新密碼已經發送成功，請注意查收</string>
+    <string name="forget_fault_tip">您輸入的手機號碼有誤，請填寫正確的手機號碼</string>
+    <string name="user_info_title">個人帳號</string>
+    <string name="user_info_account">帳號：%s</string>
+    <string name="book_new_un_login">用戶端未登錄，請登錄用戶端</string>
+    <string name="do_un_login">您尚未登錄天翼閱讀用戶端，請登錄後再操作！</string>
+    <string name="show_some_hint">本操作需要發送一條普通短信才能成功，是否繼續?</string>
+    <string name="success_hint_text">您的帳號是%1$s。為了保證您的帳號安全,請先修改密碼!</string>
+    <string name="faile_hint_text">網路超時:網路太不給力了,這下白忙活了</string>
+    <string name="edit_psw_title">修改密碼</string>
+    <string name="edit_psw_orig_psw">原  密  碼:</string>
+    <string name="edit_psw_new_psw">新  密  碼:</string>
+    <string name="edit_psw_confirm_psw">密碼確認:</string>
+    <string name="edit_psw_check_null">請輸入密碼</string>
+    <string name="edit_psw_min_len_tip">密碼位數至少6位</string>
+    <string name="edit_psw_check_exceed">密碼位數不得超過20位</string>
+    <string name="edit_psw_input_un_cn">請輸入非中文字元</string>
+    <string name="edit_psw_check_un_sam">兩次輸入的密碼不一致，請重新輸入</string>
+    <string name="edit_psw_check_valiable_space">密碼不能有空格</string>
+    <string name="edit_psw_edit_success">密碼修改成功，請牢記您的密碼</string>
+    <string name="edit_psw_reset_success">密碼設置成功，祝您閱讀愉快！</string>
+    <string name="edit_psw_edit_fault">密碼修改失敗，請重試</string>
+    <string name="name_regist_tip">歡迎免費註冊天翼閱讀用戶，以下資料為必填:</string>
+
+    <!-- 用戶簽到 -->
+    <string name="user_sigin_success_havascore">簽到成功，恭喜您獲得%s積分，連續簽到，拿高額積分！</string>
+    <string name="user_signin_five_havescore">簽到成功，恭喜您獲得%s積分！明天繼續簽到可以獲得60分</string>
+    <string name="user_signin_continu_six_havescore">簽到成功，恭喜您獲得%s積分！再接再厲，明天有70分入賬啦</string>
+    <string name="user_signin_continu_seven_havescore">簽到成功！%s分入賬。明天再加把勁，簽到得80分</string>
+    <string name="user_signin_continu_eight_havescore">簽到成功！獲得%s分。明天再來就能拿到90分啦</string>
+    <string name="user_signin_continu_nine_havescore">簽到成功！獲得%s分！為了表彰您的堅持不懈，明天有100分獎勵！</string>
+    <string name="user_signin_continu_ten_havescore">簽到成功！得%s分啦！讀書和簽到一樣，時間久了，才看得出跟別人的差距。</string>
+    <string name="user_singin_success_noscore">簽到成功</string>
+    <string name="user_singin_fail">您今天已經簽到過了！</string>
+    <string name="user_singin_fail_servererr">伺服器太擁擠，休息一下再試吧！</string>
+
+    <!-- 包月對話方塊 -->
+    <string name="dialog_booked_title">包月</string>
+    <string name="dialog_booked_catalog">名稱：%s</string>
+    <string name="dialog_booked_price">價格：%s</string>
+    <string name="dialog_booked_price_value">%s元/月</string>
+    <string name="dialog_booked_read_point">閱點價：%s點</string>
+    <string name="dialog_booked_read_point_value">閱點價：%s閱點/月</string>
+    <string name="dialog_booked_type">類型：包月</string>
+    <string name="dialog_booked_date">截至日期：%s</string>
+    <string name="dialog_booked_cp_name">企業名稱：%s</string>
+    <string name="dialog_booked_org">企業名稱：中國電信閱讀運營中心</string>
+    <!-- <string name="dialog_booked_tip">（訂購後可免費閱讀本區內所有圖書）</string> -->
+    <string name="dialog_booked_tip">退訂方式：您可以在包月專區已訂購的包月區詳情內退訂相應包月區。</string>
+    <string name="dialog_voice_class_order_tip">（包月免費暢聽該頻道下所有作品）</string>
+    <string name="dialog_booked_cancle">是否要退訂本包月？</string>
+    <string name="order_success">包月成功!請繼續支持正版！</string>
+    <string name="area_order_success">恭喜您！包月成功！</string>
+    <string name="order_fault">該專區包月失敗！</string>
+    <string name="unorder_success">退訂該專區包月成功！</string>
+    <string name="unorder_fault">退訂該專區包月失敗！</string>
+    <string name="order_state_unorder_user_1">狀態：已退訂，月底生效</string>
+    <string name="order_state_unorder_user_2">★月底前還可繼續免費閱讀本專區內所有書籍</string>
+    <string name="order_state_unorder_user_2_voice">★月底前還可繼續免費收聽本專區內所有書籍</string>
+    <string name="order_state_price">價格：%1$s元/月（%2$s閱點/月）</string>
+    <string name="order_state_price_voice">價格：%1$s元/月</string>
+    <string name="order_state_unorder">，包月後可免費閱讀本專區內所有書籍。</string>
+    <string name="order_state_unorder_voice">，訂購後可免費收聽本專區內所有書籍。</string>
+    <string name="order_state_order">狀態：已包月</string>
+
+    <!-- 評論對話方塊 -->
+    <string name="dialog_comment_title">添加評論</string>
+    <string name="dialog_comment_rb_flower">鮮花</string>
+    <string name="dialog_comment_rb_egg">雞蛋</string>
+    <string name="dialog_comment_text">評論：</string>
+    <string name="dialog_comment_hint">成功發表評論就有機會得到更多人的讚美</string>
+    <string name="same_comment_commit_tip">您已經發表過相同內容了</string>
+    <string name="dialog_comment_unsupport">贊</string>
+    <string name="dialog_comment_supported">已贊</string>
+    <string name="dialog_ok">確認</string>
+    <string name="dialog_cancel">取消</string>
+
+    <!-- 註冊對話方塊 -->
+    <string name="limit_user_registe_tip">您的操作太頻繁了，休息一會兒再試吧！</string>
+    <string name="regist_waitting_time">請等待(%d秒)</string>
+    <string name="phone_num_regist">手機號註冊</string>
+    <string name="user_name_regist">郵箱註冊</string>
+    <string name="user_name_regist_success_title_tip">恭喜您成功註冊天翼閱讀！請牢記您的帳號和密碼</string>
+    <string name="user_name_regist_success_user_name_tip">帳號：%s</string>
+    <string name="user_name_regist_success_user_psw_tip">密碼：%s</string>
+    <string name="user_name_regist_success_email_bind_tip">為防止密碼丟失，建議您綁定郵箱用於找回密碼！</string>
+    <string name="user_name_regist_success_btn_tip">我知道了</string>
+    <string name="user_name_regist_email_bind_btn_tip">綁定郵箱</string>
+    <string name="user_name_regist_user_name">　用戶名</string>
+    <string name="user_name_regist_user_psw">密碼:</string>
+    <string name="user_name_regist_comfirm_user_psw">確認密碼</string>
+    <string name="user_name_regist_email">郵箱:</string>
+    <string name="user_name_regist_email_tip">請輸入正確的郵箱地址</string>
+    <string name="user_name_regist_code">　驗證碼</string>
+    <string name="user_name_regist_code_tip">請輸入郵箱收到的驗證碼</string>
+    <string name="user_name_regist_bind_email_commit">發送驗證郵件</string>
+    <string name="user_name_regist_bind_other_email">其他郵箱</string>
+    <string name="user_name_regist_other_email_tip">請輸入要綁定的郵箱地址</string>
+    <string name="user_name_regist_code_send">發送驗證碼</string>
+    <string name="user_name_regist_commit">提交</string>
+
+    <!-- 收藏對話方塊 -->
+    <string name="dialog_hold_title">收藏成功</string>
+    <string name="hold_success">收藏成功！</string>
+    <string name="hold_fault">收藏失敗，請稍後重試！</string>
+    <string name="dialog_hold_tip">此書已被收藏</string>
+    <string name="dialog_hold_go">去收藏</string>
+    <string name="dialog_hold_cancel">稍候再去</string>
+
+    <!-- gift -->
+    <string name="gift_success_title_tip">贈送成功</string>
+    <string name="gift_success_content_tip">您的朋友(%1$s)可以直接閱讀您贈送的《%2$s》,是否發送一條短信告訴TA？</string>
+    <string name="gift_success_send_content_tip">%1$s送書給您，留言:“%2$s”。進入天翼閱讀查看http://wapread.189.cn/b/%3$s</string>
+    <string name="gift_fail_title_tip">贈送失敗</string>
+    <string name="gift_fail_content_tip">您所贈送的用戶未開通天翼閱讀，是否發送一條短信推薦TA使用？</string>
+    <string name="gift_title_tip">贈送書籍</string>
+    <string name="gift_book_title_tip">書名：%s</string>
+    <string name="gift_message_tip">贈送語：</string>
+    <string name="gift_number_empty_tip">請輸入要贈送的手機號碼！</string>
+    <string name="gift_get_contacts_fail_tip">抱歉，無法正常獲取系統聯繫人號碼.</string>
+    <string name="gift_get_contacts_empty_tip">抱歉，您選擇的聯繫人未保存號碼.</string>
+    <string name="gift_falut_tip">網路不給力，請稍後重試！</string>
+    <string name="gift_success_tip">贈送成功！您的朋友（%1$s）可直接閱讀您贈送的《%2$s》！</string>
+    <string name="gift_had_gifted_tip">您已給您的朋友（%s）贈送過該書，無需重複贈送！</string>
+    <string name="gift_account_no_exist_tip">贈送失敗\n您所贈送的用戶不存在！</string>
+
+    <!-- DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- 推薦對話方塊 -->
+    <string name="dialog_recommend_prompt_title">推薦提示</string>
+    <string name="dialog_recommend_prompt_content">點擊確認推薦天翼閱讀軟體給您的好友，相應的短信費用將由運營商進行收取。</string>
+    <string name="dialog_recommend_title">免費推薦</string>
+    <string name="dialog_recommend_phone_text">手機：</string>
+    <string name="dialog_recommend_phone_hint">請輸入好友的手機號碼</string>
+    <string name="dialog_recommend_blessing_hint">最多25個字符.</string>
+    <string name="dialog_recommend_content_text">留言：</string>
+    <string name="dialog_recommend_custom_content_text">自訂留言：</string>
+    <string name="dialog_recommend_custom_content_hint">內容控制在12字以內</string>
+    <string name="dialog_recommend_custom">自訂</string>
+    <string name="contact_number">電話：%s</string>
+    <string name="dialog_recommend_content_content">推薦天翼閱讀《%1$S》留言：%2$S</string>
+    <string name="dialog_recommend_content_hint">這本書很好看，快去看看吧</string>
+    <string name="dialog_recommend_send">發送</string>
+    <string name="dialog_recommend_empty_tip">請輸入要推薦的手機號碼！</string>
+    <string name="dialog_recommend_content_empty_tip">請輸入留言！</string>
+    <string name="dialog_phone_limit">僅限電信手機用戶（133/153/180/181/189）</string>
+    <string name="dialog_recommend_phone_err">"%s"不是正確的中國電信手機號碼，請輸入正確的中國電信手機號碼!</string>
+    <string name="dialog__phone_err">請輸入正確的手機號碼!</string>
+    <string name="dialog_phone_self_err">自己想看？購買即可！</string>
+
+    <!-- 排行榜 -->
+    <string name="rank_book_show">%1$s.《%2$s》 %3$s</string>
+    <string name="rank_book_listen_value">收聽： %s</string>
+    <string name="rank_book_click_value">點擊： %s</string>
+    <string name="rank_book_favorite_value">收藏： %s</string>
+    <string name="rank_book_pop_value">上周有%s人閱讀</string>
+    <string name="rank_book_search_value">搜索： %s</string>
+    <string name="rank_book_desc_value">簡介：%s</string>
+    <string name="catalog_title_book">書籍</string>
+    <string name="catalog_title_serial">連載</string>
+    <string name="catalog_title_magazine">雜誌</string>
+    <string name="catalog_title_cartoon">漫畫</string>
+    <string name="catalog_grid_title">%1$s%2$s</string>
+    <string name="catalog_title_boy">男生專區</string>
+    <string name="catalog_title_girl">女生專區</string>
+    <string name="catalog_title_name">%s專區</string>
+
+    <!-- 搜索介面 -->
+    <string name="search_range_text">搜索範圍：</string>
+    <string name="search_book">看書</string>
+    <string name="search_voice">聽書</string>
+    <string name="search_range_bookshelf">書架</string>
+    <string name="search_range_bookcity">書城</string>
+    <string name="search_hit">在30萬冊書中搜索</string>
+    <string name="search_read_book_hint">搜索書名</string>
+    <string name="search_voice_book_hint">搜索書名/作者/播音員</string>
+    <string name="search_btn">搜  索</string>
+    <string name="search_message">您可通過搜索功能輕鬆查找書城與書架中的圖書</string>
+    <string name="search_popkeyword">熱詞：</string>
+    <string name="search_popauthor">熱門作者：</string>
+    <string name="searchresult_frombookstore">在書城中找到%s本書</string>
+    <string name="searchresult_frombookshelf">在書架中找到%s本書</string>
+    <string name="search_book_author">作者：%s</string>
+    <string name="search_book_hits">點擊：%s</string>
+    <string name="search_book_synopsis">簡介：%s</string>
+    <string name="keyword_num">5</string>
+    <string name="search_key_empty_tip">請輸入搜索內容！</string>
+    <string name="search_select_empty_tip">請選擇搜索範圍！</string>
+    <string name="search_up_and_down">搖動手機，會有新的發現哦</string>
+    <string name="search_changother">換一批</string>
+    <string name="search_fails">搜索失敗，請檢查網路</string>
+    <string name="search_word_illegality">搜索字元非法，請重試！</string>
+
+    <!-- 系統消息 -->
+    <string name="gift_book_info">贈送信息</string>
+    <string name="tab_item_gift_to_friend">我贈送給朋友的</string>
+    <string name="tab_item_friend_gave_me">朋友贈送給我的</string>
+    <string name="gift_not_receiving">未接收</string>
+    <string name="gift_receved">已接收</string>
+
+    <!-- 系統消息 -->
+    <string name="my_msg_title">消息中心</string>
+    <string name="my_msg_title_with_value">（%s）</string>
+    <string name="system_msg_total_count">我的消息（%1$s/%2$s）</string>
+    <string name="system_msg_delete_tip">您確定要刪除此消息嗎？</string>
+    <string name="system_msg_clear_all_tip">清空消息</string>
+    <string name="system_msg_delete_one_tip">刪除消息</string>
+    <string name="system_msg_delete_on_selected_tip">請選擇需要刪除的消息！</string>
+    <string name="system_msg_alert">確定刪除所選消息嗎？</string>
+
+    <!-- 我的消息      消息類型 -->
+    <string name="my_type_default">消息</string>
+    <string name="msg_type_recommed">推薦消息</string>
+    <string name="msg_type_my_update">我的更新</string>
+    <string name="msg_type_notice">系統公告</string>
+
+    <!-- 贈送記錄 -->
+    <string name="gift_record_date">贈送時間：%s</string>
+    <string name="gift_record_send">我在%1$s我贈送給%2$s</string>
+    <string name="gift_record_accept"> 在%s贈送給我</string>
+    <string name="gift_message">贈送語：%s</string>
+    <string name="gift_message_none"> 贈送語：無</string>
+    <string name="gift_message_words">,并留言: %s</string>
+
+    <!-- 意見回饋 -->
+    <string name="satisfactory_commit_success">評論成功！</string>
+    <string name="satisfactory_commit_falut">評論失敗，請稍後重試！</string>
+    <string name="satisfactory_text_view">對此評論：</string>
+    <string name="satisfactory_text_view_with_value">對此評論：%s</string>
+    <string name="satisfactory_commit">您對此評論：%s</string>
+    <string name="satisfactory_very_well">非常滿意</string>
+    <string name="satisfactory_well">滿意</string>
+    <string name="satisfactory_normal">一般</string>
+    <string name="satisfactory_un">不滿意</string>
+
+    <!-- 网络帮助 -->
+    <string name="net_help_introduce_title">未能連接到互聯網</string>
+    <string name="net_help_introduce_tip">您的設備未啟用移動網絡或無綫網絡</string>
+    <string name="net_help_introduce_reference">如需連接到互聯網，請參考以下幾點:\n\n●檢查手機中的無線網絡設置，查看是否有可接入的無線網絡信號。\n●檢查手機是否接入移動網絡，並且手機沒有被停機。\n\n
+	    如果您已接入無線網絡:\n\n●檢查您所連接的無線網絡熱點是否已接入互聯網，或該熱點是否已允許您的設備訪問互聯網絡</string>
+
+    <!-- 如何使用话费支付 -->
+    <string name="use_sso_introduce_title">如何使用話費支付？</string>
+    <string name="use_sso_introduce_reference">如果您需要使用話費支付，請確保您當前處於電信ctwap網絡。\n\n\n如何設置ctwap網絡：\n\n\n●檢測手機中的無線網絡設置，確保無線網絡處於關閉狀態。\n\n●確保
+	    在移動網絡設置中已啟用數據流量。\n\n●將您的CDMA網絡接入點（APN）更改為中國電信CTWAP。</string>
+
+    <!-- 讀版本升級 -->
+    <string name="update_client_title">天翼閱讀版本升級</string>
+    <string name="update_client_update_info_title">發現新版本</string>
+    <string name="update_client_tip">正在下載升級包，請稍等...</string>
+    <string name="update_download_succeed_tip">升級包已下載完成了！</string>
+    <string name="update_download_fail_tip">升級包下載失敗了！</string>
+    <string name="update_download_fail_click_tip">點擊查看詳情！</string>
+    <string name="check_client_no_need_update">當前已經是最新版本!</string>
+    <string name="check_client_update_title">升級提示</string>
+    <string name="check_client_current_version">當前版本：</string>
+    <string name="check_client_update_version">版本號：</string>
+    <string name="check_client_update_version_tip">版本號：%s</string>
+    <string name="check_client_update_size">大小：%s</string>
+    <string name="check_client_update_message">更新資訊：</string>
+    <string name="update_download_now_install">馬上安裝</string>
+    <string name="update_download_back_install">稍後安裝</string>
+    <string name="update_download_now_redownload">重新下載</string>
+    <string name="update_download_back_redownload">稍後下載</string>
+    <string name="update_download_cancel_download">取消下載</string>
+    <string name="update_download_back_download">後臺運行</string>
+    <string name="update_download_back_download_tip">已經在後台為您下載新版本了。</string>
+    <!-- 功能表介面 -->
+    <string name="menu_persion_view_title">個人中心</string>
+    <string name="menu_feedback_view_title">意見回饋</string>
+    <string name="menu_scoreconvert_view_title">積分獲取細則</string>
+    <string name="menu_scoredetail_view_title">積分記錄</string>
+    <string name="menu_scorehelp_view_title">積分幫助</string>
+    <string name="personinfo_my_infos">我的消息</string>
+    <string name="menu_disclaimer_view_title">使用者服務條款</string>
+    <string name="menu_reset_title">還原默認設定</string>
+    <string name="menu_help_view_title">説明資訊</string>
+    <string name="menu_my_comment_view_title">我的評論</string>
+    <string name="menu_setting">系統設定</string>
+    <string name="menu_refined_recommond">精品推薦</string>
+    <string name="menu_readpoint_recharge">閱點充值</string>
+    <string name="main_menu_exit_app">退出軟件</string>
+    <string name="menu_setting_voice">用戶端音效</string>
+    <string name="menu_setting_buy_and_download">購買後下載</string>
+    <string name="menu_setting_sys_msg">推薦消息</string>
+    <string name="menu_setting_push_sys_msg">推送消息</string>
+    <string name="menu_setting_help_tip">幫助小貼士</string>
+    <string name="menu_setting_buy">默認支付</string>
+    <string name="menu_setting_mobile_fee">手機話費</string>
+    <string name="menu_setting_loading_view">開機介面</string>
+    <string name="menu_setting_change_language">簡繁切換</string>
+    <string name="menu_setting_voice_back">聽書播放返回鍵</string>
+    <string name="menu_setting_theme">主題</string>
+    <string name="feedback_title_ineed">我要回饋</string>
+    <string name="feedback_title_content">回饋內容</string>
+    <string name="feedback_type_1">改善建議</string>
+    <string name="feedback_type_2">內容需求</string>
+    <string name="feedback_type_3">幫助諮詢</string>
+    <string name="feedback_type_4">其他問題</string>
+    <string name="feedback_input_hint">您有什麽話想對天翼閱讀說嗎？歡迎來這裡提意見出點子，長期有效！</string>
+    <string name="feedback_contact_us">聯繫我們</string>
+    <string name="feedback_hot_line">客服熱線：4008263114</string>
+    <string name="feedback_for_email">客服郵箱：readkefu@189.cn</string>
+    <string name="feedback_input_empty_tip">請輸入您的意見！</string>
+    <string name="feedback_toast_fault">意見回饋失敗，請稍後重試！</string>
+    <string name="feedback_toast_success_title">意見回饋成功</string>
+    <string name="feedback_toast_success_content">感謝您的回饋！您提出的建議將被用來改善我們的服務！</string>
+    <string name="feedback_content_limit">內容請控制在200個字以內</string>
+    <string name="menu_reset_tip">這將刪除所有自訂設定\n並恢復到默認</string>
+    <string name="menu_reset_success_tip">還原設定成功！</string>
+    <string name="feedback_confirm">確認</string>
+    <string name="feedback_contine_confirm">補充回饋</string>
+    <string name="menu_person_guest">遊客</string>
+    <string name="menu_person_no_login">未登錄</string>
+    <string name="menu_person_username">昵稱：%s</string>
+    <string name="menu_person_sex">性別：%s</string>
+    <string name="menu_person_age">年齡：%s</string>
+    <string name="menu_person_scroe_none">積分：</string>
+    <string name="menu_person_account">帳號：%s</string>
+    <string name="menu_person_empirical">經驗值：%s</string>
+    <string name="menu_person_scroe">積分：%s分</string>
+    <string name="menu_person_hobby">愛好：%s</string>
+    <string name="menu_person_email">郵箱：%s</string>
+    <string name="menu_person_read_point">閱點：%s點</string>
+    <string name="menu_person_no_data">暫無</string>
+    <string name="menu_person_privacy">保密</string>
+    <string name="menu_person_unknown">不詳</string>
+    <string name="dialog_edit_user_info_title">編輯資訊</string>
+    <string name="dialog_person_username">昵稱：</string>
+    <string name="dialog_person_sex">性別：</string>
+    <string name="dialog_person_age">年齡：</string>
+    <string name="dialog_person_hobby">愛好：</string>
+    <string name="dialog_person_email">郵箱：</string>
+    <string name="dialog_person_email_valid">請輸入正確的E-mail位址！</string>
+    <string name="dialog_person_age_valid">請輸入合理的年齡！</string>
+    <string name="dialog_person_nickname_valid">昵稱只能是中文/英文/數字！</string>
+    <string name="dialog_person_nickname_hint">最多20個字符</string>
+    <string name="person_info_modify_success">使用者資訊修改成功！</string>
+    <string name="person_info_modify_fault">使用者資訊修改失敗！</string>
+    <string name="menu_consume_title">消費記錄</string>
+    <string name="menu_consume_date">截至%s</string>
+    <string name="menu_consume_description">您已購買%1$s本書籍，共消費%2$s元</string>
+    <string name="menu_consume_fee">%s元</string>
+    <string name="menu_consume_score">%s積分</string>
+    <string name="menu_consume_item">%1$s年%2$s月份</string>
+    <string name="menu_consume_total">截至%1$s，\n您共消費：%2$s元\u0020%3$s閱點\n近六個月已訂購%4$s本書籍\u0020%5$s個包月區</string>
+    <string name="menu_score_title">積分查詢</string>
+    <string name="my_comment_current_state_passed">狀態：審查通過&#160;&#160;&#160;&#160;</string>
+    <string name="my_comment_current_state_unpassed">狀態：審查中&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="my_comment_current_state_passed_fault">狀態：審查未通過</string>
+    <string name="menu_score_date">截至%s</string>
+    <string name="menu_score_total">您已累計積分：%s</string>
+    <string name="menu_score_remain">當前剩餘積分：%s</string>
+    <string name="menu_score_use">已用積分：%s</string>
+    <string name="menu_my_comment_title">我的評論（%s）</string>
+    <string name="my_read_comment_view_title">我的閱讀評論</string>
+    <string name="my_void_comment_view_title">我的聽書評論</string>
+    <string name="menu_favorite_title">我的最愛</string>
+    <string name="common_delete_msg">是否從%1$s中刪除《%2$s》？</string>
+    <string name="common_delete_all_msg">是否刪除%s中的所有書籍？</string>
+    <string name="common_delete_select_tip">確定刪除所選書籍嗎？</string>
+    <string name="common_delete_tip">您確定刪除《%s》嗎？</string>
+    <string name="delete_success">刪除成功！</string>
+    <string name="delete_fault">刪除失敗！</string>
+    <string name="delete_msg">刪除成功%1$s條記錄,刪除失敗%2$s條記錄</string>
+    <string name="sufing_reader_reserved">天翼閱讀 版權所有\n2012-2013 E-surfing Reading All Right Reserved</string>
+    <string name="menu_disclaimer_title">天翼閱讀用戶端使用者服務協定</string>
+    <string name="menu_disclaimer_content">"
+  一、總則
+    第一條  本服務協定雙方為中國電信與天翼閱讀用戶端用戶（以下稱“使用者”），本服務協定具有合同效力。
+    第二條 本服務協定內容包括協定正文及天翼閱讀用戶端上發佈的全部聲明和規則。包括但不限於版權聲明、隱私權聲明、使用說明。所有聲明和規則與協定正文具有同等法律效力。
+    第三條 用戶首次登錄天翼閱讀用戶端時起，本服務協定即在中國電信和用戶之間產生法律效力。
+    第四條 中國電信有權重新制定本協議，並通過天翼閱讀用戶端首頁以公告模式對使用者進行告知。新協議自公告之日起生效。用戶在公告之日後登錄天翼閱讀用戶端的行為視為無條件接受新協議。
+    第五條 本協議適用於天翼閱讀用戶端提供的全部服務。
+   
+ 二、服務
+    第六條 中國電信根據使用者在天翼閱讀用戶端上所選取服務按照資費標準收取。
+    第七條 中國電信對使用者的收費方式為從使用者手機賬戶內扣除。
+    第八條 用戶登錄天翼閱讀用戶端的手機號碼應為用戶本人正在使用的號碼或已取得該號碼的繳費義務人（包括但不限於機主、真實使用人）的同意，並應在中國電信要求提供相關證明材料時予以配合。
+    第九條 中國電信天翼閱讀業務使用無縫閱讀模式，使用者在天翼閱讀用戶端上所有的操作資訊會在相同手機號碼安裝並登錄天翼閱讀WAP時同步更新和顯示。
+   
+ 三、雙方權利和義務
+    第十條 中國電信按照本協議的約定條款向使用者提供服務和收取費用。
+    第十一條 中國電信有義務維護天翼閱讀用戶端的正常運行。
+    第十二條 用戶承諾在天翼閱讀用戶端上實施的行為遵守法律、法規及社會公共道德，不應發佈違法或違規資訊，不得惡意評價作者，如有違反，用戶應獨立承擔所有法律責任。
+    第十三條 用戶承諾尊重天翼閱讀用戶端上所有資訊、技術的智慧財產權，未得到中國電信書面同意，不得複製、傳播天翼閱讀用戶端上所有作品。
+    第十四條 對用戶的不當行為中國電信有權隨時刪除資訊、終止服務，並無須獲得使用者的同意。用戶的不當行為造成中國電信損失的，中國電信有權對其追究責任。使用者的不當行為包括但不限於本協議第十二條、十三條中的約定。
+    
+四、免責條款
+    第十五條 基於不可抗力、意外事件等原因造成天翼閱讀用戶端無法正常運行或天翼閱讀用戶端上的作品無法正常閱讀的，中國電信不承擔任何責任。本協議所稱不可抗力、意外事件是指不能預見、不能克服、不能避免的客觀事件，包括但不限於自然災害、社會事件、政府行為等。
+    第十六條 基於版權糾紛、系統升級等原因造成天翼閱讀用戶端無法正常運行或天翼閱讀用戶端上的作品無法正常閱讀的，中國電信不承擔任何責任。
+    第十七條 由於使用者自身原因導致個人資訊洩露或發生其他損失的，由用戶自行承擔。
+    第十八條 用戶對於其手機號碼按次點播訂購的內容享有隨時使用權，其手機號碼是用戶身份在天翼閱讀系統的唯一有效識別。當使用者出現如下情況時，中國電信有權終止使用者所購買內容的使用權：
+I．用戶因欠費而停機
+II．用戶更換手機號碼
+    
+五、用戶隱私保護
+    第十九條 根據產品功能特點，在經過用戶許可下，天翼閱讀可能收集以下資料：為對用戶回饋意見進行用戶回訪或者在使用者參加活動等情況下，可能會要求用戶輸入或上報手機號碼、手機IMSI號等；使用者對本軟體的操作狀態和行為資訊等一些明確且客觀反映在伺服器端的基本記錄資訊和其他相關資訊，例如：書籍下載請求資訊等；
+    第二十條 天翼閱讀基於以下原因使用使用者的資訊資源：提高使用者使用的體驗，提供客戶支援改善或提高軟體的技術和服務，例如，説明我們瞭解使用者使用軟體和服務時遇到的問題，説明我們改善我們軟體和服務的品質、性能和安全性；為使用者發送通知及為使用者提供的服務資訊；其他利於使用者利益和實現本軟體功能的使用行為，例如監測應用使用產生的流量等，以便於告知使用者流量使用情況等；可能需要聯網將使用者的部分手機資訊如終端資訊、安裝軟體等相關資訊上傳到服務。
+    
+六、糾紛解決
+    第二十一條 中國電信和用戶一致同意，基於本協議產生的爭議應先協商解決。協商無法解決的，同意接受杭州人民法院為管轄法院。
+    
+2010年04月10日
+"</string>
+    <string name="menu_help_title">天翼閱讀使用說明</string>
+    <string name="menu_help_content">"
+
+尊敬的用戶，歡迎您使用天翼閱讀用戶端！
+
+一、用戶端基本介紹
+1. 書架：讓您擁有屬於自己的掌上書架，可查看最近閱讀、訂購過的、下載過的、收藏過的書籍，也可查看本機的書籍，方便您閱讀。
+2. 書城：可查看最近熱門書籍，也可閱讀、訂購、分享、評論書籍，書籍包括圖書、聽書、雜誌、漫畫、和資訊。
+3. 排行：可查看書城中各種書籍的排行。
+4. 搜索：通過搜索關鍵字或點擊推薦的熱詞，找到感興趣的書籍。
+5. 中心：管理個人資訊、查詢帳戶資訊、充值閱點、系統消息、系統設置等。
+
+二、問題解答
+1.如何購買書籍：
+電信用戶，當選擇CTWAP聯網時，支援手機話費支付和閱點支付。在購買書籍時，確認您的支付方式並保證有足夠的話費或閱點，點擊購買即可，話費支付的費用由運營商收取。其他運營商用戶，目前只支援閱點支付。
+
+2.如何獲得閱點：
+1）積分兌換閱點券：
+可通過註冊、登錄、補充完整使用者資料、閱讀書籍、增加書簽、發佈評論、星級評分、意見回饋等操作獲取相應分值積分。	
+2）閱點券充值：
+根據獲得的閱點券，輸入券號和密碼即可兌換成閱點。閱點券可通過積分兌換或天翼閱讀不定期行銷活動獲取。
+3）短信充閱點：電信使用者可通過短信扣費的方式充值閱點，短信扣費由運營商收取。
+4）協力廠商充值：
+目前支援支付寶充值、翼支付充值。
+
+3.如何查詢帳戶記錄：
+您只需點擊中心的帳戶，便可以輕鬆查詢您使用天翼閱讀用戶端以來的所有訂購記錄、充值記錄、積分記錄以及贈送記錄。 
+
+4.如何閱讀書籍：
+支援購買前試讀和購買後閱讀兩種方式。試讀即為免費閱讀，只可閱讀書籍的免費部分；購買後可線上閱讀也可下載閱讀。在閱讀時，可根據您的閱讀習慣設置閱讀風格。點擊最近閱讀的一本書，即可進入您上次閱讀該書退出的地方繼續閱讀。
+
+5.如何設置字體和閱讀風格：
+閱讀時，點擊介面中部觸發閱讀功能表，便可設置閱讀時字體的大小、行距、翻頁效果、閱讀背景、切換日夜間模式等。
+
+6.如何設置書簽：
+當您閱讀某本書的某頁時，您只需點擊閱讀菜單右上角的“書簽”圖示添加書簽，並可通過選擇閱讀功能表中的目錄書簽，查看和管理書簽。
+
+7.如何查看最近閱讀記錄：
+在書架的最近欄目中，可查看最近閱讀記錄。點擊最近閱讀的一本書，即可進入您上次閱讀該書退出的地方繼續閱讀。
+
+8.如何收藏書籍：
+點擊書籍詳情頁中的“收藏”，您便可以將感興趣的書籍放入我的收藏中，並可以進入書架中的收藏欄目來管理您的我的最愛。
+
+9. 如何管理書架中最近、下載、收藏中的書籍：
+在書架中，長按某本書籍或點擊手機實體menu鍵，可以對書籍進行刪除、下載、評論、分享、添加到桌面快捷方式等操作。
+
+10. 如何搜索書籍：
+1. 在搜索輸入框內輸入書名、作者、關鍵字後，點擊搜索按鈕搜索相關書籍；
+2. 通過點擊搜索介面中的熱詞標籤進行書籍快速搜索。
+
+11.如何將我喜歡的書籍分享給好友：
+支援將書籍分享到新浪微博、騰訊微博、人人網、使用手機短信分享，或使用手機已安裝且支援分享功能的軟體分享。您可以在書籍閱讀介面的閱讀功能表中，點擊更多按鈕，選擇分享，將書籍分享給您的好友。
+
+12.如何分享圖書內容：
+在閱讀文字書籍時，您可以選中喜歡的語句，在彈出的功能表中選擇分享，選擇分享方式後，即可將文字內容分享給好友。
+
+13.如何分享雜誌、漫畫中的圖片：
+在閱讀雜誌、漫畫時，長按雜誌、漫畫中的圖片，在彈出的功能表中選擇分享，選擇分享方式後，即可將圖片分享給好友。
+
+14.如何綁定和解綁分享帳號？
+在天翼閱讀個人中心的帳號綁定裡，可以綁定和解綁分享帳號。
+
+15.如何升級用戶端：
+1. 每當天翼閱讀有新的版本可供您升級時，您都會收到我們的系統消息；
+2. 點擊“menu”功能鍵，或在中心的系統設置中選擇“軟體升級”即可。
+
+天翼閱讀致力打造使用者體驗最好的用戶端產品，為您帶來最暢快的數位閱讀體驗。感謝您的支持！
+
+當前版本：
+%1$s
+更新日期：%2$s
+</string>
+    <string name="not_allow_exit">幕後工作未完成，不能退出本視窗</string>
+    <string name="book_digests">閱讀筆記</string>
+    <string name="please_add_bookdigest">在此輸入您的閱讀筆記</string>
+    <string name="copy_sucess">複製成功</string>
+    <!-- add by zlf -->
+    <string name="dialog_save">保存到相冊</string>
+    <string name="dialog_share">分享</string>
+    <string name="success_save">已成功保存到相冊</string>
+    <string name="fail_save">保存失敗</string>
+    <string name="success_share">已成功分享到微博</string>
+    <string name="fail_share">分享失敗</string>
+
+    <!-- 獲取統一的時間格式 -->
+    <string name="time_today">今天</string>
+    <string name="time_yesterday">昨天 </string>
+    <string name="time_lastyear">去年</string>
+    <string name="warm_prompt_tip">溫馨提示：長按欄目名稱可以移動欄目排列順序</string>
+    <string name="also_like_tip">您可能喜歡</string>
+    <string name="subject_all_hyperlink_text">全部專題</string>
+    <string name="enter_btn">開始體驗</string>
+    <string name="level_value">經驗值%1$s\u0020\u0020離下壹級還有%2$s</string>
+    <string name="surfing_login_cancel">您已取消了操作！</string>
+    <string name="surfing_client_disable">天翼帳號客戶端已被用戶停用！</string>
+
+    <!-- 2.3.0个人中心 -->
+    <string name="levelRule_value">您當前是%1$s\u0020\u0020,升級還需%2$s經驗值</string>
+    <string name="recharge_Str">充值</string>
+    <string name="myMessage_Str">我的消息</string>
+    <string name="myRead_Str">我的閱讀</string>
+    <string name="myBing_Str">帳號綁定</string>
+    <string name="setting_Str">設置</string>
+    <string name="vBulletin_Str">建議反饋</string>
+    <string name="appRecommand_Str">應用推薦</string>
+    <string name="checkUpdate_Str">檢查新版本</string>
+    <string name="accountChangeBtn_Str">切換帳號</string>
+    <string name="myLevel_Str">我的等級</string>
+    <string name="LevelRule_Str">等级規則</string>
+    <string name="account_consume_record_Str">訂購記錄</string>
+    <string name="consume_record_books_Str">書籍</string>
+    <string name="consume_record_books_month_Str">包月區</string>
+    <string name="menu_consume_view_book_total">近六個月您已訂購%1$s本書籍，\u0020累積消費：%2$s元，\u0020%3$s閱點</string>
+    <string name="menu_consume_view_book_month_total">近六個月您已訂購%1$s个包月區，\u0020累積消費：%2$s元，\u0020%3$s閱點</string>
+    <string name="my_point_detail_value">我的積分：%1$s</string>
+    <string name="nearSeven_value">（最近7天）</string>
+    <string name="longAgo_value">更早>></string>
+    <string name="read_point_rule_value">點擊查看積分規則</string>
+    <string name="accouont_recharge_value">充值帳戶：</string>
+    <string name="money_recharge_value">充值金額：</string>
+    <string name="way_recharge_value">充值方式：</string>
+    <string name="select_way_recharge_value">選擇其他充值方式>></string>
+    <string name="shake_change_day_value">搖一搖切換日夜</string>
+    <string name="myDigests_value">我的筆記</string>
+    <string name="myBookMark_value">我的書簽</string>
+    <string name="author_value">作者：</string>
+    <string name="number_bookMark_value">个書簽</string>
+    <string name="number_myNote_value">條筆記</string>
+    <string name="signin_str">簽到</string>
+    <string name="userAccount_str">帳戶</string>
+    <string name="faseRelence_str">快充</string>
+    <string name="empty_mynote_value">無</string>
+    <string name="over_readPoint_value">(您有%1$s閱點即將過期)</string>
+    <string name="personal_edit_title_value">編輯標籤</string>
+    <string name="personal_edit_label_my_value">(點擊標籤進行添加)</string>
+    <string name="personal_edit_label_hot_value">(長按標籤進行刪除)</string>
+    <string name="personal_edit_label_now_add_value">立即添加</string>
+    <string name="over_read_point_value">閱點金額</string>
+    <string name="over_time_value">過期時間</string>
+    <string name="over_read_point_time_value">閱點到期提醒</string>
+    <string name="my_note_alert_delete_tip">刪除筆記</string>
+    <string name="my_note_alert_delete_content">確定刪除所選筆記嗎？</string>
+    <string name="bookmark_alert_delete_tip">刪除標籤</string>
+    <string name="bookmark_alert_delete_content">確定刪除所選標籤嗎？</string>
+    <string name="remind_update_catalog_serail">連載中</string>
+    <string name="empty_my_read_comment_view_title">暫無我的閱讀評論</string>
+    <string name="empty_my_voice_comment_view_title">暫無我的聽書評論</string>
+    <string name="empty_remind_update_view_title">暫無更新提醒</string>
+    <string name="zhi_fu_bao_value">支付寶充值</string>
+    <string name="yi_zhi_fu_value">翼支付充值</string>
+    <string name="read_point_value">短信充閱點</string>
+    <string name="my_nick_hink_value">請輸入昵稱</string>
+    <string name="my_age_hink_value">請輸入年齡</string>
+    <string name="confirm_sina_dialog">確定解綁新浪微博嗎？</string>
+    <string name="confirm_qq_dialog">確定解綁騰訊微博嗎？</string>
+    <string name="confirm_renren_dialog">確定解綁人人網嗎？</string>
+    <string name="confirm_title_dialog">解除綁定</string>
+    <string name="consume_content_top_vaule">好友已幫您付費,您可以免費閱讀以下書籍</string>
+    <string name="personal_edit_my_tag_success">我的標籤上傳成功</string>
+    <string name="personal_edit_my_tag_error">我的標籤上傳失敗</string>
+
+    <!-- 2.9.9 书架 -->
+    <string name="sign_up_hint">簽到就能獲得積分哦！</string>
+    <string name="search_hint">在書架中搜索書名/作者</string>
+    <string name="search_in_lastest_hint">在書架-最近中搜索書名/作者</string>
+    <string name="search_in_download_hint">在書架-下載中搜索書名/作者</string>
+    <string name="book_shelf_goto_search">去書城搜索</string>
+    <string name="personalInfoNull">未填寫</string>
+    <string name="my_tab_value">我的標籤</string>
+    <string name="my_tab_default_value">您還沒有個人標籤</string>
+    <string name="host_tab_value">熱門標籤</string>
+    <string name="remind_update_number_value">更新至%1$s</string>
+    <string name="remind_update_end_value">已完結</string>
+    <string name="remind_update_alert_value">關閉提醒后，您將不再接收該書籍的更新提醒信息，確定關閉提醒？</string>
+    <string name="no_bind_value">未綁定</string>
+    <string name="my_bind_value">我的绑定</string>
+    <string name="my_account_query_value">我的帳戶</string>
+    <string name="feedback_value">反饋記錄</string>
+    <string name="my_note_hide_title">您還沒有筆記</string>
+    <string name="my_note_hide_context">長按閱讀區域可以選擇文字并添加筆記</string>
+    <string name="my_bookmark_hide_title">您還沒有書籤</string>
+    <string name="my_bookmark_hide_context_left">點擊閱讀菜單右上角圖標</string>
+    <string name="my_bookmark_hide_context_right">可以添加書籤</string>
+    <string name="point_message_value">完善個人資料即可獲取積分~</string>
+    <string name="point_sex_boy">男</string>
+    <string name="point_sex_girl">女</string>
+    <string name="point_sex_secert">保密</string>
+    <string name="weibo_email_value">郵箱</string>
+    <string name="weibo_phone_value">手機號</string>
+    <string name="my_pack_empty_txt">您暫時還沒有訂購包月區</string>
+    <string name="audio_remark_time_tip">定時</string>
+    <string name="audio_bit_rate_tip">高清</string>
+    <string name="audio_store_tip">評論</string>
+    <string name="audio_share_tip">分享</string>
+    <string name="book_detail_marks">積分</string>
+    <string name="book_detail">圖書信息</string>
+	<string name="book_detail_publisher">版權：%s</string>
+	<string name="book_detail_publish_date">出版：%s</string>
+    <string name="bookcity_heavyrecommend_tip">重磅推薦</string>
+	<string name="bookcity_newbook_tip">新書搶先看</string>
+	<string name="bookcity_alllovebook_tip">大家都在看</string>
+	<string name="bookcity_peopleselectedbook_tip">小編精選</string>
+    <string name="import_local_title">本地書籍</string>
+    <string name="import_local_back_to_super">上一級</string>
+    <string name="import_local_scan_text">智能掃描</string>
+    <string name="bookshelf_sort_book">整理書籍</string>
+	<string name="bookshelf_recent_read_book">最近閱讀</string>
+	<string name="bookshelf_item_reader_group_num">共%s本</string>
+	<string name="bookshelf_item_reader_readed_percent">已讀%s</string>
+	<string name="bookshelf_item_reader_unread_tip">未讀</string>
+    
+    <string name="bookcity_search_not_found_tip">抱歉！沒有找到你想要的書籍</string>
+	<string name="book_in_bookshelf">已添加</string>
+	<string name="add_book_to_bookshelf">添加</string>
+	<string name="tab_recommended">推薦</string>
+	<string name="tab_classify">分類</string>
+	<string name="tab_sale">排行</string>
+	<string name="tab_special_offer">福利</string>
+	<string name="tab_search">搜索</string>
+	<string name="hot_search_books">熱搜書籍</string>
+	<string name="loading_data_failed_tip">加載失敗\n請檢查你的網絡是否鏈接額</string>
+	<string name="bookcity_latest_price">最新特價</string>
+	<string name="bookcity_title_recommend">精品推薦</string>
+	<string name="bookcity_title_classify">分類</string>
+	<string name="bookcity_title_fuli">福利</string>
+	<string name="bookcity_title_paihang">排行</string>
+	
+	<string name="pdf_lib_error">該手機型號暫不支持PDF閱讀!</string>
+	
+	<string name="sale_totle_tip">總榜</string>
+	<string name="sale_best_tip">暢銷榜</string>
+	<string name="sale_newbook_tip">新書榜</string>
+	<string name="sale_free_tip">免費榜</string>
+	
+	<string name="today_limit_free">今日限免</string>
+	<string name="cut_off_time">（截止時間 %s)</string>
+	<string name="limit_free_default_book_name">限免書籍</string>
+	<string name="free_to_get">免費領取</string>
+	<string name="bookcity_free_tip">免費專區</string>
+	<string name="show_comment_more">查看評論（ %s）</string>
+	
+	<string name="pay_mode_alipay">支付寶支付</string>
+	<string name="pay_mode_mobile_mm">移動MM支付</string>
+	<string name="pay_mode_unicom_pay">聯通沃支付</string>
+	<string name="pay_mode_surfing_read_point">天翼閱點支付</string>
+	<string name="pay_mode_fee_pay">話費支付</string>
+	
+	<string name="reward_point_pay_result_invalid_params">積分格式錯誤！</string>
+    <string name="reward_point_pay_result_invalid_price">該書價格已作調整，正在重新獲取！</string>
+    <string name="reward_point_pay_result_not_enough_pint">積分不足！</string>
+    <string name="reward_point_pay_result_has_perchase">你已購買此書，無需重複購買！</string>
+    <string name="reward_point_pay_result_fail">兌書失敗，請重試！</string>
+    
+    <string name="account_setting_receive_send_message">接收推送消息</string>
+	<string name="account_setting_screen_light">屏幕亮度</string>
+	<string name="account_setting_binding_else_account">綁定其他賬號</string>
+	<string name="account_setting_clear_memory">清理緩存</string>
+	<string name="account_setting_allow_wifi_download">僅用WIFI時下載</string>
+	<string name="account_setting_give_score_to_leyue">給樂閱評價</string>
+	<string name="account_setting_about_leyue">關於樂閱</string>
+	<string name="account_setting_visitor_lead">新手引導</string>
+	<string name="result_content_signature_empty">個性簽名不能為空</string>
+	<string name="person_info_modify_nickname_hint">請完善昵稱</string>
+    <string name="person_info_modify_signature_hint">請完善個性簽名</string>
+</resources>

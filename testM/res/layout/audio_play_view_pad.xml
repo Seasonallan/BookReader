@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+    
+    <RelativeLayout android:id="@+id/play_zone"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+        
+        <View android:layout_width="fill_parent" android:layout_height="1dp" 
+            android:background="@color/music_score_divider_line_color"/>
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:padding="10dp">
+            
+	        <TextView android:id="@+id/play_pause" 
+			    android:layout_width="45dp" android:layout_height="45dp"
+			    android:background="@drawable/audio_start"
+			    android:layout_alignParentLeft="true" android:clickable="true"/>
+	        
+			<SeekBar android:id="@+id/music_seekbar" 
+			    android:layout_width="fill_parent" android:layout_height="wrap_content"
+			    android:thumb="@drawable/thumb"    android:layout_gravity="center_horizontal"
+			    android:minHeight="2dp" android:maxHeight="2dp" 
+			    android:progress="0"  android:secondaryProgress="0"
+			    android:progressDrawable="@drawable/seekbar_style" 
+			    android:layout_marginRight="85dp" android:layout_marginLeft="40dp"
+			    android:paddingLeft="20dp" android:paddingRight="20dp"
+			    android:layout_centerVertical="true"/>
+			
+			<LinearLayout 
+			    android:layout_width="80dp" android:layout_height="wrap_content"
+			    android:layout_alignParentRight="true" android:layout_centerVertical="true"
+			    android:orientation="horizontal" android:gravity="center_vertical">
+				<TextView android:id="@+id/current_time"
+				    android:layout_width="wrap_content" android:layout_height="wrap_content"
+				    android:text="@string/music_original_current_time_display"
+				    android:textSize="14dp" android:textColor="@android:color/black"/>
+				
+				<TextView android:id="@+id/total_time"
+				    android:layout_width="wrap_content" android:layout_height="wrap_content"
+				    android:text="@string/music_total_time_display"
+				    android:textSize="14dp" android:textColor="@android:color/black"/>
+			</LinearLayout>
+		</RelativeLayout>
+    </RelativeLayout>
+	
+    <TextView android:id="@+id/title"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:background="@drawable/music_score_header_bg"
+        android:layout_alignParentTop="true" android:text="贝多芬《六首变奏曲》"
+        android:textColor="@color/music_score_divider_line_color"
+        android:gravity="center" android:textSize="18dp"/>
+    
+    <LinearLayout android:id="@+id/grid_tone_layout"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_below="@id/title"
+        android:gravity="center" android:layout_margin="20dp"/>
+    
+   <!--  <GridView android:id="@+id/grid_tone_zone"
+        android:visibility="gone" 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_below="@id/title" android:columnWidth="10dp"
+        android:stretchMode="columnWidth"  android:gravity="center"/> -->
+    
+	<ListView android:id="@+id/listview"
+	    android:layout_width="fill_parent" android:layout_height="match_parent"
+	    android:listSelector="@drawable/transparent" android:cacheColorHint="@color/transparent"
+	    android:divider="@null" android:dividerHeight="0dp"
+	    android:fadingEdge="none"  
+	    android:layout_above="@id/play_zone" android:layout_below="@id/grid_tone_layout"/>
+	    
+</RelativeLayout>

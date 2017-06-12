@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:visibility="gone" android:background="@drawable/common_bg">
+	
+	<LinearLayout android:id="@+id/progress_view" 
+	    android:layout_width="match_parent" android:layout_height="match_parent"
+	    android:orientation="vertical" android:layout_centerInParent="true"
+	    android:gravity="center">
+	    
+		<com.lectek.android.lereader.widgets.IndeterminateProgress
+			android:id="@+id/loading_v"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		
+		<TextView android:id="@+id/load_tip_tv"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:paddingLeft="30dip" android:paddingRight="30dip"
+			android:paddingTop="5dip" android:paddingBottom="5dip"
+			android:gravity="center"
+			android:text="@string/waitting_dialog_load_tip"
+			android:textColor="@color/dialog_content" />
+		
+	</LinearLayout>
+	
+	<LinearLayout  android:id="@+id/opr_setting_lay"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:visibility="gone" android:orientation="vertical"
+		android:layout_marginTop="80dp">
+		
+		<ImageView android:id="@+id/tip_img"
+		    android:layout_width="wrap_content" android:layout_height="wrap_content"
+		    android:layout_margin="15dp" android:layout_gravity="center_horizontal"
+		    android:background="@drawable/icon_no_info_tip"/>
+		
+		<Button android:id="@+id/user_opr_but"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal" style="@style/button_blue"/>
+	</LinearLayout>
+	
+	<LinearLayout  android:id="@+id/opr_setting_lay_new"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:visibility="gone" android:orientation="vertical"
+		android:layout_centerInParent="true"
+		android:layout_marginTop="80dp">
+		
+		<ImageView android:id="@+id/logo_icon"
+		    android:layout_width="wrap_content" android:layout_height="wrap_content"
+		    android:layout_margin="15dp" android:layout_gravity="center_horizontal"
+		    android:src="@drawable/leyue_logo"
+		    />
+		<TextView 
+		    android:id="@+id/tv_data_fail_tip"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/common_17"
+		    android:gravity="center"
+		    android:layout_gravity="center_horizontal"
+		    android:text="@string/loading_data_failed_tip"
+		    />
+		<Button android:id="@+id/user_opr_but_new"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:text="@string/btn_text_retry"
+			android:layout_gravity="center_horizontal" style="@style/button_retry"/>
+	</LinearLayout>
+</RelativeLayout>

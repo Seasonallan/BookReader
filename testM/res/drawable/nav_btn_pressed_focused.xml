@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<layer-list  
+    xmlns:android="http://schemas.android.com/apk/res/android">  
+    <item android:drawable="@drawable/nav_btn_pressed_normal" />  
+    <item android:drawable="@drawable/book_bg_selected"/>  
+</layer-list> 

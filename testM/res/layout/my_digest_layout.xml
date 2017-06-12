@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ListView
+        android:id="@+id/order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@drawable/person_line" 
+        binding:itemSource="bItems"
+        binding:itemTemplate="@layout/my_digest_info_item"
+        binding:onItemClicked="bOnItemClickCommand"
+        binding:onScrollStateChanged="bOnScrollStateChangedCommand"
+        binding:visibility="bContentVisibility" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/no_digest_bg"
+        binding:visibility="bNoDateVisibility" />
+
+</FrameLayout>

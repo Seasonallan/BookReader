@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/buy_dialog_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:layout_marginTop="-100dp"
+    android:background="#fff" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal" >
+        <TextView
+            android:id="@+id/text_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_common_num0"
+            android:text="@string/text_to_be_continue" />
+        <TextView
+            android:id="@+id/text_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/font_common_num5"
+            android:text="@string/text_buy_book_tip" />
+        <Button
+            android:id="@+id/buy_btn"
+            style="@style/button_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="30dp"
+            android:text="购买" />
+        
+        <!-- 积分免费兑书 -->
+         <LinearLayout
+             android:id="@+id/exchange_btn"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="15dp"
+             android:orientation="vertical" >
+             <RelativeLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+                 android:layout_marginBottom="5dp" >
+             	<TextView
+             	    android:id="@+id/free_exchange_tv"
+             	    android:layout_width="wrap_content"
+             	    android:layout_height="wrap_content"
+             	    android:textColor="@color/common_3"
+             	    android:layout_marginTop="15dp"
+             	    android:layout_marginBottom="15dp"
+             	    android:layout_centerInParent="true"
+             	    android:text="@string/btn_text_free_exchange_book" />
+             	<TextView
+             	    android:layout_width="wrap_content"
+             	    android:layout_height="wrap_content"
+             	    android:layout_toRightOf="@id/free_exchange_tv"
+             	    android:layout_centerVertical="true"
+             	    android:textColor="@color/common_3"
+             	    android:text=">>" />
+             	<ImageView
+             	    android:id="@+id/new_anim_iv"
+             	    android:layout_width="wrap_content"
+             	    android:layout_height="wrap_content"
+             	    android:layout_toLeftOf="@id/free_exchange_tv"
+             	    android:layout_marginTop="0dp" />
+             	</RelativeLayout>
+         </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

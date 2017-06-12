@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_focused="true"
+        android:drawable="@drawable/nav_btn_pressed_focused" />
+	<item android:drawable="@drawable/nav_btn_pressed_normal" />
+</selector> 

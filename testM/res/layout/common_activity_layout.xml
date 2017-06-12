@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tonlin="http://schemas.android.com/apk/res/com.lectek.android.LYReader"
+	android:id="@+id/root_view"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+	
+   	<include
+		android:id="@+id/header_lay"
+		android:layout_width="match_parent"
+		android:layout_height="45dip"
+		android:layout_alignParentTop="true"
+		layout="@layout/header" />
+   	
+   	<View android:id="@+id/header_lay_divider"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="1px"
+   	    android:layout_below="@+id/header_lay"
+   	    android:background="@color/common_19"/>
+   	
+	<FrameLayout
+		android:id="@+id/activity_content_lay"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+        android:background="@color/white"
+		android:layout_below="@id/header_lay_divider" />
+		
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="3dip"
+		android:layout_below="@id/header_lay"
+		android:visibility="gone"
+		android:background="@drawable/tab_top_shadow" />
+	<FrameLayout
+		android:id="@+id/full_screen_lay"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"/>
+	
+	<View android:id="@+id/header_bottom_line" 
+		    android:layout_width="wrap_content" android:layout_height="wrap_content"
+		    android:layout_below="@id/header_lay"/>
+	<!-- 
+	<ImageView 
+	    android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+	    android:background="@drawable/main_view_right_top_icon"/>
+		
+	<ImageView 
+	    android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+	    android:background="@drawable/main_view_left_bottom_icon"/>
+	
+	<ImageView 
+	    android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+	    android:background="@drawable/main_view_right_bottom_icon"/>
+	
+	<ImageView 
+	    android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+	    android:background="@drawable/main_view_left_top_icon"/>
+	    -->
+</RelativeLayout>

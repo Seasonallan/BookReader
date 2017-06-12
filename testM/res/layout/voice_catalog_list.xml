@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/voice_play_list_content_lay"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:orientation="horizontal"
+	android:padding="10dip" >
+	<TextView
+		android:id="@+id/voice_play_list_tv"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:ellipsize="end"
+		android:gravity="left|center_vertical"
+		android:singleLine="true"
+		android:textColor="@color/common_click_text"
+		android:textSize="@dimen/font_book_info" />
+	<TextView
+		android:id="@+id/voice_play_list_time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:ellipsize="end"
+		android:gravity="center"
+		android:singleLine="true"
+		android:textColor="#8b8b8b"
+		android:textSize="@dimen/font_book_info"/>
+</LinearLayout>

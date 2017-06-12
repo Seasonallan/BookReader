@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+	<com.lectek.lereader.core.text.test.ViewPagerTabHost
+		android:id="@android:id/tabhost"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" >
+			<TextView
+				android:id="@+id/catalog_book_name_tv"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:paddingBottom="2.5dip"
+				android:paddingLeft="8dip"
+				android:paddingRight="8dip"
+				android:paddingTop="10dip"
+				android:text="book_name"
+				android:textColor="@color/black"
+				android:textSize="@dimen/font_common_num0" />
+			<TextView
+				android:id="@+id/catalog_author_name_tv"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/catalog_book_name_tv"
+				android:paddingBottom="10dip"
+				android:paddingLeft="8dip"
+				android:paddingRight="8dip"
+				android:paddingTop="2.5dip"
+				android:text="author_name"
+				android:textColor="#88464646"
+				android:textSize="@dimen/font_common_num3" />
+			<com.lectek.lereader.core.text.test.SlideTabWidget
+				android:id="@android:id/tabs"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/catalog_author_name_tv"
+				android:background="@drawable/ic_reader_catalog_bg"
+				android:orientation="horizontal" />
+			<FrameLayout
+				android:id="@android:id/tabcontent"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_alignParentBottom="true"
+				android:layout_below="@android:id/tabs" />
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="5dip"
+				android:layout_below="@android:id/tabs"
+				android:background="@drawable/ic_reader_catalog_bg_shadow" />
+		</RelativeLayout>
+	</com.lectek.lereader.core.text.test.ViewPagerTabHost>
+	<ImageButton
+		android:id="@+id/left_suspension_but"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:background="@null"
+		android:focusable="false"
+		android:src="@drawable/ic_back_read" />
+</RelativeLayout>

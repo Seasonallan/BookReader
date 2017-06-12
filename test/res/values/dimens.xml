@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 统一视觉规范字体大小,请严格遵照！！ -->
+	<dimen name="font_common_num0">20dip</dimen>
+	<dimen name="font_common_num1">18dip</dimen>
+	<dimen name="font_common_num2">17dip</dimen>
+	<dimen name="font_common_num3">16dip</dimen>
+	<dimen name="font_common_num4">15dip</dimen>
+	<dimen name="font_common_num5">14dip</dimen>
+	<dimen name="font_common_num6">13dip</dimen>
+	<dimen name="font_common_num7">12dip</dimen>
+</resources>

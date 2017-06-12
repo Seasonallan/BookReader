@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     This file contains resource definitions for solid colors.  In
+     addition to plain color resources (retrieved via Resources.getColor()
+     and friends), we are also using it to define drawables that are
+     a solid color.
+-->
+<resources>
+	<!-- 颜色规范start -->
+	<color name="common_1">#085257</color>
+	<color name="common_2">#ffffff</color>
+	<color name="common_3">#e88c15</color>
+	<color name="common_4">#1ea3f0 </color>
+	<color name="common_5">#818081</color>
+	<color name="common_6">#606060</color>
+	<color name="common_7">#f30303</color>
+	<color name="common_8">#fa4198</color>
+	<color name="common_9">#f9e2be</color>
+	<color name="common_10">#bebebe</color>
+	<color name="common_11">#1888cf</color>
+    <color name="common_12">#817539</color>
+    <color name="common_13">#f5f5f5</color>
+    <color name="common_14">#40AC7A</color>
+    <color name="common_15">#d7d7d7</color>
+    <color name="common_16">#40ac7a</color>
+    <color name="common_17">#969696</color>
+    <color name="common_18">#f5f5f5</color>
+    <color name="common_19">#329A69</color>
+	<!-- 颜色规范end -->
+	<!-- 遗留字体颜色待替换 -->
+	<color name="blue">#0000ff</color>
+	<color name="fresh_blue">#4387d2</color>
+	<color name="red">#f00</color>
+	<color name="transparent">#00000000</color>
+	<color name="transparent_black">#05000000</color>
+	<color name="translucent_background">#FFFFFFFF</color>
+	<color name="transparent_background">#FFFFFFFF</color>
+	<color name="book_item_name">#1d383f</color>
+	<color name="book_item_author">#8c8c8c</color>
+	<color name="brown">#5d4624</color>
+	<color name="gray">#717171</color>
+	<color name="dark_gray">#8c8c8c</color>
+	<color name="golden_yellow">#B56F3E</color>
+	<color name="light_blue">#006AD5</color>
+	<color name="white">#FFFFFF</color>
+	<color name="dialog_bg">#dadada</color>
+	<color name="toast_bg">#e630302e</color>
+	<color name="dialog_bg_gold">#ccd6c38b</color>
+	<color name="dialog_bg_blue">#ccf1f1f1</color>
+	<color name="black">#000</color>
+	<color name="yellow">#fecb32</color>
+	<color name="window_bg">#0fff</color>
+	<color name="search_normal">#233d44</color>
+	<color name="search_pressed">#825f3f</color>
+	<color name="search_focused">#9e7752</color>
+	<color name="book_price_color">#4387D2</color>
+	<color name="dialog_title">#6b3d00</color>
+	<color name="dialog_content">@color/black</color>
+	<color name="voice_text_color">#FFFCFFFD</color>
+	<color name="catalog_item_selected">#e3d2c4</color>
+	<color name="audio_player_bg">#e3d8b9</color>
+	<color name="regist_btn_hint_color">#b2b2b2</color>
+	<color name="menu_btn_text_selected">@color/white</color>
+	<color name="menu_btn_text_unselected">#999999</color>
+	<color name="catalog_bg">#5f5d5e</color>
+	<color name="catalog_current">#31b3f0</color>
+	<color name="personal_text_color">#444444</color>
+	<color name="personal_blue_text_color">#546B97</color>
+	
+	<!-- 乐阅自主 遗留-->
+	<!-- 颜色规范start -->
+	<color name="common_blue_4">#04aeda</color>
+	<color name="common_yellow_3">#dd9025</color>
+	<color name="common_light_yellow">#f9e2be</color>
+	<color name="common_white_2">#ffffff</color>
+	<color name="common_grad_7">#b4b4b4</color>
+	<color name="common_pink_8">#fa4198</color>
+	<color name="common_black_6">#5e5e5e</color>
+	<color name="common_brown_1">#546570</color>
+	<color name="common_light_black_5">#afb8bd</color>
+	<color name="common_green">#62a81e</color>
+	<color name="common_text">#414141</color>
+	<!-- 颜色规范end -->
+	<color name="music_score_divider_line_color">#70B134</color>
+    <color name="color_FBF5F7">#FBF5F7</color>
+    <color name="color_E6FFFFFF">#E6FFFFFF</color>
+    <color name="color_C9D8BB">#C9D8BB</color>
+    <color name="color_ECECEC">#ECECEC</color>
+    <color name="color_EFEFEF">#EFEFEF</color>
+    <color name="color_DCDCDC">#DCDCDC</color>
+    <color name="color_696969">#696969</color>
+	
+	<!-- 搜索热词字体颜色 -->
+	<color name="search_key_word_color_1">#514d4b</color>
+	<color name="search_key_word_color_2">#c11b1b</color>
+	<color name="search_key_word_color_3">#319a26</color>
+	<color name="search_key_word_color_4">#d2930c</color>
+	<color name="search_key_word_color_5">#1288b4</color>
+	<color name="search_key_word_color_6">#874023</color>
+	<color name="search_key_word_color_7">#b01e8c</color>
+	<color name="search_key_word_color_8">#5ea215</color>
+	
+	<!-- listview -->
+	<color name="lv_item_bg_color_1">#F6F4F5</color>
+	<color name="lv_item_bg_color_2">#F3F1F2</color>
+    <!-- 书签 -->
+    <color name="book_mark_refresh_bg">#e9dec5</color>
+    <color name="color_a7c988">#a7c988</color>
+    <color name="point_manager_text_normal_color">#64717a</color>
+    <color name="color_e48f56">#e48f56</color>
+    
+    <!-- 笔记 -->
+    <color name="book_digest_item_digest_bg">#FBF4EA</color>
+    <!-- 侧边栏-个人中心 -->
+    <color name="personal_center_bg">#2C2A2B</color>
+    
+    <color name="color_414141">#414141</color>
+    <color name="color_f6f6f8">#f6f6f8</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <!-- 福利 -->
+    <color name="item_head">#40ac7a</color>
+    <color name="item_head1">#ff6a4a</color>
+    <color name="item_text">#414141</color>
+    <color name="color_ed5145">#ed5145</color>
+    <color name="color_dedede">#dedede</color>
+
+    <color name="catalog_day_bg">#e5e4df</color>
+    <color name="catalog_night_bg">#282a2e</color>
+    <color name="catalog_day_textcolor">#414141</color>
+    <color name="catalog_night_textcolor">#7d7d7d</color>
+    <color name="catalog_day_textcolor_index">#969696</color>
+
+    <color name="catalog_day_textcolor_needbuy">#b9b9b9</color>
+    <color name="catalog_night_textcolor_needbuy">#2b2b2b</color>
+
+    <color name="catalog_selected">#ed5145</color>
+    <color name="red1">#f53e1f</color>
+    <color name="green1">#f747</color>
+    <color name="blue1">#4aacf3</color>
+    <color name="yellow1">#fece5f</color>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RadioButton
+        android:id="@+id/readpoint_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="@string/radiobutton_readpoint_text"
+        android:focusable="false"
+        android:clickable="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_common_num4" />
+
+    <TextView
+        android:id="@+id/readpoint_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="@string/account_convent_point"
+        android:textColor="@color/red"
+        android:textSize="@dimen/font_common_num5" />
+
+</LinearLayout>

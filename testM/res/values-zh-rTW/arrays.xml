@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="scroll_partten">
+		<item>逐頁</item>
+	</string-array>
+	<string-array name="scroll_time">
+		<item>6秒</item>
+		<item>10秒</item>
+		<item>13秒</item>
+		<item>16秒</item>
+		<item>20秒</item>
+	</string-array>
+	<string-array name="read_theme">
+		<item>白天</item>
+		<item>夜間</item>
+		<item>護眼色</item>
+		<item>牛皮紙</item>
+		<item>粉色心情</item>
+		<item>自訂</item>
+	</string-array>
+	<string-array name="read_turn_page_type">
+		<item>無</item>
+		<item>左右滾動</item>
+		<item>上下滾動</item>
+		<item>紙質翻頁</item>
+	</string-array>
+	<string-array name="books_catalog_type">
+		<item>全部</item>
+		<item>完本</item>
+		<item>連載</item>
+	</string-array>
+	<string-array name="font_size">
+		<item>22</item>
+		<item>24</item>
+		<item>26</item>
+		<item>28</item>
+		<item>30</item>
+		<item>32</item>
+		<item>34</item>
+		<item>36</item>
+		<item>38</item>
+		<item>40</item>
+		<item>42</item>
+		<item>44</item>
+		<item>46</item>
+		<item>48</item>
+		<item>50</item>
+		<item>52</item>
+		<item>54</item>
+		<item>56</item>
+		<item>58</item>
+		<item>60</item>
+	</string-array>
+	<string-array name="font_spacing">
+		<item>常規</item>
+		<item>1.5倍</item>
+		<item>2倍</item>
+	</string-array>
+	<string-array name="word_spacing">
+		<item>常規</item>
+		<item>常規1</item>
+		<item>常規2</item>
+	</string-array>
+	<string-array name="ranking_type">
+		<item>點擊</item>
+		<item>收藏</item>
+		<item>人氣</item>
+		<item>搜索</item>
+	</string-array>
+	<string-array name="ranking_hot">
+		<item>日榜</item>
+		<item>周榜</item>
+		<item>月榜</item>
+		<item>總榜</item>
+	</string-array>
+	<string-array name="themes">
+		<item>酷炫時尚</item>
+		<item>金色沙灘</item>
+		<item>蔚藍星空</item>
+	</string-array>
+	<string-array name="pay_mode_view">
+		<item>手機話費</item>
+		<item>\u0020\u0020\u0020\u0020閱點\u0020\u0020\u0020\u0020</item>
+	</string-array>
+	<string-array name="loading_view">
+		<item>\u0020\u0020\u0020\u0020書城\u0020\u0020\u0020\u0020</item>
+		<item>\u0020\u0020\u0020\u0020書架\u0020\u0020\u0020\u0020</item>
+	</string-array>
+	<string-array name="language">
+		<item>\u0020\u0020简体\u0020\u0020</item>
+		<item>\u0020\u0020繁體\u0020\u0020</item>
+	</string-array>
+	<string-array name="voice_back">
+		<item>後臺播放</item>
+		<item>退出播放</item>
+	</string-array>
+	<string-array name="anim_type">
+		<item>紙質模擬</item>
+		<item>水準滾動</item>
+	</string-array>
+	<string-array name="auto_delayed">
+		<item>5000</item>
+		<item>10000</item>
+		<item>15000</item>
+		<item>20000</item>
+		<item>25000</item>
+		<item>30000</item>
+		<item>35000</item>
+		<item>40000</item>
+		<item>45000</item>
+		<item>50000</item>
+		<item>55000</item>
+		<item>60000</item>
+	</string-array>
+	<string-array name="auto_LR_delayed">
+		<item>5000</item>
+		<item>10000</item>
+		<item>15000</item>
+		<item>20000</item>
+		<item>25000</item>
+		<item>30000</item>
+		<item>35000</item>
+		<item>40000</item>
+		<item>45000</item>
+		<item>50000</item>
+		<item>55000</item>
+		<item>60000</item>
+	</string-array>
+	<string-array name="auto_LR_delayed_str">
+		<item>5秒</item>
+		<item>10秒</item>
+		<item>15秒</item>
+		<item>20秒</item>
+		<item>25秒</item>
+		<item>30秒</item>
+		<item>35秒</item>
+		<item>40秒</item>
+		<item>45秒</item>
+		<item>50秒</item>
+		<item>55秒</item>
+		<item>60秒</item>
+	</string-array>
+	<string-array name="timed_type">
+		<item>30分</item>
+		<item>45分</item>
+		<item>60分</item>
+		<item>75分</item>
+		<item>90分</item>
+	</string-array>
+	<string-array name="sex">
+		<item>\u0020\u0020\u0020\u0020男\u0020\u0020\u0020\u0020</item>
+		<item>\u0020\u0020\u0020\u0020女\u0020\u0020\u0020\u0020</item>
+		<item>\u0020\u0020\u0020\u0020保密\u0020\u0020\u0020\u0020</item>
+	</string-array>
+	<string-array name="keyword_type">
+		<item>全部</item>
+		<item>書名</item>
+		<item>作者</item>
+		<item>關鍵字</item>
+	</string-array>
+	<string-array name="search_type">
+		<item>看書</item>
+		<item>聽書</item>
+	</string-array>
+	<string-array name="content_type">
+		<item>書籍</item>
+		<item>漫畫</item>
+		<item>雜誌</item>
+		<item>連載</item>
+	</string-array>
+	<!-- 推薦內容 -->
+	<string-array name="recommended_items">
+		<item>這本書看得我廢寢忘食！</item>
+		<item>自訂</item>
+		<item>超愛這本書，你也來瞧瞧！</item>
+		<item>打發時間的佳作，准沒錯！</item>
+		<item>抽空看看這本書，很贊！</item>
+		<item>寫得特真實，想再讀一遍！</item>
+		<item>一口氣讀完的，著迷了！</item>
+		<item>看三遍了，想再看，特推！</item>
+		<item>熬夜看完了，真當贊。</item>
+		<item>絕對適合你看，一定要讀！</item>
+		<item>這本書順氣！敞亮！超好！</item>
+	</string-array>
+	<!-- 推薦軟體 -->
+	<string-array name="recommended_soft_items">
+		<item>這個軟體看書超好用的！</item>
+		<item>這個閱讀軟體做的很專業！</item>
+		<item>這裡有很多圖書、雜誌、漫畫可以看！</item>
+		<item>自訂</item>
+	</string-array>
+	<string-array name="book_digests_menu_one">
+		<item>高亮</item>
+		<item>複製</item>
+		<item>筆記</item>
+		<item>分享</item>
+	</string-array>
+	<string-array name="book_digests_menu_two">
+		<item>複製</item>
+		<item>筆記</item>
+		<item>分享</item>
+		<item>刪除</item>
+	</string-array>
+	<string-array name="gift_blessing_arr_str">
+		<item>一本書，一聲祝福，願您一生幸福。 </item>
+		<item>祝你生活節節登高，日子越過越好！</item>
+		<item>書中自有黃金屋，祝你開心！ </item>
+		<item>送你一本書，祝你生日快樂！ </item>
+		<item>自定義</item>
+	</string-array>
+	<string-array name="wisdom_arr_str">
+		<item>努力載入中，請稍候...</item>
+		<item>努力載入中，請稍候...</item>
+		<item>努力載入中，請稍候...</item>
+		<item>努力載入中，請稍候...</item>
+	</string-array>
+	<string-array name="grade_rule_0_0">
+		<item>等級</item>
+	</string-array>
+	<string-array name="grade_rule_0_1">
+		<item>經驗值</item>
+	</string-array>
+	<string-array name="grade_rule_0_2">
+		<item>級數</item>
+	</string-array>
+	<string-array name="grade_rule_1_0">
+		<item>童生</item>
+	</string-array>
+	<string-array name="grade_rule_1_1">
+		<item>0-100</item>
+		<item>101-200</item>
+		<item>201-400</item>
+		<item>401-600</item>
+		<item>601-800</item>
+		<item>801-1000</item>
+	</string-array>
+	<string-array name="grade_rule_1_2">
+		<item>LV1</item>
+		<item>LV2</item>
+		<item>LV3</item>
+		<item>LV4</item>
+		<item>LV5</item>
+		<item>LV6</item>
+	</string-array>
+	<string-array name="grade_rule_2_0">
+		<item>秀才</item>
+	</string-array>
+	<string-array name="grade_rule_2_1">
+		<item>1001-1100</item>
+		<item>1101-1200</item>
+		<item>1201-1400</item>
+		<item>1401-1600</item>
+		<item>1601-1800</item>
+		<item>1801-2000</item>
+	</string-array>
+	<string-array name="grade_rule_2_2">
+		<item>LV1</item>
+		<item>LV2</item>
+		<item>LV3</item>
+		<item>LV4</item>
+		<item>LV5</item>
+		<item>LV6</item>
+	</string-array>
+	<string-array name="grade_rule_3_0">
+		<item>舉人</item>
+	</string-array>
+	<string-array name="grade_rule_3_1">
+		<item>2001-2500</item>
+		<item>2501-3000</item>
+		<item>3001-3500</item>
+		<item>3501-4000</item>
+		<item>4001-4500</item>
+		<item>4501-5000</item>
+	</string-array>
+	<string-array name="grade_rule_3_2">
+		<item>LV1</item>
+		<item>LV2</item>
+		<item>LV3</item>
+		<item>LV4</item>
+		<item>LV5</item>
+		<item>LV6</item>
+	</string-array>
+	<string-array name="grade_rule_4_0">
+		<item>解元</item>
+	</string-array>
+	<string-array name="grade_rule_4_1">
+		<item>5001-5500</item>
+		<item>5501-6000</item>
+		<item>6001-7000</item>
+		<item>7001-8000</item>
+		<item>8001-9000</item>
+		<item>9000-10000</item>
+	</string-array>
+	<string-array name="grade_rule_4_2">
+		<item>LV1</item>
+		<item>LV2</item>
+		<item>LV3</item>
+		<item>LV4</item>
+		<item>LV5</item>
+		<item>LV6</item>
+	</string-array>
+	<string-array name="grade_rule_5_0">
+		<item>貢士</item>
+	</string-array>
+	<string-array name="grade_rule_5_1">
+		<item>10001-11000</item>
+		<item>11001-12000</item>
+		<item>12001-14000</item>
+		<item>14001-16000</item>
+		<item>16001-18000</item>
+		<item>18001-20000</item>
+	</string-array>
+	<string-array name="grade_rule_5_2">
+		<item>LV1</item>
+		<item>LV2</item>
+		<item>LV3</item>
+		<item>LV4</item>
+		<item>LV5</item>
+		<item>LV6</item>
+	</string-array>
+	<string-array name="grade_rule_6_0">
+		<item>會元</item>
+	</string-array>
+	<string-array name="grade_rule_6_1">
+		<item>20001-25000</item>
+		<item>25001-30000</item>
+		<item>30001-35000</item>
+		<item>35001-40000</item>
+		<item>40001-45000</item>
+		<item>45001-50000</item>
+	</string-array>
+	<string-array name="grade_rule_6_2">
+		<item>LV1</item>
+		<item>LV2</item>
+		<item>LV3</item>
+		<item>LV4</item>
+		<item>LV5</item>
+		<item>LV6</item>
+	</string-array>
+	<string-array name="grade_rule_7_0">
+		<item>進士</item>
+	</string-array>
+	<string-array name="grade_rule_7_1">
+		<item>50001-55000</item>
+		<item>55001-60000</item>
+		<item>60001-70000</item>
+		<item>70001-80000</item>
+		<item>80001-90000</item>
+		<item>90001-100000</item>
+	</string-array>
+	<string-array name="grade_rule_7_2">
+		<item>LV1</item>
+		<item>LV2</item>
+		<item>LV3</item>
+		<item>LV4</item>
+		<item>LV5</item>
+		<item>LV6</item>
+	</string-array>
+	<string-array name="grade_rule_8_0">
+		<item>探花</item>
+	</string-array>
+	<string-array name="grade_rule_8_1">
+		<item>100001-110000</item>
+		<item>110001-120000</item>
+		<item>120001-140000</item>
+		<item>140001-160000</item>
+		<item>160001-180000</item>
+		<item>180000-200000</item>
+	</string-array>
+	<string-array name="grade_rule_8_2">
+		<item>LV1</item>
+		<item>LV2</item>
+		<item>LV3</item>
+		<item>LV4</item>
+		<item>LV5</item>
+		<item>LV6</item>
+	</string-array>
+	<string-array name="grade_rule_9_0">
+		<item>榜眼</item>
+	</string-array>
+	<string-array name="grade_rule_9_1">
+		<item>200001-250000</item>
+		<item>250001-300000</item>
+		<item>300001-350000</item>
+		<item>350001-400000</item>
+		<item>400001-450000</item>
+		<item>450001-500000</item>
+	</string-array>
+	<string-array name="grade_rule_9_2">
+		<item>LV1</item>
+		<item>LV2</item>
+		<item>LV3</item>
+		<item>LV4</item>
+		<item>LV5</item>
+		<item>LV6</item>
+	</string-array>
+	<string-array name="grade_rule_10_0">
+		<item>狀元</item>
+	</string-array>
+	<string-array name="grade_rule_10_1">
+		<item>500001-</item>
+	</string-array>
+	<string-array name="grade_rule_10_2">
+		<item>--</item>
+	</string-array>
+	
+	<string-array name="book_shelf_title_column">
+		<item>最近</item>
+		<item>訂購</item>
+		<item>下載</item>
+		<item>收藏</item>
+		<item>本機</item>
+	</string-array>
+	<string-array name="voice_bit_rate_tip">
+		<item>標清</item>
+		<item>高清</item>
+	</string-array>
+</resources>

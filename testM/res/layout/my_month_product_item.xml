@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <!-- 图片 -->
+    <com.lectek.android.binding.widget.BAsyncImageView
+        android:id="@+id/book_cover_iv"
+        android:layout_width="@dimen/common_cover_width"
+        android:layout_height="@dimen/common_cover_height"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dip"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/book_default"
+        binding:defaultImgRes="@drawable/book_default"
+        binding:imageUrl="bCoverPath" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/book_cover_iv"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <!-- 包月专区 -->
+        <TextView
+            android:id="@+id/book_name_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/book_cover_iv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="book name"
+            android:textColor="@color/black"
+            android:textSize="18dip"
+            binding:text="bMonthProName" />
+
+        <!-- 状态 -->
+        <TextView
+            android:id="@+id/author_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book_name_tv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dip"
+            android:layout_toRightOf="@id/book_cover_iv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="author name"
+            android:textColor="@color/black"
+            android:textSize="16dip"
+            binding:text="bStatus" />
+        
+        <!-- 描述 -->
+        <TextView
+            android:id="@+id/author_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book_name_tv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dip"
+            android:layout_toRightOf="@id/book_cover_iv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="author name"
+            android:textColor="@color/black"
+            android:textSize="16dip"
+            binding:text="bDescription" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

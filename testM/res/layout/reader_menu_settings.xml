@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1" >
+    
+    <TableRow
+        android:gravity="center_vertical"
+		android:paddingTop="20dip"
+		android:paddingLeft="24dip"        
+         >
+
+        <TextView
+            android:id="@+id/menu_settings_anim_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/reader_menu_title_anim_type"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_common_num5" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <CheckedTextView
+                android:layout_marginLeft="23dip"
+                android:id="@+id/menu_settings_anim_type_flip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_settings_btn_selector"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:gravity="center"
+                android:clickable="true"
+                android:textSize="12dip"
+                android:text="@string/reader_menu_anim_type_zzfz" />
+
+            <CheckedTextView
+                android:layout_marginLeft="16dip"
+                android:id="@+id/menu_settings_anim_type_translation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_settings_btn_selector"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:gravity="center"
+                android:clickable="true"
+                android:textSize="12dip"
+                android:text="@string/reader_menu_anim_type_spgd" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </TableRow>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="24dip"
+        android:paddingTop="16dip"
+        android:gravity="center_vertical"
+         >
+    
+        <TextView
+            android:id="@+id/menu_settings_font_size_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/reader_menu_more_auto_start"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_common_num5" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="23dip"
+                android:layout_height="0dip" />
+
+            <com.lectek.android.widget.MenuToggleButton
+                android:id="@+id/menu_settings_anim_auto_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:textOff="@string/tab_item_close"
+                android:textOn="@string/tab_item_open"
+                android:textSize="@dimen/font_toggle_btn_text_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableRow
+        android:gravity="center_vertical"
+        android:paddingLeft="24dip"
+        android:paddingTop="16dip"
+         >
+
+        <TextView
+            android:id="@+id/menu_settings_font_size_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/reader_menu_title_font"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_common_num5" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_marginLeft="23dip"
+                android:id="@+id/menu_settings_font_size_cut_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_settings_btn_selector"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:src="@drawable/menu_settings_font_size_cut_selector" />
+
+            <ImageButton
+                android:layout_marginLeft="16dip"
+                android:id="@+id/menu_settings_font_size_add_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:background="@drawable/menu_settings_btn_selector"
+                android:src="@drawable/menu_settings_font_size_add_selector" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:gravity="center_vertical"
+        android:paddingLeft="24dip"
+        android:paddingTop="16dip" >
+
+        <TextView
+            android:id="@+id/menu_settings_line_spacing_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/reader_menu_title_line_spacing"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_common_num5" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <CheckedTextView
+                android:layout_marginLeft="23dip"
+                android:id="@+id/menu_settings_line_spacing_but_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_line_spacing_background1"
+                android:clickable="true" />
+
+            <CheckedTextView
+                android:layout_marginLeft="53dp"
+                android:id="@+id/menu_settings_line_spacing_but_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_line_spacing_background2"
+                android:clickable="true" />
+
+            <CheckedTextView
+                android:layout_marginLeft="53dp"
+                android:id="@+id/menu_settings_line_spacing_but_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_line_spacing_background3"
+                android:clickable="true" />
+
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:gravity="center_vertical"
+        android:paddingLeft="24dip"
+        android:paddingTop="16dip"
+        android:paddingBottom="12dip"
+         >
+
+        <TextView
+            android:id="@+id/menu_settings_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/reader_menu_title_bg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_common_num5" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingRight="30dip"
+             >
+
+            <GridView
+                android:layout_marginLeft="21dip"
+                android:id="@+id/menu_settings_bg_gv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/transparent"
+                android:gravity="center_vertical"
+                android:listSelector="@drawable/list_selector_background"
+                android:numColumns="5"
+                android:stretchMode="columnWidth" />
+        </LinearLayout>
+    </TableRow>
+
+    <!--
+    <TableRow
+		android:gravity="center_vertical"
+		android:padding="10dip">
+		<TextView
+			android:id="@+id/menu_settings_anim_type_tv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip"
+			android:gravity="right"
+			android:text="@string/reader_menu_title_anim_type"
+			android:textColor="@color/white"
+			android:textSize="@dimen/font_dialog_text" />
+		<LinearLayout
+			android:layout_weight="1"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+			<View
+				android:layout_width="0dip"
+				android:layout_height="0dip"
+				android:layout_weight="1" />
+			<CheckedTextView
+				android:id="@+id/menu_settings_anim_type_simulation_but"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:clickable="true"
+				style="@style/menu_button"
+				android:text="@string/reader_menu_anim_type_zzfz" />
+			<View
+				android:layout_width="0dip"
+				android:layout_height="0dip"
+				android:layout_weight="1" />
+			<CheckedTextView
+				android:id="@+id/menu_settings_anim_type_roll_but"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:clickable="true"
+				style="@style/menu_button"
+				android:text="@string/reader_menu_anim_type_spgd" />
+			<View
+				android:layout_width="0dip"
+				android:layout_height="0dip"
+				android:layout_weight="1" />
+		</LinearLayout>
+	</TableRow>
+
+    -->
+
+
+    <!--
+    <TableRow
+        android:gravity="center_vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/menu_settings_anim_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="right"
+            android:text="@string/reader_menu_title_anim_type"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_dialog_text" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+            <com.lectek.android.widget.ReaderToggleButton
+                android:id="@+id/menu_settings_anim_type_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:textOff="@string/reader_menu_anim_type_spgd"
+                android:textOn="@string/reader_menu_anim_type_zzfz"
+                android:textSize="@dimen/font_toggle_btn_text_size" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/menu_settings_auto_anim_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/reader_menu_more_auto_start"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_dialog_text" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+            <com.lectek.android.widget.ReaderToggleButton
+                android:id="@+id/menu_settings_anim_auto_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:textOff="@string/tab_item_close"
+                android:textOn="@string/tab_item_open"
+                android:textSize="@dimen/font_toggle_btn_text_size" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </TableRow>
+
+    -->
+
+</TableLayout>

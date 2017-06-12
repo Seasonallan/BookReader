@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="5dip" >
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="10dip"
+		android:text="@string/reader_menu_item_line_spacing_tip"
+		android:textColor="@color/common_white_2"
+		android:textSize="@dimen/font_common_num4" />
+	<RadioGroup
+		android:id="@+id/menu_settings_line_spacing_rg"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dip"
+		android:background="@drawable/menu_icon_but_background"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:padding="3dip" >
+		<RadioButton
+			android:id="@+id/menu_settings_line_spacing_but_1"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/menu_radio_bg_selector"
+			android:button="@null"
+			android:gravity="center"
+			android:padding="5dip"
+			android:text="@string/reader_menu_item_line_spacing_type1_tip"
+			android:textColor="@drawable/menu_radio_color_selector" />
+		<RadioButton
+			android:id="@+id/menu_settings_line_spacing_but_2"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/menu_radio_bg_selector"
+			android:button="@null"
+			android:gravity="center"
+			android:padding="5dip"
+			android:text="@string/reader_menu_item_line_spacing_type2_tip"
+			android:textColor="@drawable/menu_radio_color_selector" />
+		<RadioButton
+			android:id="@+id/menu_settings_line_spacing_but_3"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/menu_radio_bg_selector"
+			android:button="@null"
+			android:gravity="center"
+			android:padding="5dip"
+			android:text="@string/reader_menu_item_line_spacing_type3_tip"
+			android:textColor="@drawable/menu_radio_color_selector" />
+	</RadioGroup>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:padding="10dip" >
+		<TextView
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/reader_menu_item_font_size_tip"
+			android:textColor="@color/common_white_2"
+			android:textSize="@dimen/font_common_num4" />
+		<ImageButton
+			android:id="@+id/menu_settings_font_size_sut_but"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="15dip"
+			android:background="@drawable/btn_regist_bg"
+			android:paddingBottom="5dip"
+			android:paddingLeft="10dip"
+			android:paddingRight="10dip"
+			android:paddingTop="5dip"
+			android:scaleType="center"
+			android:src="@drawable/font_size_redu_bg" />
+		<ImageButton
+			android:id="@+id/menu_settings_font_size_add_but"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn_regist_bg"
+			android:paddingBottom="5dip"
+			android:paddingLeft="10dip"
+			android:paddingRight="10dip"
+			android:paddingTop="5dip"
+			android:scaleType="center"
+			android:src="@drawable/font_size_add_bg" />
+	</LinearLayout>
+</LinearLayout>

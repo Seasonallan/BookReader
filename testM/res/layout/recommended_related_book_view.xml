@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/book_cover_ll"
+        android:layout_width="92dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/book_shelf_item_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.lectek.android.binding.widget.BAsyncImageView
+            android:id="@+id/book_cover_iv"
+            android:layout_width="@dimen/common_cover_width"
+            android:layout_height="@dimen/common_cover_height"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            binding:defaultImgRes="@drawable/book_default"
+            binding:imageUrl="bRecommendedCoverUrl" />
+    </LinearLayout>
+
+    <!-- 书名 -->
+
+    <TextView
+        android:id="@+id/book_name_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/book_cover_ll"
+        android:layout_alignRight="@id/book_cover_ll"
+        android:layout_below="@id/book_cover_ll"
+        android:layout_marginTop="5dip"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/item_text"
+        android:textSize="@dimen/font_common_num5"
+        binding:text="bRecommendedBookName"/>
+
+</RelativeLayout>

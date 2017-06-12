@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@color/window_bg">
+		    <com.lectek.android.widget.TimeLimitWebView
+				android:id="@+id/login_wv"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:background="@color/window_bg" android:visibility="gone" />
+		    
+		    <LinearLayout android:id="@+id/ty_pay_tip"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginLeft="10dip"
+		        android:layout_marginRight="10dip"
+		        android:layout_marginTop="15dip"
+		        android:layout_marginBottom="10dip"
+		        android:visibility="gone"
+				android:background="@drawable/border_single_bg" android:orientation="vertical" >
+				<LinearLayout 
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal">
+				    <ImageView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center_vertical"
+			            android:background="@drawable/tip_icon"
+			            />
+				    <TextView 
+				        android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center_vertical"
+			            android:text="@string/fanlly_remind"
+			            android:textSize="@dimen/font_common_num4"
+			            android:textColor="#E4874C"/>
+				</LinearLayout>
+				<TextView 
+				        android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center_vertical"
+			            android:text="@string/tianyi_buy_remind"
+			            android:textSize="@dimen/font_common_num4"
+			            android:textColor="#787878"
+			            />
+			</LinearLayout>
+		</LinearLayout>
+</ScrollView>	    
+<!-- 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/window_bg" android:orientation="vertical" >
+	
+	<com.lectek.android.widget.TimeLimitWebView
+		android:id="@+id/login_wv"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@color/window_bg" android:visibility="gone" />
+	
+	<ImageView android:id="@+id/web_err_tip_iv"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@color/window_bg" android:scaleType="center"
+		android:src="@drawable/web_error_404" android:visibility="gone" />
+</RelativeLayout> -->

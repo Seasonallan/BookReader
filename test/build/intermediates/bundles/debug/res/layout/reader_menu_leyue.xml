@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/reader_menu_lay"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<include
+		android:id="@+id/menu_header_layout"
+		android:layout_alignParentTop="true"
+		layout="@layout/menu_header_leyue" />
+	<com.lectek.lereader.core.text.test.CheckedGridView
+		android:id="@+id/reader_menu_gv"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="@drawable/menu_foot_background"
+		android:cacheColorHint="@color/transparent"
+		android:gravity="center"
+		android:listSelector="@drawable/list_selector_background"
+		android:numColumns="4"
+		android:stretchMode="columnWidth" />
+	<FrameLayout
+		android:id="@+id/menu_child_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@id/reader_menu_gv"
+		android:background="@drawable/menu_child_background" />
+	<RelativeLayout
+		android:id="@+id/transparent_view"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_above="@id/menu_child_layout"
+		android:layout_below="@id/menu_header_layout" />
+	<include
+		android:id="@+id/menu_reader_voice_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/menu_header_layout"
+		android:layout_marginTop="-6dip"
+		layout="@layout/menu_reader_voice"
+		android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.lectek.android.widget.CheckedRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/menu_item_background"
+	android:paddingBottom="12dip"
+	android:paddingTop="12dip" >
+	<CheckedTextView
+		android:id="@+id/menu_icon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true" />
+	<TextView
+		android:id="@+id/menu_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/menu_icon"
+		android:layout_centerHorizontal="true"
+		android:ellipsize="end"
+		android:singleLine="true"
+		android:textColor="@color/common_white_2"
+		android:textSize="@dimen/font_common_num6" />
+</com.lectek.android.widget.CheckedRelativeLayout>

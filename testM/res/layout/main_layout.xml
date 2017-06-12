@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lectek.android.binding.widget.BViewPagerTabHost 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:binding="http://www.gueei.com/android-binding/"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	binding:offscreenPageLimit="1" binding:pagerTabHostAdapter="bViewPagerTabHostAdapter" 
+	android:id="@+id/main_view_pager">
+	
+	<RelativeLayout
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		 >
+		<FrameLayout 
+			android:id="@+id/custom_title"
+			android:layout_width="fill_parent" android:layout_height="45dip"
+			android:background="#000" android:layout_alignParentTop="true"
+			android:gravity="center_vertical" android:orientation="horizontal"
+			android:visibility="gone"
+			/>
+		<RelativeLayout android:id="@+id/tab_title"
+			android:layout_width="fill_parent" android:layout_height="45dip"
+			android:background="@color/common_16" android:layout_below="@id/custom_title"
+			android:gravity="center_vertical" android:orientation="horizontal" 
+			binding:visibility="bShelfLBtnVisible" 
+			>
+			
+			<com.lectek.android.widget.SlideTabWidget
+				android:id="@android:id/tabs"
+				android:layout_width="wrap_content" android:layout_height="match_parent"
+				android:gravity="center" android:orientation="horizontal"
+				android:visibility="gone"
+				/>
+			
+			<TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/title_book_shelf"
+			    android:textColor="@color/white"
+			    android:textSize="20sp"
+			    android:layout_centerInParent="true"
+			    />
+			
+			
+			<RelativeLayout
+			    android:id="@+id/fl_menu"
+			    android:layout_width="50dp"
+			    android:layout_height="50dp"
+			    binding:onClick="bLeftButClick"
+			    >
+
+			    <ImageView
+			        android:layout_width="50dp"
+			        android:layout_height="50dp"
+			        android:src="@drawable/icon_gerenzhongxin"
+			        android:padding="10dp"
+			        />
+			    
+			    <ImageView
+			        android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:background="@drawable/red_point"
+			    	android:layout_gravity="right|top"
+			    	android:layout_marginRight="12dp"
+			    	android:layout_marginTop="10dp"
+			    	binding:visibility="bIsUnLoginPointVisibility"
+			    	android:layout_alignParentRight="true"
+			    	android:layout_alignParentTop="true"
+			    	/>
+			    
+			</RelativeLayout>
+			
+			<ImageView 
+			    android:id="@+id/iv_shelf_more"
+			    android:layout_toRightOf="@id/fl_menu"
+			    android:layout_width="50dp" android:layout_height="wrap_content"
+				android:src="@drawable/icon_gengduo"
+				android:paddingTop="10dp"
+				android:paddingBottom="10dp"
+				android:paddingRight="20dp"
+				binding:onClick="bImportButClick" binding:visibility="bShelfLImportBtnVisible"
+			    />
+			
+			<ImageView
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/icon_shucheng"
+		        android:padding="10dp"
+		        android:layout_alignParentRight="true"
+		        binding:onClick="bShelfRightButClick"
+		        />
+			
+			
+		</RelativeLayout>
+		
+		<FrameLayout android:id="@android:id/tabcontent"
+			android:layout_width="match_parent" android:layout_height="match_parent"
+			android:layout_below="@id/tab_title"/>
+		
+		<View android:id="@+id/header_bottom_line_add" 
+		    android:layout_width="wrap_content" android:layout_height="wrap_content"
+		    android:layout_below="@id/tab_title"  />
+		
+	</RelativeLayout>
+	
+	<RelativeLayout android:id="@+id/help_lay"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:clickable="true" android:background="#7B000000"
+		binding:visibility="bLayoutTipVisible" binding:onClick="bhelplayoutCommand"
+		android:visibility="gone"
+		>
+		<!-- 个人中心提示 -->
+		<ImageView 
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+			android:src="@drawable/icon_personal_center_tip" android:layout_marginTop="@dimen/c_margin_top"
+			binding:visibility="bPersonalTipVisible"/>
+		<!-- 书架提示 -->
+		<ImageView 
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+			android:src="@drawable/icon_book_shelf_opr_tip" android:layout_marginBottom="@dimen/c_margin_bottom"
+			binding:visibility="bBookShelfTipVisible"/>
+		<!-- 搜索提示 -->
+		<ImageView 
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+			android:src="@drawable/icon_search_tip" android:layout_marginTop="@dimen/c_margin_top"
+			binding:visibility="bSearchTipVisible"/>
+		<!-- 书城提示 -->
+		<ImageView 
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+			android:layout_centerHorizontal="true"
+			android:src="@drawable/icon_book_city_opr_tip" android:layout_marginBottom="@dimen/c_margin_bottom"
+			binding:visibility="bBookCityTipVisible"/>
+	</RelativeLayout>
+</com.lectek.android.binding.widget.BViewPagerTabHost>

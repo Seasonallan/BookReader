@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="alipayclient">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/testM/libs/alipayclient.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

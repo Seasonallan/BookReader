@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ListView
+        android:id="@+id/buy_type_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/transparent" />
+
+    <TextView
+        android:id="@+id/go_to_sso_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip"
+        android:text="@string/go_to_pay_by_sso"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/font_book_info"
+        android:visibility="gone" />
+
+    <!-- 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/readpoint_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radiobutton_readpoint_text"
+                    android:textSize="@dimen/font_common_num4"
+                    android:textColor="@color/black"
+                    android:layout_gravity="left" />
+                <TextView
+                    android:id="@+id/readpoint_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_common_num5"
+                    android:text="@string/account_convent_point" />
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/phone_fare_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_text_confirm_buy"
+                    android:textSize="@dimen/font_common_num4"
+                    android:textColor="@color/black"
+                    android:layout_gravity="left" />
+                <TextView
+                    android:id="@+id/phone_fare_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_common_num5"
+                    android:text="@string/menu_consume_fee" />
+            </LinearLayout>
+        </RadioGroup>
+        
+    </LinearLayout>
+     -->
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.lectek.android.LYReader"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector_background"
+    android:paddingBottom="10dp" >
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:id="@+id/book_info_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/line"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <com.lectek.android.binding.widget.BAsyncImageView
+            android:layout_width="@dimen/common_cover_width"
+           	android:layout_height="@dimen/common_cover_height"
+            android:scaleType="fitXY"
+            binding:defaultImgRes="@drawable/book_default"
+            binding:imageUrl="bRecommendedCoverUrl" />
+
+        <com.lectek.android.lereader.widgets.RoundProgressBar
+            android:id="@+id/roundProgressBar2"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_download"
+            android_custom:max="100"
+            android_custom:roundProgressColor="@color/common_14"
+            android_custom:roundTextSize="15dip"
+            android_custom:roundWidth="5dip"
+            android_custom:textIsDisplayable="true"
+            binding:progress="bProgress"
+            binding:visibility="bRoundProgressBarVisibility" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/book_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/book_info_cover"
+        android:singleLine="true"
+        android:text="bookname"
+        android:textColor="@color/color_414141"
+        android:textSize="@dimen/font_common_num3"
+        binding:text="bBookName" />
+
+    <TextView
+        android:id="@+id/book_author_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_title_tv"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/book_info_cover"
+        android:text="author"
+        android:textColor="@color/common_17"
+        android:textSize="@dimen/font_common_num7"
+        binding:text="bAuthorName" />
+
+    <TextView
+        android:id="@+id/book_des_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_author_tv"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/book_info_cover"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+        android:textColor="@color/common_17"
+        android:textSize="@dimen/font_common_num7"
+        binding:text="bDecContent" />
+
+    <TextView
+        android:id="@+id/free_read"
+        android:layout_width="@dimen/read_btn_width"
+        android:layout_height="@dimen/read_btn_height"
+        android:layout_below="@id/book_des_tv"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@id/book_info_cover"
+        android:background="@drawable/btn_addto_bookshelf_bg"
+        android:gravity="center"
+        binding:onClick="bFreeReadClick"
+        binding:text="bFreeReadBtn"
+        binding:textColor="bFreeReadTextColor"
+        binding:visibility="bFreeReadReadVisibility" />
+
+</RelativeLayout>

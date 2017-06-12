@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:binding="http://www.gueei.com/android-binding/"
+    android:id="@+id/login_logo_bg"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" 
+	android:background="@drawable/login_logo">
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dip"
+		android:gravity="center_horizontal"
+		android:orientation="vertical" >
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/common_7"
+			android:textSize="@dimen/font_common_num6" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/common_7"
+			android:textSize="@dimen/font_common_num6" />
+	</LinearLayout>
+	<ProgressBar
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:indeterminateOnly="false"
+		android:max="100"
+		android:maxHeight="5dip"
+		android:minHeight="5dip"
+		android:progress="0"
+		android:progressDrawable="@drawable/progress_welcome"
+		android:visibility="gone"
+		binding:max="bProgressMax"
+		binding:progress="bProgress"/>
+</LinearLayout>

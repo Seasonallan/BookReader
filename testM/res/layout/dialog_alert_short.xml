@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:id="@+id/alert_dialog_root_view">
+	<LinearLayout
+		android:id="@+id/header_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_weight="0" >
+		<TextView
+			android:id="@+id/dialog_title"
+			android:layout_width="fill_parent"
+			android:layout_height="35dip"
+			android:singleLine="true"
+			android:gravity="center"
+			android:textColor="@color/dialog_title"
+			android:textSize="@dimen/font_dialog_text" />
+		<ImageView
+			android:id="@+id/dialog_line"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/line" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/body_root_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingBottom="5dip"
+		android:layout_weight="1" >
+		<com.lectek.android.widget.UpperBoundFrameLayout
+			android:id="@+id/dialog_content"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		<ImageView
+			android:id="@+id/dialog_line_gone"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/line"
+			android:visibility="gone" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/buy_info_ll"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dip"
+		android:layout_marginTop="10dip"
+		android:orientation="vertical"
+		android:layout_weight="0" >
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/footer_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:orientation="horizontal" 
+		android:layout_weight="0">
+		<Button
+			android:id="@+id/positive_btn"
+			style="@style/button_big"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dip"
+			android:paddingBottom="5dip"
+			android:paddingTop="5dip"
+			android:layout_weight="1"
+			android:layout_marginLeft="60dip"
+			android:text="@string/btn_text_download" />
+		<Button
+			android:id="@+id/negative_btn"
+			style="@style/button_normal_light_color"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip"
+			android:paddingBottom="5dip"
+			android:paddingTop="5dip"
+			android:layout_weight="1"
+			android:layout_marginRight="60dip"
+			android:text="@string/btn_text_cancel" />
+	</LinearLayout>
+	<LinearLayout 
+        android:id="@+id/go_to_sms_recharge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line"/>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dip"
+	        android:layout_marginRight="20dip"
+	        android:layout_marginTop="10dip"
+	        android:layout_marginBottom="5dip"
+	        android:orientation="horizontal">
+            <TextView 
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/account_recharge_sms_title"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arrow_left_account"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

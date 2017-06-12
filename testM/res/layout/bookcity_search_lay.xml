@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:scrollbars="none"
+    android:fadingEdge="none">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <RelativeLayout 
+		    android:id="@+id/search_btn"
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/size_50dip"
+		    android:background="@color/color_ECECEC"
+		    >
+		    <RelativeLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_marginTop="@dimen/size_8dip"
+		        android:layout_marginBottom="@dimen/size_8dip"
+		        android:layout_marginLeft="@dimen/common_padding_16"
+		        android:layout_marginRight="@dimen/common_padding_16"
+		        android:background="@drawable/bg_search"
+		        binding:onClick = "bSearchBtnClicked"
+		        >
+	            <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="@dimen/size_32dip"
+			        android:layout_centerInParent="true"
+			        android:gravity="center"
+			        android:text="@string/main_booksearch_btn"
+			        android:textSize="@dimen/font_common_num5"
+			        android:drawableLeft="@drawable/icon_search"
+			        android:textColor="@color/catalog_day_textcolor_needbuy"
+			        android:background="@drawable/bg_search"
+			        android:layout_marginLeft="@dimen/common_padding_18"
+			        android:layout_marginRight="@dimen/common_padding_18"
+			        />
+		    </RelativeLayout>
+		</RelativeLayout>
+		
+        <RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="@color/white"
+		    android:padding="@dimen/common_padding_16"
+		    >
+		    <TextView
+		        android:id="@+id/hot_search_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/hot_search_books" 
+		        android:textSize="@dimen/font_common_num3"
+		        android:textColor="@color/common_17"
+		        android:layout_alignParentTop="true"
+		        />
+		   <LinearLayout 
+		        android:id="@+id/keyword_container"
+		        android:layout_below="@id/hot_search_title"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:orientation="vertical"
+		        android:layout_marginTop="@dimen/common_padding_20"
+		        >
+		    </LinearLayout>
+		    
+		</RelativeLayout>
+    </LinearLayout>
+	
+</ScrollView>

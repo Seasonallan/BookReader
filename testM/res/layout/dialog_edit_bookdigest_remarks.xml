@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:text="@string/book_digests"
+        android:textColor="@color/dialog_title"
+        android:textSize="@dimen/font_dialog_text" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:background="@drawable/line" />
+
+    <EditText
+        android:id="@+id/digests_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="top"
+        android:lines="4"
+        android:scrollbars="vertical" />
+
+    <GridView
+        android:id="@+id/color_gv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:cacheColorHint="@color/transparent"
+        android:gravity="center"
+        android:numColumns="5"
+        android:stretchMode="columnWidth" />
+
+    <EditText
+        android:id="@+id/remarks_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:gravity="top"
+        android:hint="@string/please_add_bookdigest"
+        android:lines="4"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/remarks_save_btn"
+            style="@style/button_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="@string/btn_text_confirm" />
+
+        <Button
+            android:id="@+id/remarks_cancel_btn"
+            style="@style/button_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="@string/btn_text_cancel" />
+    </LinearLayout>
+</LinearLayout>

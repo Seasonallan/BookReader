@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <LinearLayout 
+        android:id="@+id/recharge_info_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+	    <TextView
+	        android:id="@+id/recharge_for_number"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/account_recharge_for_number"
+	        android:layout_marginTop="5dip"
+	        android:textColor="@color/dialog_content"
+	        android:textSize="@dimen/font_dialog_text" />
+	
+	    <TextView
+	        android:id="@+id/recharge_from_number"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dip"
+	        android:text="@string/account_recharge_from_number"
+	        android:textColor="@color/dialog_content"
+	        android:textSize="@dimen/font_dialog_text" />
+	
+	    <TextView
+	        android:id="@+id/recharge_readpoint_count"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dip"
+	        android:text="@string/account_recharge_readpoint_count"
+	        android:textColor="@color/dialog_content"
+	        android:textSize="@dimen/font_dialog_text" />
+	
+	    <TextView
+	        android:id="@+id/recharge_sms_price"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dip"
+	        android:text="@string/account_recharge_sms_price"
+	        android:textColor="@color/dialog_content"
+	        android:textSize="@dimen/font_dialog_text" />
+	
+	    <TextView
+	        android:id="@+id/recharge_tips"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dip"
+	        android:text="@string/account_recharge_sms_friendly_tips"
+	        android:textColor="@color/dialog_title"
+	        android:textSize="15dip" />
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:id="@+id/recharge_loading_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dip"
+        android:visibility="gone"
+        >
+		<com.lectek.android.lereader.widgets.IndeterminateProgress
+			android:id="@+id/recharge_loading_v"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal" 
+			android:paddingTop="20dip"/>
+		<TextView 
+		    android:id="@+id/recharge_loading_tip"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal" 
+			android:text="@string/loading_sms_buy_send_sms_tip"
+			android:paddingBottom="10dip"
+			android:paddingTop="10dip"/>
+	</LinearLayout>
+    
+    <TextView 
+        android:id="@+id/recharge_error_tip_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="15dip"
+        android:layout_marginTop="5dip"
+		android:layout_marginBottom="5dip"
+        android:visibility="gone"/>
+    
+    <LinearLayout
+        android:id="@+id/recharge_btn_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="20dip" >
+
+        <Button
+            android:id="@+id/dialog_comment_ok"
+            style="@style/button_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="@string/btn_text_recharge" />
+
+        <Button
+            android:id="@+id/dialog_comment_cancel"
+            style="@style/button_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="@string/btn_text_cancel" />
+    </LinearLayout>
+</LinearLayout>

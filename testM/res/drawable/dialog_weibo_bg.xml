@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/dialog_bg"/>
+    <stroke android:width="2dip" android:color="#6a8299"
+            android:dashWidth="1dip"/>
+    <padding android:left="2dip" android:top="2dip"
+            android:right="2dip" android:bottom="2dip" />
+    <corners android:radius="5dip" />
+</shape>

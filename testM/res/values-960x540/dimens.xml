@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- **********分辨率800x480********** -->
+    
+     <!-- 书籍详情 -->
+    <dimen name="book_intro_text_size">15dip</dimen>
+    <dimen name="book_intro_text_tag_size">17dip</dimen>
+</resources>

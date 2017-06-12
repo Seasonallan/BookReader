@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/subject_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+
+        <!-- 今日限免 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            binding:onClick="bGotoContentInfoView"
+            binding:visibility="bLimitFreeVisibility" >
+
+            <View
+                android:id="@+id/limit_free_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/size_30dip"
+                android:background="@drawable/line" />
+
+            <View
+                android:id="@+id/limit_free_tag"
+                android:layout_width="@dimen/recommend_redsize_width"
+                android:layout_height="@dimen/recommend_redsize_height"
+                android:layout_alignBottom="@+id/limit_free_divider_line"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:background="@color/item_head" />
+
+            <TextView
+                android:id="@+id/limit_free_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/limit_free_divider_line"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:layout_marginLeft="@dimen/size_4dip"
+                android:layout_toRightOf="@+id/limit_free_tag"
+                android:text="@string/today_limit_free"
+                android:textColor="@color/item_text"
+                android:textSize="@dimen/item_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/limit_free_divider_line"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:layout_marginLeft="@dimen/size_4dip"
+                android:layout_toRightOf="@+id/limit_free_text"
+                android:text="@string/cut_off_time"
+                android:textColor="@color/common_17"
+                android:textSize="@dimen/item_time_size" 
+                binding:text="bFreeOffTime"/>
+
+            <com.lectek.android.binding.widget.BAsyncImageView
+                android:id="@+id/limit_free_book_cover"
+                android:layout_width="@dimen/common_cover_width"
+           		android:layout_height="@dimen/common_cover_height"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/limit_free_divider_line"
+                android:layout_marginTop="@dimen/size_8dip"
+                android:layout_marginLeft="@dimen/size_8dip"
+                android:src="@drawable/book_default"
+                binding:imageUrl="bLimitFreeCoverUrl" />
+
+            <TextView
+                android:id="@+id/tv_limit_free_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/limit_free_book_cover"
+                android:layout_toRightOf="@+id/limit_free_book_cover"
+                android:layout_marginLeft="@dimen/size_16dip"
+                android:layout_marginRight="@dimen/size_8dip"
+                android:text="@string/limit_free_default_book_name"
+                android:textColor="@color/item_text"
+                android:textSize="@dimen/item_text_size"
+                binding:text="bLimitFreeTitle" />
+
+            <RatingBar
+                android:id="@+id/rb_limit_free"
+                style="@style/customSmallRatingBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_limit_free_title"
+                android:layout_toRightOf="@+id/limit_free_book_cover"
+                android:layout_marginLeft="@dimen/size_16dip"
+                android:layout_marginTop="2dp"
+                android:numStars="5"
+                android:stepSize="0.5"
+                binding:rating="bLimitFreeRatingValue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_8dip"
+                android:layout_below="@id/tv_limit_free_title"
+                android:layout_toRightOf="@id/rb_limit_free"
+                android:text="@string/account_setting_cache_size"
+                android:textColor="@color/common_17"
+                android:textSize="12dp"
+                binding:text="bLimitFreeZanNum" 
+                binding:visibility="bLimitFreeZanNumVisible"/>
+
+            <TextView
+                android:id="@+id/limit_free_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rb_limit_free"
+                android:layout_toRightOf="@+id/limit_free_book_cover"
+                android:layout_marginLeft="@dimen/size_16dip"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="@dimen/size_8dip"
+                android:text="@string/content_info_author"
+                android:textColor="@color/common_17"
+                android:textSize="12dp"
+                binding:text="bLimitFreeAuthor" />
+
+            <TextView
+                android:id="@+id/limit_free_free_to_get"
+                android:layout_width="85dp"
+                android:layout_height="32dp"
+                android:layout_alignBottom="@+id/limit_free_book_cover"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:background="@drawable/btn_addto_bookshelf_bg"
+                android:paddingRight="@dimen/size_8dip"
+                android:text="@string/free_to_get"
+                android:textColor="#ed5145"
+                android:textSize="12dp" 
+                binding:text ="bFreeGetText"
+                binding:onClick="bFreeGetClick"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/limit_free_free_to_get"
+                android:layout_below="@+id/limit_free_author"
+                android:layout_toRightOf="@+id/limit_free_book_cover"
+                android:layout_marginLeft="@dimen/size_16dip"
+                android:layout_marginRight="@dimen/size_8dip"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Hello WorldHello WorldHello WorldHello WorldHello WorldHello World"
+                android:textColor="@color/common_17"
+                android:textSize="12dp"
+                binding:text="bLimitFreeContent" />
+            
+            <View
+                android:layout_below="@id/limit_free_book_cover"
+	            android:layout_width="fill_parent"
+	            android:layout_height="10dp"
+	            android:layout_marginTop="10dp"
+	            android:background="#ECECEC" 
+	            />
+        </RelativeLayout>
+
+        <!-- 最新特价 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_8dip" 
+            binding:visibility="bSpecialViewVisibility">
+
+            <View
+                android:id="@+id/special_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/size_30dip"
+                android:background="@drawable/line" />
+
+            <TextView
+                android:id="@+id/special_tag"
+                android:layout_width="@dimen/recommend_redsize_width"
+                android:layout_height="@dimen/recommend_redsize_height"
+                android:layout_alignBottom="@+id/special_divider_line"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:background="@color/red1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/special_divider_line"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:layout_marginLeft="@dimen/size_4dip"
+                android:layout_toRightOf="@+id/special_tag"
+                android:text="@string/bookcity_latest_price"
+                android:textColor="@color/common_text"
+                android:textSize="@dimen/font_common_num3" />
+
+            <ImageView
+                android:id="@+id/newbook_more_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/special_divider_line"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:layout_marginRight="@dimen/size_8dip"
+                android:src="@drawable/recommend_more"
+                binding:onClick="bNewbookMoreClick" />
+
+            <com.lectek.android.widget.ReaderGridView
+                android:id="@+id/so_rgv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/special_divider_line"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:cacheColorHint="@color/transparent"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:paddingTop="10dip"
+                android:verticalSpacing="5dp"
+                binding:itemSource="bSpecialOfferGridViewItems"
+                binding:itemTemplate="@layout/gridview_newbook_item_layout"
+                binding:onItemClicked="bSpecialOfferGridViewItemClickedCommand" />
+            
+            <com.lectek.android.widget.ReaderGridView
+                android:id="@+id/subject_recommend1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:cacheColorHint="@color/transparent"
+                android:layout_marginTop="@dimen/size_8dip"
+                android:layout_below="@+id/so_rgv"
+                android:numColumns="2"
+                binding:itemSource="bSubjectItems1"
+                binding:onItemClicked="bSubjectItems1Click"
+                binding:itemTemplate="@layout/gridview_editorrecommend_item_layout"
+                >
+            </com.lectek.android.widget.ReaderGridView>
+        </RelativeLayout>
+
+        <!-- 免费专区 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_8dip" 
+            binding:visibility="bFreeViewVisibility">
+
+            <View
+                android:id="@+id/popular_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/size_30dip"
+                android:background="@drawable/line" />
+
+            <TextView
+                android:id="@+id/popular_tag"
+                android:layout_width="@dimen/recommend_redsize_width"
+                android:layout_height="@dimen/recommend_redsize_height"
+                android:layout_alignBottom="@+id/popular_divider_line"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:background="@color/blue1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/popular_divider_line"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:layout_marginLeft="@dimen/size_4dip"
+                android:layout_toRightOf="@+id/popular_tag"
+                android:text="@string/bookcity_free_tip"
+                android:textColor="@color/common_text"
+                android:textSize="@dimen/font_common_num3" />
+
+            <ImageView
+                android:id="@+id/alllove_more_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/popular_divider_line"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:layout_marginRight="@dimen/size_8dip"
+                android:src="@drawable/recommend_more"
+                binding:onClick="bFreeMoreClick" />
+
+            <com.lectek.android.widget.ReaderGridView
+                android:id="@+id/recommend_free_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/popular_divider_line"
+                android:layout_marginTop="@dimen/size_8dip"
+                android:cacheColorHint="@color/transparent"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:verticalSpacing="5dp"
+                binding:itemSource="bFreeGridViewItems"
+                binding:itemTemplate="@layout/gridview_newbook_item_layout"
+                binding:onItemClicked="bFreeGridViewItemClickedCommand" >
+            </com.lectek.android.widget.ReaderGridView>
+            
+             <com.lectek.android.widget.ReaderGridView
+                android:id="@+id/subject_recommend2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:cacheColorHint="@color/transparent"
+                android:layout_marginTop="@dimen/size_8dip"
+                android:layout_below="@+id/recommend_free_lv"
+                android:numColumns="2"
+                binding:itemSource="bSubjectItems2"
+                binding:onItemClicked="bSubjectItems2Click"
+                binding:itemTemplate="@layout/gridview_editorrecommend_item_layout"
+				>
+            </com.lectek.android.widget.ReaderGridView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

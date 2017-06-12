@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- **********分辨率1280x720********** -->
+    
+    <!-- 底部滑动区域 -->
+    <dimen name="a_bottom_layout_height">60dp</dimen>
+    
+    <dimen name="book_shelf_checkbox_margin_right">4dp</dimen>
+    <dimen name="book_shelf_checkbox_margin_bottom">5dp</dimen>
+     <!-- 书籍详情 -->
+    <dimen name="book_intro_text_size">15dip</dimen>
+    <dimen name="book_intro_text_tag_size">17dip</dimen>
+   
+</resources>

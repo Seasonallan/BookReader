@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.lectek.android.LYReader"
+	android:installLocation="auto"
+	android:versionCode="120"
+	android:versionName="2.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:name="com.lectek.android.lereader.application.MyAndroidApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_label"
+        android:theme="@style/leyueTheme"
+        android:hardwareAccelerated="false" >
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="lectek01" >
+        </meta-data>
+        <meta-data
+            android:name="SALE_CHANNEL"
+            android:value="chunjie1" >
+        </meta-data>
+        <!-- 乐阅CPA -->
+        <!-- <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="528ac0ee56240be0f4346d94" > -->
+        <!-- 乐阅 -->
+       <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="526221a056240b87be063898" />
+        <!-- 单本书 -->
+      <!--  <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5279dab556240b82780121be" /> -->
+        <!-- 乐阅点达渠道 -->
+        <!-- <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="52b013b056240b559103a1b8" /> -->
+        <!-- provider start -->
+        <provider
+            android:name="com.lectek.android.lereader.download.DownloadProvider"
+            android:authorities="com.lectek.android.LYReader.provider.DownloadProvider" />
+        <provider
+            android:name="com.lectek.android.lereader.storage.cprovider.DataProvider"
+            android:authorities="com.lectek.android.LYReader.provider.DataProvider" />
+        <!-- provider end -->
+        <!-- service start -->
+        <service
+            android:name="com.lectek.android.lereader.download.DownloadService"
+            android:enabled="true" >
+        </service>
+        
+        <service android:name="com.lectek.android.transfer.WebService" />
+        <!-- service end -->
+
+        <!-- activity start -->
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.WelcomeActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_label"
+            android:screenOrientation="portrait"
+            android:theme="@style/sfreader_Theme_NoTitleBar_Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.action.CREATE_SHORTCUT" />
+				<!-- //2014056 程序无法启动 暂时注释掉，wuwq
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="com.lectek.leyue.webchat" />
+				 -->
+            </intent-filter>
+            <!-- //20140507此功能暂时屏蔽，后台未开发完成 wuwq
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="com.lectek.leyue.webchat" />
+                <data android:host="com.lectek.leyue.lereader"/>
+            </intent-filter>
+             -->
+        </activity>
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.SlideActivityGroup"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.BookCityActivityGroup"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.BookCityRecommendActivity"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.BookCityClassifyActivity"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.BookCitySaleActivity"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.BookCitySearchActivity"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.BookCitySpecialOfferActivity"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.BookCityBookListActivity"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.BookCityClassifyDetailActivity"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.BookCitySubjectActivity"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.BookShelfActivity"
+            android:screenOrientation="portrait"  />
+        <!--<activity
+            android:name="com.lectek.android.lereader.ui.specific.MainActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+         <activity
+            android:name="com.lectek.android.sfreader.ui.login.UserLoginActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />-->
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.weibo.WeiboActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />-->
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.pay.ReadticketRechargeActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />-->
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.ScoreExchangeBookActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+       <!--  <activity
+            android:name="com.lectek.android.sfreader.ui.pay.PointsToReadticketActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> -->
+       <!--  <activity
+            android:name="com.lectek.android.sfreader.ui.pay.RechargeThirdPartyActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.lectek.android.lereader.ui.common.UpdateDialogActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/sfreader_Theme_Dialog" />
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.login.UserChangePwdActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" /> -->
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.weibo.WeiboAccountManage"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />-->
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.weibo.RenrenLoginActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />-->
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.weibo.ShareActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/sfreader_Theme_Share_Dialog"
+            android:windowSoftInputMode="stateHidden|adjustPan" />-->
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.weibo.SinaWeiboActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/sfreader_Theme_Dialog" /> -->
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.weibo.WeiboEngineActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />-->
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.login.ShowEditUserInfoActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.lectek.android.lereader.ui.pay.UseSSOHelpActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.common.CommWebView"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.weibo.SpecialShareActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />-->
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.login.RegisterByCellActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/sfreader_Theme_Translucent_NoTitleBar" />-->
+        <activity
+            android:name="com.lectek.android.lereader.ui.pay.RechargeSmsActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.pay.ReadPointRechargeActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.lectek.android.sfreader.ui.pay.OverReadPointActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.login.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.UserInfoActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.MyOrderActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.specific.MyMonthProductActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />-->
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.specific.ContentInfoActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.PointManageActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.pay.AlipayRechargeActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.pay.PointRechargeActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.com.chinatelecom.account.lib.ct.DownloadApkActivity"
+            android:excludeFromRecents="true" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.SearchListActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:theme="@style/search_activity_theme"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.SubjectDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.BookListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+       <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.specific.MonthlyPaymentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />-->
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.specific.MonthlyPaymentDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />-->
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.CatalogListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.umeng.fb.ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <!-- <activity
+            android:name="com.lectek.android.sfreader.ui.login_leyue.UserLoginActivityLeYue"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait" />  -->
+        <!-- 新版改造乐阅登录界面 -->
+        <activity
+            android:name="com.lectek.android.lereader.ui.login_leyue.UserLoginLeYueNewActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.login_leyue.UserRegistActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.login_leyue.ThirdPartyLoginActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait" />
+        <activity
+        	android:name="com.lectek.android.lereader.ui.specific.BookCommentActivity"
+        	android:configChanges="keyboardHidden|orientation|locale"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait" />
+        <activity
+        	android:name="com.lectek.android.lereader.ui.specific.BookCommentDetailActivity"
+        	android:configChanges="keyboardHidden|orientation|locale"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait" />
+        <activity
+        	android:name="com.lectek.android.lereader.ui.specific.ReplyCommentActivity"
+        	android:configChanges="keyboardHidden|orientation|locale"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.importlocal.ImportLocalActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.lectek.android.lereader.ui.wifiTransfer.WifiTransferActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.ShareDialogActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparent_activity" />
+           <!-- adjustPan 显示会把titleBar给顶掉 -->
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.ContentInfoActivityLeyue"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+             <intent-filter>
+                <action android:name="com.lectek.android.LYReader.book" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           <!-- Support zxing://scan/?... like iPhone app -->
+		     <intent-filter>
+		       <action android:name="android.intent.action.VIEW"/>
+		       <category android:name="android.intent.category.DEFAULT"/>
+		       <category android:name="android.intent.category.BROWSABLE"/>
+			   <data android:scheme="leyue" />
+		     </intent-filter> 
+		     <intent-filter>
+		       <action android:name="android.intent.action.VIEW"/>
+		       <category android:name="android.intent.category.DEFAULT"/>
+		       <category android:name="android.intent.category.BROWSABLE"/>
+			   <data android:scheme="http" android:host="220.160.111.214" android:port="28082"/>
+		     </intent-filter> 
+		     <intent-filter>
+		       <action android:name="android.intent.action.VIEW"/>
+		       <category android:name="android.intent.category.DEFAULT"/>
+		       <category android:name="android.intent.category.BROWSABLE"/>
+			   <data android:scheme="http" android:host="115.29.171.102" android:port="8081"/>
+		     </intent-filter> 
+<!-- 		       <data android:scheme="leyue" android:host="book" android:path="/123*"/> -->
+        </activity>
+        <activity
+            android:name="com.lectek.android.lereader.ui.person.PersonInfoNickNameActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.EditUserPasswordActivity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+			android:name="com.lectek.android.update.UpdateActivity"
+			android:configChanges="keyboardHidden|orientation|locale"
+			android:screenOrientation="portrait"
+			android:theme="@style/commonDialog" >
+		</activity>
+        <activity
+			android:name="com.lectek.android.lereader.ui.basereader_leyue.BaseReaderActivityLeyue"
+			android:configChanges="keyboardHidden|orientation|locale"
+			android:windowSoftInputMode="adjustPan|stateHidden"
+            android:launchMode="singleTask"
+			android:screenOrientation="portrait">
+		</activity>
+        <activity
+			android:name="com.lectek.android.lereader.ui.specific.ThirdUrlActivity"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustPan" >
+		</activity>
+        <activity
+			android:name="com.lectek.android.lereader.ui.specific.GuiderActivity"
+			android:screenOrientation="portrait"
+			android:configChanges="keyboardHidden|orientation|locale"
+			android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+			android:name="com.lectek.android.lereader.ui.specific.ScoreRuleActivity"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.MyMessagesActivity"
+            android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.BookCommentActivity1"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.person.PersonInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.person.PersonInfoEmailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.person.PersonInfoPhoneNumActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.person.PersonInfoBirthdayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.person.PersonInfoSexActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.VisitorEditUserPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.BookCatalogListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+			android:name="com.lectek.android.lereader.ui.common.AppWidgetSplashActivity"
+			android:allowTaskReparenting="true"
+			android:configChanges="keyboardHidden|orientation|locale"
+			android:excludeFromRecents="true"
+			android:screenOrientation="portrait"
+			android:taskAffinity="com.lectek.android.sfreader.AppWidgetSplashActivity"
+			android:theme="@style/sfreader_Theme_Translucent_NoTitleBar_Fullscreen" />
+		<activity
+           android:name=".wxapi.WXEntryActivity"
+           android:screenOrientation="portrait"
+           android:exported="true" 
+           android:launchMode="singleTop"
+           android:theme="@android:style/Theme.NoDisplay"/> 
+          <!-- android:exported="true"  这个属性 不写，会出现短暂黑屏-->
+		<activity
+           android:name=".yxapi.YXEntryActivity"
+           android:screenOrientation="portrait"
+           android:exported="true" 
+           android:launchMode="singleTop"
+           android:excludeFromRecents="true"
+           android:theme="@android:style/Theme.NoDisplay"/> 
+          <!-- android:exported="true"  这个属性 不写，会出现短暂黑屏-->
+          
+       <!-- ###################注册UMENG SDK使用的Activity###################### -->
+        <!--分享编辑页-->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity android:name="com.tencent.tauth.AuthActivity" 
+            android:launchMode="singleTask"
+            android:noHistory="true">
+		     <intent-filter>
+		         <action android:name="android.intent.action.VIEW" />
+		         <category android:name="android.intent.category.DEFAULT" />
+		         <category android:name="android.intent.category.BROWSABLE" />
+		         <data android:scheme="tencent100391295" /> 
+		     </intent-filter>
+        </activity>
+        
+        <activity android:name="com.tencent.plus.ImageActivity" />
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.MyDigestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.MyDigestInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.CollectBookActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.PublishCommentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.FeedBackNewActivity"
+            android:screenOrientation="portrait"
+            />
+        
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.UserSettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" 
+            android:theme="@style/leyueTheme"
+            />
+        
+        <activity
+            android:name="com.lectek.android.lereader.ui.specific.CoverActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/cover_activity_theme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        
+        <activity
+            android:name="com.lectek.android.lereader.ui.person.SelectPicPopupWindow"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" 
+            android:theme="@style/MyDialogStyleBottom"
+            />
+        
+        <activity
+            android:name="com.lectek.android.lereader.ui.person.SelectSexActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" 
+            android:theme="@style/MyDialogStyleBottom"
+            />
+        
+        <activity
+            android:name="com.lectek.android.lereader.ui.person.PersonInfoSignatureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" 
+            />
+		
+        <!-- activity end -->
+
+
+        <!-- 腾讯信鸽  push服务广播 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v2" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- APP实现的Receiver，用于接收消息和结果反馈 -->
+        <receiver android:name=".CustomPushReceiver" >
+            <intent-filter>
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- push服务 -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushService"
+            android:exported="true"
+            android:process=":xg_service_v2" />
+        <!-- 请修改为APP的AccessId -->
+
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100025417" />
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="A9D3YK4S59ZV" />
+
+    </application>
+
+    <!-- uses-permission start -->
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 移动mm支付 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+
+	<uses-permission android:name="android.permission.BIND_APPWIDGET" />
+	<uses-permission android:name="android.permission.READ_LOGS" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<!-- ###################声明 UMENG SDK使用的相关权限###################### -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />     <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />      <!-- 获取用户手机的IMEI，用来唯一的标识用户。 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.INTERNET" />              <!-- 允许应用程序联网，以便向我们的服务器端发送数据。 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />  <!-- 用于评论模块分享位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /><!-- 用于评论模块分享位置信息 -->
+    <!-- uses-permission end -->
+	<!-- 友盟消息推送特有权限 -->
+	<permission android:name="org.agoo.android.permission.MESSAGE" />
+	<uses-permission android:name="org.agoo.android.permission.MESSAGE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+</manifest>

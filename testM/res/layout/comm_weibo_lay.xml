@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/window_bg">
+	<com.lectek.android.widget.TimeLimitWebView
+		android:id="@+id/login_wv"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@color/window_bg"
+		android:visibility="gone" />
+	<ImageView
+		android:id="@+id/web_err_tip_iv"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@color/window_bg"
+		android:scaleType="center"
+		android:src="@drawable/web_error_404"
+		android:visibility="gone" />
+</FrameLayout>

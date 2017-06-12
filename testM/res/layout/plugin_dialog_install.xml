@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="20dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip" >
+
+    <TextView 
+        android:id="@+id/plugin_textview_des"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="@dimen/font_common_num4"
+  		android:textColor="@color/common_6"
+  		android:gravity="center_horizontal"
+  		android:text="@string/book_label_goto_position"
+        />
+    
+    
+    <ImageView 
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/person_line"
+        />
+    
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+       android:id="@+id/plugin_progress_percent"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       />
+	     
+    
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="fill_parent" android:layout_height="fill_parent" >
+        
+        <android.support.v4.view.ViewPager android:id="@+id/guidePages"
+            android:layout_width="fill_parent" android:layout_height="fill_parent" />
+	
+		<RelativeLayout 
+		    android:layout_height="fill_parent" android:layout_width="wrap_content">
+	        <LinearLayout android:id="@+id/viewGroup"
+	            android:gravity="center_horizontal" android:layout_marginBottom="20dip"
+	            android:layout_width="fill_parent" android:layout_height="wrap_content"
+	            android:orientation="horizontal" android:layout_alignParentBottom="true">
+	        </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

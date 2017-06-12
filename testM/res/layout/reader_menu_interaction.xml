@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+    
+    <LinearLayout 
+        android:id="@+id/interaction_remind_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        
+        <TextView
+	        android:id="@+id/interaction_remind"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:paddingBottom="10dip"
+	        android:paddingTop="10dip"
+	        android:text="@string/reader_menu_title_remind_update"
+	        android:singleLine="true"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/font_menu_interaction" />
+        
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:background="@drawable/menu_divider"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/interaction_comment_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        
+        <TextView
+	        android:id="@+id/interaction_comment"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:paddingBottom="10dip"
+	        android:paddingTop="10dip"
+	        android:text="@string/reader_menu_title_comment"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/font_menu_interaction" />
+        
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:background="@drawable/menu_divider"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/interaction_share_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        
+        <TextView
+	        android:id="@+id/interaction_share"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:paddingBottom="10dip"
+	        android:paddingTop="10dip"
+	        android:text="@string/reader_menu_title_share"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/font_menu_interaction" />
+        
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:background="@drawable/menu_divider"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/interaction_gift_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        
+        <TextView
+	        android:id="@+id/interaction_gift"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:paddingBottom="10dip"
+	        android:paddingTop="10dip"
+	        android:text="@string/reader_menu_title_gift"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/font_menu_interaction" />
+        
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:background="@drawable/menu_divider"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            />
+        
+    </LinearLayout>
+
+</LinearLayout>

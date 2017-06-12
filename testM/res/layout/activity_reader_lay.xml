@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tonlin="http://schemas.android.com/apk/res/com.lectek.android.LYReader"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+	<!-- 此处surfaceView 用来避免初始化videoView的时候黑屏闪烁问题 -->
+    <SurfaceView
+        android:layout_height="0dp"
+        android:layout_width="0dp" />
+    <com.lectek.android.lereader.widgets.PullRefreshLayout
+        android:id="@+id/pull_container"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/book_mark_refresh_bg"
+        tonlin:actionViewId="@+id/action_view" tonlin:toolViewId="@+id/tool_view"
+        android:scrollbars="vertical" android:descendantFocusability="blocksDescendants">
+
+        <include
+            android:id="@+id/action_view"
+            layout="@layout/book_mark_refresh_layout" />
+
+        <include
+            android:id="@+id/tool_view"
+            layout="@layout/tool_layout" />
+        <FrameLayout
+            android:id="@+id/read_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/book_second_cover"/>
+    </com.lectek.android.lereader.widgets.PullRefreshLayout>
+	<RelativeLayout
+		android:id="@+id/content_lay" 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="gone" />
+	<RelativeLayout
+		android:id="@+id/help_lay"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:clickable="true" 
+		android:background="#7B000000"
+		android:visibility="gone">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:src="@drawable/ic_next_page_tip" />
+	</RelativeLayout>
+</RelativeLayout>

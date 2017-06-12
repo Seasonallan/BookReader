@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/line"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="17dp" >
+
+    <com.lectek.android.binding.widget.BAsyncImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        binding:defaultImgRes="@drawable/icon_head_default"
+        binding:imageUrl="bUserIconUrl"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="17dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="24dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:textColor="@color/common_14"
+                android:textSize="@dimen/font_common_num3"
+                binding:text="bUserNameText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:text="03-07 18:00"
+                android:textColor="@color/common_17"
+                android:textSize="@dimen/font_common_num5"
+                binding:text="bTimeText" />
+        </RelativeLayout>
+
+        <RatingBar
+            style="@style/customSmallRatingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="0.5"
+            android:visibility="visible"           
+            binding:rating="bRatingItemValue" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_common_num3"
+            binding:text="bCommentText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15sp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                binding:src="bZanSrc"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icon_zan_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/common_17"
+                android:textSize="14sp"
+                binding:text="bSupportCountText" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icon_pinlun" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textColor="@color/common_17"
+                android:textSize="14sp"
+                binding:text="bReplyCountText" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

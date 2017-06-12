@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lectek.android.widget.CheckedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector"
+	android:orientation="horizontal">
+	<View
+	    android:id="@+id/header"
+	    android:layout_width="3dp"
+	    android:layout_height="fill_parent"
+	    android:layout_marginBottom="5dp"
+	    android:background="@drawable/transparent" />
+	<CheckedTextView
+		android:id="@+id/catalog_title_tv"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:singleLine="true"
+		android:ellipsize="end"
+		android:gravity="center_vertical"
+		android:minHeight="35dip"
+		android:paddingLeft="10dip"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:textColor="@color/catalog_item_title_checkable_bg"
+		android:textSize="@dimen/font_common_num1" />
+	<TextView
+		android:id="@+id/catalog_title_index_tv"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:singleLine="true"
+		android:gravity="center_vertical"
+		android:paddingLeft="10dip"
+		android:paddingRight="4dip"
+		android:textColor="#414141"
+		android:textSize="@dimen/font_common_num4" />
+	<ImageView
+	    android:id="@+id/catalog_pay_iv"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/lock"
+	    android:visibility="invisible"
+	    android:layout_gravity="center_vertical" />
+</com.lectek.android.widget.CheckedLinearLayout>

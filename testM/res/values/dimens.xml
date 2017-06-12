@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 统一视觉规范字体大小,请严格遵照！！-->
+    <dimen name="font_common_num0">20dip</dimen>
+    <dimen name="font_common_num1">18dip</dimen>
+    <dimen name="font_common_num2">17dip</dimen>
+    <dimen name="font_common_num3">16dip</dimen>
+    <dimen name="font_common_num4">15dip</dimen>
+    <dimen name="font_common_num5">14dip</dimen>
+    <dimen name="font_common_num6">13dip</dimen>
+    <dimen name="font_common_num7">12dip</dimen>
+	
+	<!-- 特殊大小-->
+	<!-- 内容列表Item 文本tagA,tagB,tagC上间距 -->
+	<dimen name="common_content_list_item_tagAB_top">14dp</dimen>
+	<dimen name="common_content_list_item_tagC_top">8dp</dimen>
+	
+	<!-- 内容列表内间距 -->
+	<dimen name="common_content_list_padding">20dp</dimen>
+	<!-- 图片的宽和高 -->
+    <dimen name="common_cover_width">88dip</dimen>
+    <dimen name="common_cover_height">116dip</dimen>
+    
+    <dimen name="common_cover_tip_width">20dip</dimen>
+    <dimen name="common_cover_tip_height">20dip</dimen>
+
+    <dimen name="common_cover_height_bg">128dip</dimen>
+    <dimen name="common_name_width">92dip</dimen>
+
+    <dimen name="common_bg_width">100dip</dimen>
+    <dimen name="common_bg_height">130dip</dimen>
+
+    <dimen name="common_bg_width_file">90dip</dimen>
+    <dimen name="common_bg_height_file">118dip</dimen>
+<!--    <dimen name="common_cover_width">85dip</dimen>
+    <dimen name="common_cover_height">131dip</dimen>-->
+    <dimen name="common_muti_cover_width">-22dip</dimen>
+    <dimen name="common_cover_small_width">80dip</dimen>
+    <dimen name="common_cover_small_height">108dip</dimen>
+    <!-- 默认封面上显示的书名字体大小 -->
+    <dimen name="book_shelf_cover_font_size">11dip</dimen>
+    <dimen name="dialog_item_padding">15dip</dimen>
+    <dimen name="dialog_width">300dip</dimen>
+    <dimen name="color_picker_dialog_center_x">200px</dimen>
+    <dimen name="color_picker_dialog_center_y">200px</dimen>
+    <dimen name="color_picker_dialog_center_radius">32px</dimen>
+    
+    <dimen name="content_info_margin_left">17dip</dimen>
+    <dimen name="content_info_margin_right">17dip</dimen>
+	
+	<!-- 遗留字号待替换 -->
+    <dimen name="font_system_title_bar">15dip</dimen>
+    <dimen name="font_book_info">15dip</dimen>
+    <dimen name="font_dialog_text">18dip</dimen>
+    <dimen name="font_dialog_text_small">14dip</dimen>
+    <dimen name="font_dialog_title">20dip</dimen>
+    <dimen name="font_dialog_tip">18dip</dimen>
+    <dimen name="font_popup_menu">16dip</dimen>
+    <dimen name="font_catalog_name">16dip</dimen>
+    <dimen name="font_menu_setting">20dip</dimen>
+    <dimen name="font_menu_title">18dip</dimen>
+    <dimen name="checkbox_font">18dip</dimen>
+    <dimen name="font_common_item_in_grid">15dip</dimen>
+    <dimen name="font_menu_text_size">14dip</dimen>
+    <dimen name="font_toggle_btn_text_size">12dip</dimen>
+    <dimen name="font_menu_interaction">15dip</dimen>
+    <dimen name="font_catalog">15dip</dimen>
+    <!-- 遗留字号待替换 -->
+   
+    <!-- 主界面适配 -->
+    
+    <!-- 书城  -->
+    <dimen name="bookcity_recommend_padding">10dp</dimen>
+    <dimen name="recommend_redsize_width">5dp</dimen>
+    <dimen name="recommend_redsize_height">17dp</dimen>
+    
+    
+    <!-- 底部分割线 -->
+    <dimen name="a_bottom_divider_line_height">20dp</dimen>
+    <!-- 顶部滑动条 -->
+    <dimen name="a_top_slide_bg_width">50dp</dimen>
+    <dimen name="a_top_slide_bg_height">3dp</dimen>
+    <dimen name="a_top_slide_bg_offset">5dp</dimen>
+    <!-- 底部滑动条 -->
+    <dimen name="a_bottom_slide_bg_radius">7dp</dimen>
+    <dimen name="a_bottom_slide_bg_width">72dp</dimen>
+    <dimen name="a_bottom_slide_bg_height">100dp</dimen>
+    <dimen name="a_bottom_slide_bg_offset">-1dp</dimen>
+    <dimen name="a_top_text_padding">5dp</dimen>
+    <!-- 底部滑动区域 -->
+    <dimen name="a_bottom_layout_height">55dp</dimen>
+    <!-- 搜索界面 -->
+    <dimen name="b_pop_window_offset_x">-5dp</dimen>
+    <dimen name="b_pop_window_offset_y">70dp</dimen>
+    
+     <!-- 书籍详情 -->
+    <dimen name="book_info_cover_bg_width">99dip</dimen>
+    <dimen name="book_info_cover_bg_height">132dip</dimen>
+    <dimen name="book_info_cover_width">95dip</dimen>
+    <dimen name="book_info_cover_height">128dip</dimen>
+    <dimen name="book_intro_text_size">14dip</dimen>
+    <dimen name="book_intro_text_tag_size">16dip</dimen>
+    <!-- 遮罩 -->
+    <dimen name="c_margin_top">20dp</dimen>
+    <dimen name="c_margin_bottom">0dp</dimen>
+    <!-- 书架界面 -->
+    <dimen name="book_shelf_checkbox_margin_right">-12dp</dimen>
+    <dimen name="book_shelf_checkbox_margin_bottom">-5dp</dimen>
+    <!-- 自定义标题 -->
+    <dimen name="customer_title_height">45dip</dimen>
+    
+    <dimen name="index_page_subject_activity_rg_height">116dip</dimen>
+    <dimen name="subject_image_height">90dip</dimen>
+    <dimen name="subject_image_width">120dip</dimen>
+    <dimen name="read_btn_width">95dip</dimen>
+    <dimen name="read_btn_height">32dip</dimen>
+    <dimen name="add_btn_width">70dip</dimen>
+    <dimen name="book_list1_cover_bg_width">110dip</dimen>
+    <dimen name="book_list1_cover_bg_height">145dip</dimen>
+    <dimen name="free_btn_width">70dip</dimen>
+
+    <dimen name="personal_account_manage_tip_text_size">16sp</dimen>
+	<dimen name="common_padding_20">20dip</dimen>
+	<dimen name="common_padding_18">18dip</dimen>
+	<dimen name="common_padding_16">16dip</dimen>
+	<dimen name="common_padding_15">15dip</dimen>
+	<dimen name="common_padding_10">10dip</dimen>
+    
+    <dimen name="personal_item_height">50dp</dimen>
+
+    <dimen name="size_n8dip">-8dip</dimen>
+    <dimen name="size_n4dip">-4dip</dimen>
+    <dimen name="size_1dip">1dip</dimen>
+    <dimen name="size_2dip">2dip</dimen>
+    <dimen name="size_4dip">4dip</dimen>
+    <dimen name="size_8dip">8dip</dimen>
+    <dimen name="size_10dip">10dip</dimen>
+    <dimen name="size_16dip">16dip</dimen>
+    <dimen name="size_18dip">18dip</dimen>
+    <dimen name="size_32dip">32dip</dimen>
+	<dimen name="size_45dip">45dip</dimen>
+    <dimen name="size_50dip">50dip</dimen>
+    <dimen name="size_40dip">40dip</dimen>
+    <dimen name="size_30dip">30dip</dimen>
+    <dimen name="size_76dip">76dip</dimen>
+    <dimen name="size_80dip">80dip</dimen>
+    <dimen name="size_128dip">128dip</dimen>
+    <dimen name="size_138dip">138dip</dimen>
+    <dimen name="size_196dip">196dip</dimen>
+      <!-- 福利 -->
+    <dimen name="item_head">8dp</dimen>
+    <dimen name="item_text_size">16dp</dimen>
+    <dimen name="item_time_size">12dp</dimen>
+    <dimen name="item_icon_width">95dp</dimen>
+    <dimen name="item_icon_height">131dp</dimen>
+    
+    <dimen name="bookcity_book_cover_width">75dip</dimen>
+    <dimen name="bookcity_book_cover_height">100dip</dimen>
+    <dimen name="menu_pop_window_item_height">40dp</dimen>
+    <dimen name="bookshelf_recent_delete_height">30dp</dimen>
+    
+    <integer name="user_icon_corner_degree">90</integer>
+    <integer name="subject_pic_corner_degree">15</integer>
+</resources>

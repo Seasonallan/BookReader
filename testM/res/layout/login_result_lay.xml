@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:padding="20dip"
+	android:orientation="vertical" >
+	<com.lectek.android.lereader.widgets.IndeterminateProgress
+		android:id="@+id/loading_progress_v"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:paddingBottom="15dip"/>
+	<TextView
+		android:id="@+id/result_tv"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingLeft="40dip"
+		android:paddingRight="40dip"
+		android:paddingBottom="15dip"
+		android:textSize="@dimen/font_dialog_tip"
+		android:text="@string/waitting_dialog_load_tip"
+		android:textColor="@color/dialog_content" />
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+		<Button
+			android:id="@+id/cancel_login_but"
+			style="@style/button_normal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/login_cancel_text"
+			android:layout_marginRight="30dip"/>
+		<Button
+			android:id="@+id/manual_login_but"
+			style="@style/button_normal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/login_manual_text"/>
+	</LinearLayout>
+</LinearLayout>

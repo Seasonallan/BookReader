@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/personal_center_bg"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout 
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                >
+                <RelativeLayout 
+                    android:layout_height="100dp"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_horizontal"
+                    binding:visibility="bShowNotLoginViewVisibility"
+                    >
+                    <ImageView 
+                        android:id="@+id/iv_qq_login"
+                        android:layout_height="40dp"
+                        android:layout_width="40dp"
+                        android:src="@drawable/icon_qq_90"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        binding:onClick="bQQLoginClick"
+                        />
+                    
+                    <ImageView 
+                        android:id="@+id/iv_xinlang_login"
+                        android:layout_toRightOf="@id/iv_qq_login"
+                        android:layout_height="40dp"
+                        android:layout_width="40dp"
+                        android:src="@drawable/icon_xinlangweibo_90"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        binding:onClick="bSinaLoginClick"
+                        />
+                    
+                    <ImageView 
+                        android:layout_toRightOf="@id/iv_xinlang_login"
+                        android:layout_height="40dp"
+                        android:layout_width="40dp"
+                        android:src="@drawable/icon_leyue_90"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        binding:onClick="bLeyueLoginClick"
+                        />
+                    
+                    <TextView 
+                        android:layout_below="@id/iv_qq_login"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/menu_not_login_tip"
+                        android:textColor="#7b7b7b"
+                        android:textSize="@dimen/font_common_num4"
+                        android:layout_marginTop="10dp"
+                        />
+                    
+                </RelativeLayout>
+
+	            <RelativeLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="80dp" 
+	                binding:visibility="bShowUserInfoVisibility"
+	                >
+	                
+	                <com.lectek.android.binding.widget.BAsyncImageView 
+	                    android:id="@+id/iv_head"
+	                    android:layout_height="50dp"
+	                    android:layout_width="50dp"
+	                    android:src="@drawable/icon_zhanghao"
+	                    android:layout_centerVertical="true"
+	                    android:layout_marginLeft="30dp"
+	                    binding:onClick="bMyPersonInfoClick"
+	                    binding:imageUrl="bHeadImageUrl"
+	                    android:adjustViewBounds="true"
+	                    android:scaleType="fitXY"
+	                    binding:cornerDegree="@integer/user_icon_corner_degree"
+	                    binding:defaultImgRes="@drawable/icon_zhanghao"/>
+	                
+	                <LinearLayout 
+	                    android:layout_toRightOf="@id/iv_head"
+	                    android:layout_height="50dp"
+	                    android:layout_width="fill_parent"
+	                    android:orientation="vertical"
+	                    android:layout_centerVertical="true"
+	                    android:layout_marginLeft="20dp"
+	                    >
+	                    <TextView
+		                    android:id="@+id/user_name_tv"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="0dp"
+		                    android:gravity="center_vertical"
+		                    android:singleLine="true"
+		                    android:ellipsize="middle"
+		                    android:text="nickname"
+		                    android:textColor="@color/white"
+		                    android:textSize="21dp"
+		                    binding:text="bUserName"
+		                    android:layout_weight="1"
+		                    />
+		
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="0dp"
+		                    android:singleLine="true"
+		                    android:textColor="#7b7b7b"
+		                    android:textSize="14dp"
+		                    android:text="@string/menu_welcome_tip"
+		                    android:gravity="center_vertical"
+		                    android:layout_weight="1"
+		                    />
+	                    
+	                </LinearLayout>
+	            </RelativeLayout>
+            </FrameLayout>  
+
+            
+            <ImageView 
+                android:layout_height="2dp"
+                android:layout_width="fill_parent"
+                android:background="@drawable/bg_fengexian"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout 
+                    android:layout_height="@dimen/personal_item_height"
+                    android:layout_width="fill_parent"
+                    android:paddingLeft="30dp"
+                    binding:onClick="bMyMessageClick"
+                    binding:visibility="bShowUserInfoVisibility"
+                    >
+                    <ImageView 
+                        android:id="@+id/iv_message"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                        android:src="@drawable/icon_message_white"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        />
+                    
+                    <TextView 
+                        android:layout_toRightOf="@id/iv_message"
+                        android:layout_height="fill_parent"
+                        android:layout_width="wrap_content"
+                        android:text="@string/my_type_default"
+                        android:gravity="center_vertical|left"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+                    
+                    <ImageView 
+                        android:layout_height="2dp"
+                        android:layout_width="fill_parent"
+                        android:layout_toRightOf="@id/iv_message"
+                        android:background="@drawable/bg_fengexian"
+                        android:layout_alignParentBottom="true"
+                        />
+                    
+                    
+                    
+                </RelativeLayout>
+                
+                <RelativeLayout 
+                    android:layout_height="@dimen/personal_item_height"
+                    android:layout_width="fill_parent"
+                    android:paddingLeft="30dp"
+                    binding:onClick="bMyDigestClick"
+                    >
+                    <ImageView 
+                        android:id="@+id/iv_message"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                        android:src="@drawable/icon_biji_white"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        />
+                    
+                    <TextView 
+                        android:layout_toRightOf="@id/iv_message"
+                        android:layout_height="fill_parent"
+                        android:layout_width="wrap_content"
+                        android:text="@string/myDigests_value"
+                        android:gravity="center_vertical|left"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+                    
+                    <ImageView 
+                        android:layout_height="2dp"
+                        android:layout_width="fill_parent"
+                        android:layout_toRightOf="@id/iv_message"
+                        android:background="@drawable/bg_fengexian"
+                        android:layout_alignParentBottom="true"
+                        />
+                    
+                    
+                    
+                </RelativeLayout>
+                
+                <RelativeLayout 
+                    android:layout_height="@dimen/personal_item_height"
+                    android:layout_width="fill_parent"
+                    android:paddingLeft="30dp"
+                    binding:onClick="bMyCollectClick"
+                    >
+                    <ImageView 
+                        android:id="@+id/iv_message"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                        android:src="@drawable/icon_shoucang_white"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        />
+                    
+                    <TextView 
+                        android:layout_toRightOf="@id/iv_message"
+                        android:layout_height="fill_parent"
+                        android:layout_width="wrap_content"
+                        android:text="@string/user_info_my_collect"
+                        android:gravity="center_vertical|left"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+                    
+                    <ImageView 
+                        android:layout_height="2dp"
+                        android:layout_width="fill_parent"
+                        android:layout_toRightOf="@id/iv_message"
+                        android:background="@drawable/bg_fengexian"
+                        android:layout_alignParentBottom="true"
+                        />
+                    
+                    
+                    
+                </RelativeLayout>
+                
+                <RelativeLayout 
+                    android:layout_height="@dimen/personal_item_height"
+                    android:layout_width="fill_parent"
+                    android:paddingLeft="30dp"
+                    binding:onClick="bMyOrderClick"
+                    
+                    >
+                    <ImageView 
+                        android:id="@+id/iv_message"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                        android:src="@drawable/icon_yigou_white"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        />
+                    
+                    <TextView 
+                        android:layout_toRightOf="@id/iv_message"
+                        android:layout_height="fill_parent"
+                        android:layout_width="wrap_content"
+                        android:text="@string/menu_yigou_book"
+                        android:gravity="center_vertical|left"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+                    
+                    <ImageView 
+                        android:layout_height="2dp"
+                        android:layout_width="fill_parent"
+                        android:layout_toRightOf="@id/iv_message"
+                        android:background="@drawable/bg_fengexian"
+                        android:layout_alignParentBottom="true"
+                        />
+                    
+                    
+                    
+                </RelativeLayout>
+                
+                <RelativeLayout 
+                    android:layout_height="@dimen/personal_item_height"
+                    android:layout_width="fill_parent"
+                    android:paddingLeft="30dp"
+                    binding:onClick="bFeedbackClick"
+                    
+                    >
+                    <ImageView 
+                        android:id="@+id/iv_message"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                        android:src="@drawable/icon_yijian_white"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        />
+                    
+                    <TextView 
+                        android:layout_toRightOf="@id/iv_message"
+                        android:layout_height="fill_parent"
+                        android:layout_width="wrap_content"
+                        android:text="@string/menu_yijian_tip"
+                        android:gravity="center_vertical|left"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+                    
+                    <ImageView 
+                        android:layout_height="2dp"
+                        android:layout_width="fill_parent"
+                        android:layout_toRightOf="@id/iv_message"
+                        android:background="@drawable/bg_fengexian"
+                        android:layout_alignParentBottom="true"
+                        />
+                    
+                    
+                    
+                </RelativeLayout>
+                
+                <RelativeLayout 
+                    android:layout_height="@dimen/personal_item_height"
+                    android:layout_width="fill_parent"
+                    android:paddingLeft="30dp"
+                    binding:onClick="bUserSettingClick"
+                    
+                    >
+                    <ImageView 
+                        android:id="@+id/iv_message"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                        android:src="@drawable/icon_shezhi_white"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        />
+                    
+                    <TextView 
+                        android:layout_toRightOf="@id/iv_message"
+                        android:layout_height="fill_parent"
+                        android:layout_width="wrap_content"
+                        android:text="@string/menu_setting_tip"
+                        android:gravity="center_vertical|left"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+                    
+                    <ImageView 
+                        android:layout_height="2dp"
+                        android:layout_width="fill_parent"
+                        android:layout_toRightOf="@id/iv_message"
+                        android:background="@drawable/bg_fengexian"
+                        android:layout_alignParentBottom="true"
+                        />
+                    
+                    
+                    
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView 
+        android:layout_height="20dp"
+        android:layout_width="24dp"
+        android:src="@drawable/icon_zhiyin_white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        binding:onClick="bArrowClick"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadeScrollbars="true"
+    android:fadingEdge="none"
+    android:orientation="vertical"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbarThumbVertical="@drawable/scroll" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" >
+
+            <TextView
+                style="@style/commonPersonInfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_readticket_id" />
+
+            <EditText
+                android:id="@+id/account_readticket_id_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:digits="0123456789"
+                android:gravity="center_vertical"
+                android:hint="@string/account_readticket_hint_id"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:lines="1" />
+
+            <EditText
+                android:id="@+id/account_readticket_psw_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:digits="0123456789"
+                android:gravity="center_vertical"
+                android:hint="@string/account_readticket_hint_psw"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:lines="1" />
+
+            <Button
+                android:id="@+id/account_recharge_btn"
+                style="@style/button_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:enabled="false"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="@string/account_recharge" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/account_e_coupons_tv"
+                style="@style/commonPersonInfoText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/account_recharge_e_coupons" />
+
+            <TextView
+                android:id="@+id/empty_view"
+                style="@style/commonPersonInfoText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/account_recharge_no_e_coupons"
+                android:visibility="gone" />
+
+            <com.lectek.android.widget.ReaderGridView
+                android:id="@+id/account_readticket_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:paddingTop="10dip"
+                android:verticalSpacing="5dp" />
+
+            <include
+                android:layout_alignParentBottom="true"
+                layout="@layout/online_fast_seek_bar" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

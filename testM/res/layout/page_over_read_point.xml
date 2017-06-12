@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/window_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/over_read_point_top_bg" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="15dip"
+            android:paddingBottom="15dip"
+            android:text="@string/over_read_point_value"
+            android:textColor="@color/personal_text_color"
+            android:textSize="16dip" />
+
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/person_line" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+           	android:layout_weight="1"
+            android:padding="15dip"
+            android:gravity="center"
+            android:text="@string/over_time_value"
+            android:textColor="@color/personal_text_color"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" >
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dip"
+            android:background="@drawable/person_line" />
+
+        <ListView
+            android:id="@+id/overReadPointList"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/window_bg"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dip"
+            android:background="@drawable/person_line" />
+    </LinearLayout>
+
+</LinearLayout>

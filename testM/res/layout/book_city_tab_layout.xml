@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/bookcity_title"
+        android:layout_alignParentTop="true"
+        android:layout_height="@dimen/size_45dip"
+        layout="@layout/book_city_title_bar" />
+
+    <com.lectek.android.widget.ViewPagerTabHost
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/size_45dip"
+        android:layout_below="@id/bookcity_title" >
+
+        <com.lectek.android.widget.SlideTabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/a_bottom_layout_height"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/a_bottom_layout_height" />
+    </com.lectek.android.widget.ViewPagerTabHost>
+
+</merge>

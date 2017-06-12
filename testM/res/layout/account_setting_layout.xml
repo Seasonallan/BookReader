@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    >
+
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        >
+        <ImageView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/color_dedede"
+            android:layout_marginTop="15dp"
+            />
+        
+        <RelativeLayout 
+            android:layout_height="50dp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            >
+            <TextView 
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:text="@string/account_setting_receive_send_message"
+                android:textColor="@color/color_414141"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+            
+            <CheckBox 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        binding:checked="bReceiveMessageChecked"
+				android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/user_setting_checkbox_selector"
+                android:button="@null"
+                binding:onClick="bReceiveMessageClick"
+		        />
+            
+        </RelativeLayout>
+        
+        <ImageView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/color_dedede"
+            />
+        
+        <ImageView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/color_dedede"
+            android:layout_marginTop="15dp"
+            />
+        
+        <RelativeLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            >
+            <TextView 
+                android:id="@+id/tv_screen_tip"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:text="@string/account_setting_screen_light"
+                android:textColor="@color/color_414141"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                />
+            
+            <SeekBar
+                android:layout_toRightOf="@id/tv_screen_tip"
+		        android:id="@+id/sb_screen_light"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:max="100"
+		        android:progress="50"
+		        
+		        />
+            
+        </RelativeLayout>
+        
+        <ImageView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/color_dedede"
+            />
+        
+        <ImageView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/color_dedede"
+            android:layout_marginTop="15dp"
+            />
+        
+        <RelativeLayout 
+            android:layout_height="50dp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            binding:onClick="bBindingAccount"
+            >
+            <TextView 
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:text="@string/account_setting_binding_else_account"
+                android:textColor="@color/color_414141"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+            
+            <ImageView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/icon_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                />
+            
+        </RelativeLayout>
+        
+        <ImageView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/color_dedede"
+            />
+        
+        <ImageView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/color_dedede"
+            android:layout_marginTop="15dp"
+            />
+        
+        <RelativeLayout 
+            android:layout_height="50dp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            binding:onClick="bClearCacheClick"
+            >
+            <TextView 
+                android:id="@+id/tv_account_setting_clear_memory_tip"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:text="@string/account_setting_clear_memory"
+                android:textColor="@color/color_414141"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+            
+            <TextView 
+                android:layout_toRightOf="@id/tv_account_setting_clear_memory_tip"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                binding:text="bCacheSizeText"
+                android:textColor="@color/common_17"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                />
+            
+            
+        </RelativeLayout>
+        
+        <ImageView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/color_dedede"
+            android:layout_marginLeft="20dp"
+            />
+        
+        <RelativeLayout 
+            android:layout_height="50dp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            >
+            <TextView 
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:text="@string/account_setting_allow_wifi_download"
+                android:textColor="@color/color_414141"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+            
+            <CheckBox 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        binding:checked="bWifiDownloadChecked"
+				android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/user_setting_checkbox_selector"
+                android:button="@null"
+                binding:onClick="bWifiDownloadClick"
+		        />
+            
+        </RelativeLayout>
+        
+        <ImageView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/color_dedede"
+            />
+        
+        <ImageView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/color_dedede"
+            android:layout_marginTop="15dp"
+            />
+        
+        <RelativeLayout 
+            android:layout_height="50dp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            binding:onClick="bCommentLeyueClick"
+            >
+            <TextView 
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:text="@string/account_setting_give_score_to_leyue"
+                android:textColor="@color/color_414141"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+            
+            <ImageView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/icon_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                />
+            
+        </RelativeLayout>
+        
+        <ImageView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/color_dedede"
+            android:layout_marginLeft="20dp"
+            />
+        
+        <RelativeLayout 
+            android:layout_height="50dp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            binding:onClick="bAboutClick"
+            >
+            <TextView 
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:text="@string/account_setting_about_leyue"
+                android:textColor="@color/color_414141"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+            
+            <ImageView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/icon_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                />
+            
+        </RelativeLayout>
+        
+        <ImageView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/color_dedede"
+            />
+        
+        <ImageView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/color_dedede"
+            android:layout_marginTop="15dp"
+            />
+        
+        <RelativeLayout 
+            android:layout_height="50dp"
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            binding:onClick="bVisitorLeadClick"
+            >
+            <TextView 
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:text="@string/account_setting_visitor_lead"
+                android:textColor="@color/color_414141"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+            
+            <ImageView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/icon_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                />
+            
+        </RelativeLayout>
+        
+        <ImageView 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/color_dedede"
+            />
+        
+    </LinearLayout>
+
+</ScrollView>

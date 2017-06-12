@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        >
+		<RelativeLayout 
+		    android:id="@+id/rl_select_title"
+		    android:layout_height="40dp"
+		    android:layout_width="fill_parent"
+		    android:background="@color/gray"
+		    >
+		    <TextView 
+		        android:id="@+id/tv_cancel"
+		        android:layout_height="fill_parent"
+		        android:layout_width="wrap_content"
+		        android:text="@string/beagle_manage_upload_cancel"
+		        android:layout_marginLeft="@dimen/size_8dip"
+		        android:gravity="center"
+		        android:textSize="@dimen/font_common_num5"
+		        />
+		    <TextView 
+		        android:layout_height="fill_parent"
+		        android:layout_width="wrap_content"
+		        android:text="@string/person_info_select_sex_tip"
+		        android:gravity="center"
+		        android:textSize="@dimen/font_common_num4"
+				android:layout_centerInParent="true"
+				android:textColor="@color/white"
+				android:textStyle="bold"
+		        />
+		    
+		     <TextView 
+		         android:id="@+id/tv_save"
+		        android:layout_height="fill_parent"
+		        android:layout_width="wrap_content"
+		        android:text="@string/title_finish_sort_book_shelf"
+		        android:layout_marginLeft="@dimen/size_8dip"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="@dimen/size_8dip"
+		        android:textSize="@dimen/font_common_num5"
+		        android:gravity="center"
+		        />
+		    
+		</RelativeLayout>
+		
+		<com.lectek.android.lereader.widgets.wheel.WheelView 
+		    android:id="@+id/wv_sex"
+		    android:layout_below="@id/rl_select_title"
+		    android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:paddingTop="30dp"
+		    android:paddingBottom="30dp"
+		    android:background="#F5F5F5"
+		    />
+	</RelativeLayout>
+</RelativeLayout>

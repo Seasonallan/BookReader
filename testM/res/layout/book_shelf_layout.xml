@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lectek.android.lereader.widgets.drag.DragLayer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:id="@+id/layer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dip" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45dip"
+            layout="@layout/book_shelf_title_bar" />
+
+        <include
+            android:id="@+id/title_sort_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45dip"
+            layout="@layout/book_shelf_sort_title_bar"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <com.lectek.android.lereader.widgets.GapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/common_16" >
+
+        <ImageView
+            android:id="@+id/iconView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_launcher"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/headView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="@dimen/size_10dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_search"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_search" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/main_booksearch_btn"
+                    android:textColor="@color/common_17"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.lectek.android.lereader.widgets.GapScrollView
+            android:id="@+id/contentView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" >
+
+                <!-- 最近阅读 -->
+
+                <FrameLayout
+                    android:id="@+id/fl_recent_read"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_138dip"
+                    android:background="@color/common_16"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="@dimen/size_8dip"
+                    android:paddingRight="@dimen/size_8dip"
+                    android:paddingTop="@dimen/size_8dip">
+
+                    <!-- 无书籍提示 -->
+
+                    <TextView
+                        android:id="@+id/rl_no_data_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="@dimen/size_8dip"
+                        android:drawablePadding="@dimen/size_8dip"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="@string/bookshelf_recent_read_book"
+                        android:textSize="18dp"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal">
+
+                        <!-- 第四本 -->
+
+                        <RelativeLayout
+                            android:id="@+id/fourth_lastest_read_book"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="@dimen/size_n4dip"
+                            android:paddingLeft="@dimen/size_196dip"
+                            android:visibility="gone" >
+
+                            <com.lectek.android.widget.AsyncImageView
+                                android:id="@+id/iv_fourth_book_img"
+                                android:layout_width="@dimen/common_cover_small_width"
+                                android:layout_height="@dimen/common_cover_small_height"
+                                android:background="@drawable/book_shelf_item_bg"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/book_default" />
+
+                            <ImageView
+                                android:id="@+id/iv_fourth_book_online"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/iv_fourth_book_img"
+                                android:layout_alignTop="@+id/iv_fourth_book_img"
+                                android:background="@drawable/online_book_icon" />
+
+                            <ImageView
+                                android:id="@+id/iv_fourth_book_delete"
+                                android:layout_width="@dimen/common_cover_tip_width"
+                                android:layout_height="@dimen/common_cover_tip_height"
+                                android:layout_alignRight="@+id/iv_fourth_book_img"
+                                android:layout_alignTop="@+id/iv_fourth_book_img"
+                                android:layout_marginRight="@dimen/size_n8dip"
+                                android:layout_marginTop="@dimen/size_n8dip"
+                                android:background="@drawable/btn_recent_read_delete_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+						<!-- 第三本 -->
+
+                        <RelativeLayout
+                            android:id="@+id/third_lastest_read_book"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:layout_marginBottom="@dimen/size_n4dip"
+                            android:paddingLeft="@dimen/size_128dip"
+                            android:visibility="gone" >
+
+                            <com.lectek.android.widget.AsyncImageView
+                                android:id="@+id/iv_third_book_img"
+                                android:layout_width="@dimen/common_cover_width"
+                                android:layout_height="@dimen/common_cover_height"
+                                android:background="@drawable/book_shelf_item_bg"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/book_default" />
+
+                            <ImageView
+                                android:id="@+id/iv_third_book_online"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/iv_third_book_img"
+                                android:layout_alignTop="@+id/iv_third_book_img"
+                                android:background="@drawable/online_book_icon" />
+
+                            <ImageView
+                                android:id="@+id/iv_third_book_delete"
+                                android:layout_width="@dimen/common_cover_tip_width"
+                                android:layout_height="@dimen/common_cover_tip_height"
+                                android:layout_alignRight="@+id/iv_third_book_img"
+                                android:layout_alignTop="@+id/iv_third_book_img"
+                                android:layout_marginRight="@dimen/size_n8dip"
+                                android:layout_marginTop="@dimen/size_n8dip"
+                                android:background="@drawable/btn_recent_read_delete_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                        
+                        
+                        <!-- 第二本 -->
+
+                        <RelativeLayout
+                            android:id="@+id/second_lastest_read_book"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:layout_marginBottom="@dimen/size_n4dip"
+                            android:paddingLeft="@dimen/size_76dip"
+                            android:visibility="gone" >
+
+                            <com.lectek.android.widget.AsyncImageView
+                                android:id="@+id/iv_second_book_img"
+                                android:layout_width="@dimen/common_cover_small_width"
+                                android:layout_height="@dimen/common_cover_small_height"
+                                android:background="@drawable/book_shelf_item_bg"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/book_default" />
+
+                            <ImageView
+                                android:id="@+id/iv_second_book_online"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/iv_second_book_img"
+                                android:layout_alignTop="@+id/iv_second_book_img"
+                                android:background="@drawable/online_book_icon" />
+
+                            <ImageView
+                                android:id="@+id/iv_second_book_delete"
+                                android:layout_width="@dimen/common_cover_tip_width"
+                                android:layout_height="@dimen/common_cover_tip_height"
+                                android:layout_alignRight="@+id/iv_second_book_img"
+                                android:layout_alignTop="@+id/iv_second_book_img"
+                                android:layout_marginRight="@dimen/size_n8dip"
+                                android:layout_marginTop="@dimen/size_n8dip"
+                                android:background="@drawable/btn_recent_read_delete_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                        
+                        
+                        <!-- 第一本 -->
+
+                        <RelativeLayout
+                            android:id="@+id/first_lastest_read_book"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:layout_marginBottom="@dimen/size_n4dip"
+                            android:visibility="gone">
+
+                            <com.lectek.android.widget.AsyncImageView
+                                android:id="@+id/iv_first_book_img"
+                                android:layout_width="@dimen/common_cover_width"
+                                android:layout_height="@dimen/common_cover_height"
+                                android:background="@drawable/book_shelf_item_bg"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/book_default"/>
+
+                            <ImageView
+                                android:id="@+id/iv_first_book_online"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/iv_first_book_img"
+                                android:layout_alignTop="@+id/iv_first_book_img"
+                                android:background="@drawable/online_book_icon" />
+
+                            <ImageView
+                                android:id="@+id/iv_first_book_delete"
+                                android:layout_width="@dimen/common_cover_tip_width"
+                                android:layout_height="@dimen/common_cover_tip_height"
+                                android:layout_alignRight="@+id/iv_first_book_img"
+                                android:layout_alignTop="@+id/iv_first_book_img"
+                                android:layout_marginRight="@dimen/size_n8dip"
+                                android:layout_marginTop="@dimen/size_n8dip"
+                                android:background="@drawable/btn_recent_read_delete_bg"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                    </FrameLayout>
+                </FrameLayout>
+
+                <include
+                    android:id="@+id/broadcast_ad"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fl_recent_read"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    layout="@layout/broadcast_advertisement_layout" />
+
+                <ImageView
+                    android:id="@+id/advert_split_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/broadcast_ad"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/common_17" />
+
+                <com.lectek.android.lereader.widgets.drag.DragGridView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/book_shelf_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/advert_split_line"
+                    android:drawingCacheQuality="low"
+                    android:fadeScrollbars="true"
+                    android:fadingEdge="none"
+                    android:gravity="center"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="3"
+                    android:paddingBottom="@dimen/size_8dip"
+                    android:paddingLeft="@dimen/size_8dip"
+                    android:paddingRight="@dimen/size_8dip"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:scrollbarThumbVertical="@drawable/scroll"
+                    binding:itemSource="bItems"
+                    binding:itemTemplate="@layout/book_shelf_item_layout"
+                    binding:onItemClicked="bOnItemClickCommand"
+                    binding:onItemLongClicked="bOnItemLongClickedCommand"
+                    binding:visibility="bContentVisibility" />
+            </RelativeLayout>
+        </com.lectek.android.lereader.widgets.GapScrollView>
+    </com.lectek.android.lereader.widgets.GapView>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/title_bar"
+        android:background="@color/common_19" />
+
+</com.lectek.android.lereader.widgets.drag.DragLayer>

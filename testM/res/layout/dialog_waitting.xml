@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="10dip" >
+	<com.lectek.android.lereader.widgets.IndeterminateProgress
+		android:id="@+id/dialog_pb_fl"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true" />
+	<TextView
+		android:id="@+id/content_tv"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/dialog_pb_fl"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="20dip"
+		android:text="@string/waitting_dialog_tip"
+		android:textColor="@color/dialog_content"
+		android:textSize="@dimen/font_dialog_tip" />
+	<ImageView
+		android:id="@+id/dialog_cancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_toRightOf="@id/content_tv"
+		android:visibility="gone" />
+</RelativeLayout>

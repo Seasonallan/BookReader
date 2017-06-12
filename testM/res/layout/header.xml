@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/header_bar"
+	android:layout_width="fill_parent"
+	android:layout_height="45dip"
+	android:background="@color/common_16"
+	android:gravity="center"
+	android:orientation="horizontal" >
+	<FrameLayout
+		android:id="@+id/body_title_left_but"
+		android:layout_width="50dip"
+		android:layout_height="match_parent"
+		android:background="@drawable/title_bar_but_selector"
+		android:padding="3dip">
+		<TextView
+			android:id="@+id/body_title_left_but_tv"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:singleLine="true"
+			android:ellipsize="end"
+			android:gravity="center"
+			android:textColor="@color/white"
+			android:textSize="15dip" />
+		<ImageView 
+			android:id="@+id/body_title_left_but_iv"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="centerInside"/>
+	</FrameLayout>
+	<ImageView
+		android:id="@+id/body_title_left_line"
+		android:layout_width="1.5dip"
+		android:layout_height="match_parent"
+		android:layout_marginTop="5dip"
+		android:layout_marginBottom="5dip"
+		android:background="@drawable/line_v" />
+	<FrameLayout
+		android:id="@+id/body_title_center_lay"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1" >
+		<TextView
+			android:id="@+id/body_title"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:ellipsize="end"
+			android:gravity="center"
+			android:singleLine="true"
+			android:text="@string/app_label"
+			android:textColor="@color/white"
+			android:textSize="18dip" />
+	</FrameLayout>
+	<ImageView
+		android:id="@+id/body_title_right_line"
+		android:layout_width="1.5dip"
+		android:layout_height="match_parent"
+		android:layout_marginTop="5dip"
+		android:layout_marginBottom="5dip"
+		android:background="@drawable/line_v" />
+	<FrameLayout
+		android:id="@+id/body_title_right_but"
+		android:layout_width="50dip"
+		android:layout_height="match_parent"
+		android:background="@drawable/title_bar_but_selector"
+		android:layout_margin="3dip">
+		<TextView
+			android:id="@+id/body_title_right_but_tv"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:singleLine="true"
+			android:ellipsize="end"
+			android:gravity="center"
+			android:textColor="@color/white"
+			android:textSize="15dip" />
+		<ImageView 
+			android:id="@+id/body_title_right_but_iv"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="centerInside"/>
+	</FrameLayout>
+</LinearLayout>

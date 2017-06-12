@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:id="@+id/content_info_scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    binding:visibility="bLayoutVisible" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dip"
+                android:paddingLeft="@dimen/content_info_margin_left"
+                android:paddingRight="@dimen/content_info_margin_right"
+                android:paddingTop="10dip" >
+
+                <!-- 封面 -->
+
+                <FrameLayout
+                    android:id="@+id/book_cover_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dip" >
+
+                    <LinearLayout
+                        android:layout_width="@dimen/book_info_cover_bg_width"
+                        android:layout_height="@dimen/book_info_cover_bg_height"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/book_shelf_item_bg"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <com.lectek.android.binding.widget.BAsyncImageView
+                            android:id="@+id/book_cover"
+                            android:layout_width="@dimen/book_info_cover_width"
+                            android:layout_height="@dimen/book_info_cover_bg_height"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            binding:defaultImgRes="@drawable/book_default"
+                            binding:imageUrl="bCoverUrl" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/limit_free_icon"
+                        binding:visibility="bLimitFreeVisibility" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/limit_price_icon"
+                        binding:visibility="bLimitPriceVisibility" />
+                </FrameLayout>
+
+                <!-- 书名 -->
+
+                <TextView
+                    android:id="@+id/book_name_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:layout_toRightOf="@id/book_cover_iv"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="书名"
+                    android:textColor="@color/common_text"
+                    android:textSize="@dimen/font_common_num3"
+                    binding:text="bBookName" />
+                <!-- 作者 -->
+
+                <TextView
+                    android:id="@+id/author_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/book_name_tv"
+                    android:layout_marginTop="7dip"
+                    android:layout_toRightOf="@id/book_cover_iv"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="作者"
+                    android:textColor="@color/common_17"
+                    android:textSize="@dimen/font_common_num5"
+                    binding:text="bAuthorName" />
+                <!-- 大小 -->
+
+                <TextView
+                    android:id="@+id/size_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/author_tv"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/book_cover_iv"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="daxiao"
+                    android:textColor="@color/common_17"
+                    android:textSize="@dimen/font_common_num5"
+                    binding:text="bSize" />
+
+                <TextView
+                    android:id="@+id/surfingreader_from_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/size_tv"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/book_cover_iv"
+                    android:singleLine="true"
+                    android:text="来源"
+                    android:textColor="@color/common_6"
+                    android:textSize="@dimen/font_common_num5"
+                    android:visibility="gone"
+                    binding:text="bSrFromText"
+                    binding:visibility="bSrFromVisibility" />
+
+                <!-- 原价 -->
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/surfingreader_from_tv"
+                    android:layout_marginTop="3dip"
+                    android:layout_toRightOf="@id/book_cover_iv"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="纸书：1.5"
+                    android:textColor="@color/catalog_selected"
+                    android:textSize="@dimen/font_common_num5"
+                    binding:text="SPAN(bPrice,bPriceSpan)"
+                    binding:visibility="bPriceViewVisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/price"
+                    android:layout_below="@id/price"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    binding:visibility="bBookRatingVisibility" >
+
+                    <RatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:stepSize="0.5"
+                        binding:rating="bBookRating" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="(45)"
+                        android:textColor="@color/common_17"
+                        android:textSize="@dimen/font_common_num7" />
+                </LinearLayout>
+                <!-- 折扣 -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/discount_bg"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="5.3这"
+                    android:textColor="@color/common_2"
+                    android:textSize="@dimen/font_common_num7"
+                    binding:text="bDiscount"
+                    binding:visibility="bDiscountViewVisible" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:src="@drawable/tyyd_icon"
+                binding:visibility="bTyydVisibility" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@color/white"
+            android:paddingBottom="7dip"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <!-- 购买 -->
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_content_info_buy"
+                android:textColor="@color/catalog_selected"
+                android:textSize="@dimen/font_common_num3"
+                binding:enabled="bBuyBtnEnabled"
+                binding:onClick="bBuyClick"
+                binding:text="bBuy"
+                binding:visibility="bBuyBtnVisibility" />
+
+            <Button
+                style="@style/button_white"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:text="@string/content_info_btn_try_read"
+                binding:background="bReadBtnBackground"
+                binding:onClick="bReadClick"
+                binding:text="bReadBtn"
+                binding:textColor="bReadBtnTextColor"
+                binding:visibility="bReadBtnVisible" />
+            <!-- 下载过渡View -->
+
+            <LinearLayout
+                android:id="@+id/download_progress_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_white_bg"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                binding:visibility="bDownloadViewVisibility" >
+
+                <ProgressBar
+                    android:layout_width="19dip"
+                    android:layout_height="19dip"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/progress_medium_blue"
+                    android:indeterminateDuration="2000" />
+
+                <TextView
+                    android:id="@+id/progress_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dip"
+                    android:text="312313"
+                    android:textColor="@color/common_brown_1"
+                    android:textSize="@dimen/font_common_num3"
+                    binding:text="bProgressText" />
+            </LinearLayout>
+
+            <!-- 在线阅读 -->
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_content_info_read"
+                android:textColor="@color/item_head"
+                android:textSize="@dimen/font_common_num3"
+                binding:onClick="bOnlineReadClick"
+                binding:text="bOnlineReadBtn"
+                binding:textColor="bOnlineReadTextColor"
+                binding:visibility="bOnlineReadVisibility" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/line_divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <!-- 收藏 -->
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_shoucang"
+                android:drawablePadding="5dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:text="@string/book_favourite_action_now"
+                android:textColor="@color/book_item_name"
+                android:textSize="@dimen/font_common_num3"
+                binding:drawableLeft="bCollectBg"
+                binding:onClick="bGoCollectClick" />
+
+            <ImageView
+                android:layout_width="1.5dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/line_v" />
+            <!-- 积分 -->
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_jifen"
+                android:drawablePadding="5dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:text="@string/book_detail_marks"
+                android:textColor="@color/book_item_name"
+                android:textSize="@dimen/font_common_num3"
+                binding:onClick="bFreeExchangeBook" />
+
+            <ImageView
+                android:layout_width="1.5dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/line_v" />
+            <!-- 分享 -->
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_fenxiang"
+                android:drawablePadding="5dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="@string/reader_menu_title_share"
+                android:textColor="@color/book_item_name"
+                android:textSize="@dimen/font_common_num3"
+                binding:onClick="bGoShareClick" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/line" />
+
+        <!-- 内容简介 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/book_des_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:text="@string/content_info_desc"
+                android:textColor="@color/item_text"
+                android:textSize="@dimen/font_common_num3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="@dimen/content_info_margin_right"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                binding:onClick="bShowAllDescClick"
+                binding:visibility="bDesAllLayout" >
+
+                <com.lectek.android.widget.EllipsizingTextView
+                    android:id="@+id/ellipseTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="0dp"
+                    android:singleLine="false"
+                    android:textColor="@color/common_17"
+                    android:textSize="@dimen/font_common_num4"
+                    binding:maxLines="bContentMaxLines"
+                    binding:text="bDesc4Line" />
+
+                <TextView
+                    android:id="@+id/more_des_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:drawablePadding="3dip"
+                    android:drawableRight="@drawable/icon_zhankai"
+                    android:text="@string/tab_item_catalog_spread"
+                    android:textColor="@color/common_11" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/book_des_content_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/book_des_tv"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:textColor="@color/common_6"
+                android:textSize="@dimen/book_intro_text_size"
+                binding:onClick="bShow4LineDescClick"
+                binding:text="bDesc"
+                binding:visibility="bShowDescTv" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            binding:onClick="bAllCatalogClick" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1"
+                android:text="查看目录"
+                android:textColor="@color/common_text"
+                android:textSize="@dimen/book_intro_text_tag_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/icon_arrow_right" />
+        </LinearLayout>
+
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/line" />
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            binding:visibility="bBookTipVisiblity"
+            >
+            <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:layout_marginLeft="10dip"
+	            android:gravity="center_vertical"
+	            android:text="@string/book_detail_bookmark"
+	            android:textColor="@color/common_text"
+	            android:textSize="@dimen/font_common_num3" 
+	            />
+	
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:background="@drawable/line"
+	           />
+        </LinearLayout>
+        
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" 
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/free_exchange_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/btn_text_free_exchange_book"
+                android:textColor="@color/common_3"
+                binding:text="HIGHLIGHT_SPAN(bRechargeText,bRechargeUnderlineText,onCreateRechargeSpanList)" />
+
+            <ImageView
+                android:id="@+id/new_anim_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_toLeftOf="@id/free_exchange_tv" />
+        </RelativeLayout>
+
+        <!-- 书籍评论 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            binding:onClick="bCommentClick" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:text="@string/book_comment_title"
+                android:textColor="@color/book_item_name"
+                android:textSize="@dimen/book_intro_text_tag_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="@string/view_data_empty_tip_comment"
+                binding:visibility="bNoCommentVisibility" />
+
+            <ListView
+                android:id="@+id/comment_list_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/comment_layout"
+                android:layout_alignParentTop="true"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@drawable/person_line"
+                binding:itemSource="bItems"
+                binding:itemTemplate="@layout/book_comment_list_item_layout"
+                binding:onItemClicked="bCommentItemClick" />
+
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:padding="10dp"
+                android:background="@drawable/person_line"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/line" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            binding:onClick="bCommentClick"
+            binding:visibility="bCommentContentVisibility" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1"
+                binding:text = "bMoreCommend"
+                android:textColor="@color/common_text"
+                android:textSize="@dimen/book_intro_text_tag_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/icon_arrow_right" />
+        </LinearLayout>
+        <!-- 用户还喜欢 -->
+		<View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/line" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/recommended_related"
+            android:textColor="@color/book_item_name"
+            android:textSize="@dimen/font_common_num3"
+            binding:visibility="bRecommendedRelatedTagVisible" />
+
+        <!--
+             <GridView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:scrollbars="none"
+            binding:itemSource="bRecommendItems"
+            binding:itemTemplate="@layout/recommended_related_book_view"
+            binding:onItemClicked="bGridItemClickedCommand"
+            binding:visibility="bRecommendedRelatedTagVisible" />
+        -->
+
+        <com.lectek.android.widget.GVViewPager
+            android:id="@+id/gvvp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dip"
+            android:orientation="vertical"
+            binding:visibility="bBookDetailVisible"
+            >
+            <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:gravity="center_vertical"
+	            android:text="@string/book_detail"
+	            android:textColor="@color/common_text"
+	            android:textSize="@dimen/font_common_num3" />
+
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/line" />
+	        
+	        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xx出版社"
+                android:textColor="@color/common_17"
+                binding:text="bPublishCompany" 
+                binding:visibility="bPublishCompanyVisible"/>
+	        
+	        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000-01-01"
+                android:textColor="@color/common_17"
+                binding:text="bPublishTime" 
+                binding:visibility="bPublishTimeVisible"/>
+	        
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

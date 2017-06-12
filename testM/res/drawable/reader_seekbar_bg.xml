@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 滑动时的背景效果 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+	<!-- 背景 -->
+	<item android:id="@android:id/background" android:drawable="@drawable/bg_jindutiao_grey">
+		<!-- <shape>
+			<corners android:radius="5dip" />
+			<gradient
+				android:angle="270"
+				android:centerColor="#d4bf95"
+				android:centerY="0.75"
+				android:endColor="#d4bf95"
+				android:startColor="#d4bf95" />
+		</shape> -->
+	</item>
+	<!-- 第二进度条 -->
+	<item android:id="@android:id/secondaryProgress">
+		<clip>
+			<shape>
+				<corners android:radius="5dip" />
+				<gradient
+					android:angle="270"
+					android:centerColor="#b89673"
+					android:centerY="0.75"
+					android:endColor="#b89673"
+					android:startColor="#BB40AC7A" />
+			</shape>
+		</clip>
+	</item>
+	<!-- 第一进度条 -->
+	<item android:id="@android:id/progress">
+		<!-- <clip>
+			<shape>
+				<corners android:radius="5dip" />
+				<gradient
+					android:angle="270"
+					android:centerColor="#856343"
+					android:centerY="0.75"
+					android:endColor="#856343"
+					android:startColor="#856343" />
+			</shape>
+		</clip> -->
+    	<clip android:drawable="@drawable/bg_jindutiao"/>
+    </item>
+</layer-list>

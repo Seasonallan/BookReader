@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    
+	<TextView android:id="@+id/bottom_opt"
+	    android:layout_width="fill_parent" android:layout_height="40dp"
+	    binding:visibility="bOrderMonthViewVisible" binding:onClick="bOrderMonthClick"
+	    android:background="@drawable/monthly_order_btn_bg" android:text="@string/order"
+	    android:gravity="center" 
+	    android:textColor="@color/white" android:layout_alignParentBottom="true"/>
+	
+	<ListView android:id="@+id/listview"
+	    android:layout_above="@id/bottom_opt"
+	    android:layout_width="fill_parent" android:layout_height="match_parent"
+	    android:scrollingCache="false" android:cacheColorHint="@color/transparent"
+	    binding:onItemClicked="bItemClickedCommand" android:scrollbars="none"
+	    android:divider="@drawable/divider_horizontal_line"
+	    binding:clickedItem="ClickedItem"   
+	    binding:onScrollStateChanged="bOnScrollStateChangedCommand"
+	    binding:itemSource="STITCH(SECTION(.,@layout/monthly_detail_header_view),
+	    							ADAPTER({source=bBookItems,template=
+	    									ALT_TEMPLATE(@layout/monthly_payment_item,@layout/monthly_payment_item_deep_bg)}))"/>
+	
+		<!-- 可以不用自定义形式实现，用SECTION/ STITCH/ADAPTER结合就可以了 -->
+		 <!-- binding:itemTemplate="com.lectek.android.binding.converters.HEADER_VIEW_TEMPELATE(@layout/monthly_detail_header_view,
+	    		ALT_TEMPLATE(@layout/monthly_payment_item,@layout/monthly_payment_item_deep_bg)) -->
+</RelativeLayout>

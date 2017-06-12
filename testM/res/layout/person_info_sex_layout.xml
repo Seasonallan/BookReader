@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <!-- 购买radiobutton -->
+    <RadioGroup 
+        android:layout_marginTop="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+	    
+        <RadioButton 
+            android:id="@+id/wo_pay_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/person_info_sex_boy"
+            android:textColor="@color/common_6"
+            android:textSize="@dimen/font_common_num4"
+            android:gravity="center_vertical"
+            binding:checked="bSexBoyCheckable"
+            />
+        
+        <RadioButton 
+            android:id="@+id/alipay_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/person_info_sex_girl"
+            android:textColor="@color/common_6"
+            android:textSize="@dimen/font_common_num4"
+            android:gravity="center_vertical"
+            binding:checked="bSexGirlCheckable"
+            />
+        
+        <RadioButton 
+            android:id="@+id/reader_point_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/person_info_sex_secert"
+            android:textColor="@color/common_6"
+            android:textSize="@dimen/font_common_num4"
+            android:gravity="center_vertical"
+            binding:checked="bSexSecretCheckable"
+            />
+    </RadioGroup>
+
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border_single_bg"
+        android:clickable="true"
+        android:drawableRight="@drawable/arrow_left_account"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="@string/btn_text_modify_psw"
+        android:textColor="@color/black"
+        binding:onClick="bModifyPSWClick" />
+    -->
+
+    <Button
+        style="@style/button_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="15dip"
+        android:gravity="center"
+        android:text="@string/btn_text_save"
+        binding:onClick="bSaveClick" />
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lectek.android.lereader.widgets.GapRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tonlin="http://schemas.android.com/apk/res/com.lectek.android.LYReader"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/sale_totle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/sale_totle_tip"
+        android:textColor="@color/common_14"
+        android:textSize="@dimen/font_common_num3" />
+
+    <TextView
+        android:id="@+id/sale_best_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sale_totle_tv"
+        android:layout_toRightOf="@+id/sale_totle_tv"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/sale_best_tip"
+        android:textColor="@color/color_414141"
+        android:textSize="@dimen/font_common_num3"/>
+
+    <TextView
+        android:id="@+id/sale_newbook_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sale_best_tv"
+        android:layout_toRightOf="@+id/sale_best_tv"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/sale_newbook_tip"
+        android:textColor="@color/color_414141"
+        android:textSize="@dimen/font_common_num3"/>
+
+    <TextView
+        android:id="@+id/sale_free_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sale_newbook_tv"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/sale_newbook_tv"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/sale_free_tip"
+        android:textColor="@color/color_414141"
+        android:textSize="@dimen/font_common_num3" />
+    
+    <ImageView
+        android:id="@+id/sale_tag"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/sale_totle_tv"
+        android:background="@color/color_f2f2f2" /><!--  -->
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="wrap_content"
+        android:layout_height="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@id/sale_tag"
+        android:scaleType="matrix"
+        android:background="@color/common_14" />
+    
+    <com.lectek.android.lereader.widgets.MyViewPager
+        android:id="@+id/sale_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cursor"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" >
+        
+    </com.lectek.android.lereader.widgets.MyViewPager>
+
+</com.lectek.android.lereader.widgets.GapRelativeLayout>

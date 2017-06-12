@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:background="#D7D7D7"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/account_points_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dip"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:singleLine="true"
+            android:text="@string/my_point_detail_value"
+            android:textColor="#444444"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/account_readpoint_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dip"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:singleLine="true"
+            android:text="@string/account_readkpoint_total"
+            android:textColor="#444444"
+            android:textSize="16dip" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none"
+        android:orientation="vertical"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@drawable/scroll" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/account_points2ticket_guide_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="@string/account_points2ticket_guide"
+                android:textColor="#444444"
+                android:textSize="@dimen/font_common_num6"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/empty_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:text="@string/account_no_readticket"
+                android:textColor="#444444"
+                android:visibility="gone" />
+
+            <com.lectek.android.widget.ReaderGridView
+                android:id="@+id/account_points2ticket_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:horizontalSpacing="30dip"
+                android:listSelector="@color/transparent"
+                android:numColumns="2"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip"
+                android:verticalSpacing="15dip" />
+
+            <include
+                android:layout_alignParentBottom="true"
+                layout="@layout/online_fast_seek_bar" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

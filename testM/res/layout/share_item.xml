@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="match_parent"
+  	android:layout_height="match_parent">
+  	<!-- 图片  -->	
+  	<ImageView
+	  	android:id="@+id/share_logo"
+	  	android:layout_width="48dip"
+	  	android:layout_height="48dip"
+	  	android:layout_gravity="center"
+	  	android:scaleType="fitXY"
+	  	android:adjustViewBounds="true"
+	  	android:layout_alignParentLeft="true"
+	  	/>
+	<TextView
+		android:id="@+id/share_name"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:singleLine="true"
+		android:ellipsize="end"
+		android:layout_toRightOf="@id/share_logo"
+		android:layout_marginLeft="10dip"
+		android:textColor="@color/black"
+		android:text="share name"
+		android:layout_gravity="center"
+		/>
+</LinearLayout>

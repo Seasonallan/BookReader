@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/catalog_bg"
+	android:paddingBottom="10dip"
+	android:paddingLeft="10dip"
+	android:paddingRight="10dip"
+	android:paddingTop="10dip" >
+	<RadioGroup
+		android:id="@+id/reader_rg"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:gravity="center"
+		android:orientation="horizontal" >
+		<RadioButton
+			android:id="@+id/reader_rb_catalog"
+			style="@style/catalog_RadioButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="true"
+			android:paddingBottom="5dip"
+			android:paddingLeft="30dip"
+			android:paddingRight="30dip"
+			android:paddingTop="5dip"
+			android:text="@string/btn_text_catalog"
+			android:textColor="@color/white"
+			android:textSize="18dip" />
+		<RadioButton
+			android:id="@+id/reader_rb_bookmark"
+			style="@style/catalog_RadioButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="5dip"
+			android:paddingLeft="30dip"
+			android:paddingRight="30dip"
+			android:paddingTop="5dip"
+			android:text="@string/btn_text_bookmark"
+			android:textColor="@color/white"
+			android:textSize="18dip"
+			android:visibility="gone" />
+		<RadioButton
+			android:id="@+id/reader_rb_bookdigest"
+			style="@style/catalog_RadioButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="5dip"
+			android:paddingLeft="30dip"
+			android:paddingRight="30dip"
+			android:paddingTop="5dip"
+			android:text="@string/btn_text_bookdigest"
+			android:textColor="@color/white"
+			android:textSize="18dip"
+			android:visibility="gone" />
+	</RadioGroup>
+	<LinearLayout
+		android:id="@+id/delete_bookmark_lay"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="10dp"
+		android:layout_marginTop="10dip"
+		android:gravity="center_horizontal"
+		android:visibility="gone" >
+		<Button
+			android:id="@+id/delecte_bookmark_comfirm_btn"
+			style="@style/button_normal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dip"
+			android:paddingBottom="5dip"
+			android:paddingLeft="25dip"
+			android:paddingRight="25dip"
+			android:paddingTop="5dip"
+			android:text="@string/btn_text_delete" />
+		<Button
+			android:id="@+id/delecte_bookmark_cancel_btn"
+			style="@style/button_normal_light_color"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="40dip"
+			android:paddingBottom="5dip"
+			android:paddingLeft="25dip"
+			android:paddingRight="25dip"
+			android:paddingTop="5dip"
+			android:text="@string/btn_text_cancel" />
+	</LinearLayout>
+	<RelativeLayout
+		android:id="@+id/title_underline"
+		android:layout_width="match_parent"
+		android:layout_height="3dip"
+		android:layout_below="@id/reader_rg" >
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="3dip"
+			android:background="#20434242" />
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:orientation="horizontal" >
+			<View
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" />
+			<ImageView
+				android:id="@+id/left_underline"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/catalog_title_underline" />
+			<View
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" />
+			<ImageView
+				android:id="@+id/middle_underline"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/catalog_title_underline"
+				android:visibility="invisible" />
+			<View
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" />
+			<ImageView
+				android:id="@+id/right_underline"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/catalog_title_underline"
+				android:visibility="invisible" />
+			<View
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" />
+		</LinearLayout>
+	</RelativeLayout>
+	<LinearLayout
+		android:id="@+id/middle_content"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@id/delete_bookmark_lay"
+		android:layout_below="@id/title_underline"
+		android:orientation="vertical" >
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dip"
+			android:layout_weight="1" >
+			<ListView
+				android:id="@+id/reader_catalog_lv"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:cacheColorHint="@color/transparent"
+				android:descendantFocusability="blocksDescendants"
+				android:divider="@drawable/catalog_divider"
+				android:fastScrollEnabled="false" />
+			<ImageView
+				android:id="@+id/catalog_shadow"
+				android:layout_width="match_parent"
+				android:layout_height="3dip"
+				android:layout_alignParentBottom="true"
+				android:background="@drawable/menu_bottom_shadow" />
+			<TextView
+				android:id="@+id/seek_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true"
+				android:background="@drawable/menu_seektext_bg"
+				android:paddingBottom="10dip"
+				android:paddingLeft="20dip"
+				android:paddingRight="20dip"
+				android:singleLine="true"
+				android:textColor="@color/white"
+				android:textSize="15dip"
+				android:visibility="gone" />
+		</RelativeLayout>
+		<LinearLayout
+			android:id="@+id/catalog_seek_bar_lay"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#99000000"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:padding="5dp" >
+			<TextView
+				android:id="@+id/catalog_pre_page"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="5dip"
+				android:text="@string/pre_page"
+				android:textColor="@color/white" />
+			<RelativeLayout
+				android:id="@+id/online_seek_id"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_vertical" >
+				<!-- android:background="@drawable/tab_item_bg_hover" -->
+				<TextView
+					android:id="@+id/online_seek_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:singleLine="true"
+					android:textColor="@android:color/white"
+					android:textSize="12.0dip"
+					android:visibility="gone" />
+				<SeekBar
+					android:id="@+id/online_seek_bar"
+					style="@style/style_reader_seek"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/online_seek_text"
+					android:gravity="center" />
+			</RelativeLayout>
+			<TextView
+				android:id="@+id/catalog_next_page"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="5dip"
+				android:text="@string/next_page"
+				android:textColor="@color/white" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/prompt_text_lay"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:orientation="vertical"
+		android:visibility="gone" >
+		<TextView
+			android:id="@+id/prompt_part1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:textColor="@color/white"
+			android:textSize="16dip" />
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:orientation="horizontal" >
+			<TextView
+				android:id="@+id/prompt_part2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/white"
+				android:textSize="13dip" />
+			<ImageView
+				android:id="@+id/prompt_iv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/bookmark_icon" />
+			<TextView
+				android:id="@+id/prompt_part3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/white"
+				android:textSize="13dip" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/reader_catalog_loading_lay"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_alignBottom="@id/middle_content"
+		android:layout_alignLeft="@id/middle_content"
+		android:layout_alignRight="@id/middle_content"
+		android:layout_alignTop="@id/middle_content"
+		android:background="@color/catalog_bg"
+		android:clickable="true"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:paddingBottom="10dip"
+		android:paddingTop="10dip" >
+		<com.lectek.android.lereader.widgets.IndeterminateProgress
+			android:id="@+id/dialog_pb_fl"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<TextView
+			android:id="@+id/reader_catalog_loading_content_tv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dip"
+			android:text="@string/waitting_dialog_tip"
+			android:textColor="@color/dialog_content"
+			android:textSize="@dimen/font_dialog_tip" />
+	</LinearLayout>
+</RelativeLayout>

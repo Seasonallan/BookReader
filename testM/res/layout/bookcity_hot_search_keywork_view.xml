@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/size_30dip"
+    android:background="@drawable/bookcity_search_keyword_bg" 
+    android:textSize="@dimen/font_common_num4"
+    android:textColor="@color/common_17"
+    android:singleLine="true"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:gravity="center"
+    />
+

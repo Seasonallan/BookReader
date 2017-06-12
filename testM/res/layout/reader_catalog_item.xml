@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/catalog_item_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="@dimen/font_catalog"
+    android:gravity="center_vertical"
+    android:background="@drawable/list_selector_background"
+    android:paddingLeft="35dip"
+    android:paddingTop="12dip"
+    android:paddingBottom="12dip"
+/>

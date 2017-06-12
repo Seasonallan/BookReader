@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- **********分辨率1920x1080********** -->
+    
+    <!-- 书城  -->
+    <!-- 底部分割线 -->
+    <dimen name="a_bottom_divider_line_height">20dp</dimen>
+    <!-- 顶部滑动条 -->
+    <dimen name="a_top_slide_bg_width">45dp</dimen>
+    <dimen name="a_top_slide_bg_height">3dp</dimen>
+    <dimen name="a_top_slide_bg_offset">3dp</dimen>
+    <!-- 底部滑动条 -->
+    <dimen name="a_bottom_slide_bg_radius">7dp</dimen>
+    <dimen name="a_bottom_slide_bg_width">77dp</dimen>
+    <dimen name="a_bottom_slide_bg_height">200dp</dimen>
+    <dimen name="a_bottom_slide_bg_offset">-1dp</dimen>
+    <!-- 底部滑动区域 -->
+    <dimen name="a_bottom_layout_height">60dp</dimen>
+    
+    <!-- 搜索界面 -->
+    <dimen name="b_pop_window_offset_x">-1dp</dimen>
+    <dimen name="b_pop_window_offset_y">70dp</dimen>
+    
+     <!-- 书籍详情 -->
+    <dimen name="book_info_cover_bg_width">99dip</dimen>
+    <dimen name="book_info_cover_bg_height">132dip</dimen>
+    <dimen name="book_intro_text_size">16dip</dimen>
+    <dimen name="book_intro_text_tag_size">18dip</dimen>
+    
+    <!-- 书架界面 -->
+    <dimen name="book_shelf_checkbox_margin_right">0dp</dimen>
+    <dimen name="book_shelf_checkbox_margin_bottom">0dp</dimen>
+    
+</resources>

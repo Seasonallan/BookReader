@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/recommended_book_bg"
+    android:background="#fff" >
+    
+    <TextView
+        android:id="@+id/tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_common_num1"
+        android:textColor="@color/common_6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="已阅读到最后一页，\n精彩还在继续！" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tip_tv"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical" >
+        <!-- 相关推荐-->
+	    <TextView 
+	        android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        android:text="@string/recommended_related" android:layout_margin="10dp"
+	        binding:visibility="bRecommendedRelatedTagVisible"
+	        android:textColor="@color/book_item_name"
+	        android:textSize="@dimen/font_common_num3" />
+	    <FrameLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	    <GridView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:numColumns="3"
+	        android:scrollbars="none"
+	        binding:visibility="bRecommendedRelatedTagVisible"
+	        binding:onItemClicked="bGridItemClickedCommand"
+	        binding:itemSource="bRecommendItems"
+	        binding:itemTemplate="@layout/recommended_related_book_view" />
+	    	
+	    	<LinearLayout
+	    	    android:id="@+id/progress_view"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_gravity="center"
+	    	    binding:visibility="bRecommendedLoadVisible"
+	    	    android:orientation="vertical" >
+
+	    	    <com.lectek.android.lereader.widgets.IndeterminateProgress
+	    	        android:id="@+id/loading_v"
+	    	        android:layout_gravity="center_horizontal"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content" />
+
+	    	    <TextView
+	    	        android:id="@+id/load_tip_tv"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_gravity="center_horizontal"
+	    	        android:gravity="center"
+	    	        android:paddingBottom="5dip"
+	    	        android:paddingLeft="30dip"
+	    	        android:paddingRight="30dip"
+	    	        android:paddingTop="5dip"
+	    	        android:text="@string/waitting_dialog_load_tip"
+	    	        android:textColor="@color/dialog_content" />
+	    	</LinearLayout>
+
+	    </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

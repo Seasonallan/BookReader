@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lectek.android.binding.widget.BAsyncImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:binding="http://www.gueei.com/android-binding/"
+    android:id="@+id/subject_item_iv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/subject_image_height"
+    android:layout_centerHorizontal="true"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:adjustViewBounds="true"
+    binding:defaultImgRes="@drawable/test_subject_1" 
+    android:scaleType="fitXY"
+    binding:imageUrl="bSubjectUrl" 
+    binding:cornerDegree="@integer/subject_pic_corner_degree"
+    binding:onClick ="bSubjectClick"/>

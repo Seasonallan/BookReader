@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 书城顶部，滑动条 -->
+    <corners android:radius="1dp"/>
+	<solid android:color="#ffffffff"/>
+	<stroke android:width="1px" 
+	    android:color="#991A7A80"/>
+	<size android:width="@dimen/a_top_slide_bg_width" 
+	    android:height="@dimen/a_top_slide_bg_height"/>
+</shape>

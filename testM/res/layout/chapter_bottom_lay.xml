@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/choised_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#f00"
+        android:textSize="@dimen/font_book_info"
+        android:text="@string/reader_charpter_choised" />
+
+    <TextView
+        android:id="@+id/total_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:textColor="#f00"
+        android:textSize="@dimen/font_book_info"
+        android:text="@string/reader_charpter_total_price" />
+	</LinearLayout>
+	<TextView 
+	    android:id="@+id/go_to_sso_pay_tv"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="@color/blue"
+	    android:layout_marginTop="5dip"
+	    android:layout_marginBottom="5dip"
+	    android:visibility="gone"
+		android:text="@string/go_to_pay_by_sso"/>
+</LinearLayout>

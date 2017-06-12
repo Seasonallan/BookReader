@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp" 
+    android:orientation="vertical"
+    >
+    
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        >
+        <ImageView 
+            android:layout_height="fill_parent"
+            android:layout_width="5dp"
+            android:background="@color/red"
+            />
+        <TextView
+	        android:id="@+id/bookdigests_time_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:text="时间"
+	        android:textColor="@color/common_5"
+	        android:textSize="@dimen/font_common_num4"
+	        binding:text="bDigestTime"
+	        android:layout_marginLeft="5dp"
+	        />
+        
+    </LinearLayout>
+    
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@color/book_digest_item_digest_bg"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/bookdigests_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:singleLine="true"
+            android:text="章节"
+            android:textColor="@color/common_5"
+            android:textSize="@dimen/font_common_num2"
+            binding:text="bChapterName" 
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/bookdigests_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:text="内容"
+            android:textColor="@color/common_5"
+            android:textSize="@dimen/font_common_num4"
+            binding:text="bDigestContent" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        
+        <ImageView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/icon_biji_grey"
+            />
+        
+        <ImageView 
+            android:layout_height="fill_parent"
+            android:layout_width="1px"
+            android:background="@color/gray"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+        
+        <TextView
+            android:id="@+id/bookdigests_msg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="笔记"
+            android:textColor="@color/common_10"
+            android:textSize="@dimen/font_common_num4"
+            binding:text="bDigestMsg" />
+        
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:background="@drawable/bg_fengexian"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+</LinearLayout>

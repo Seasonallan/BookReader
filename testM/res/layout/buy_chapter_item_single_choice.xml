@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lectek.android.widget.CheckedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_vertical"
+	android:orientation="horizontal"
+	android:paddingLeft="6dip"
+	android:paddingRight="6dip" >
+	<TextView
+		android:id="@+id/checked_tip_tv"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:singleLine="true"
+		android:textColor="@color/black"
+		android:textSize="@dimen/font_book_info" />
+	<RadioButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:clickable="false"
+		android:focusable="false" />
+</com.lectek.android.widget.CheckedLinearLayout>

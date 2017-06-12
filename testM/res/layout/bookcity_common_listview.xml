@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lectek.android.lereader.widgets.PullToRefreshListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:binding="http://www.gueei.com/android-binding/"
+    	android:id="@+id/common_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:scrollingCache="false"
+        android:fadingEdge="none"
+        android:background="@color/white"
+        android:divider="@drawable/line"
+        android:scrollbars="none"
+        binding:footerSource="bFooterViewModel"
+        binding:footerTemplate="@layout/list_loading_data_layout"
+        binding:itemSource="bBookItems"
+        binding:itemTemplate="@layout/listview_second_view_item_layout"
+        binding:onItemClicked="bBookCityItemClickCommand"
+        binding:onScrollStateChanged="bOnScrollStateChangedCommand"
+        binding:visibility="bBookCityListVisibility" >
+</com.lectek.android.lereader.widgets.PullToRefreshListView>

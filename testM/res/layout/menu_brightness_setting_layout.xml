@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:padding="5dip" >
+	<!-- 阅读模式切换 -->
+	<LinearLayout 
+	    android:id="@+id/nightSetLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	 <TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingRight="5dip"
+		android:paddingLeft="5dip"
+		android:layout_gravity="center_vertical"
+		android:text="@string/reader_menu_item_night_setting_tip"
+		android:textColor="@color/common_white_2"
+		android:textSize="@dimen/font_common_num4" />
+	 <RadioGroup
+		android:id="@+id/menu_settings_night_rg"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dip"
+		android:layout_marginBottom="10dip"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="50dip"
+		android:background="@drawable/menu_icon_but_background"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:padding="3dip" >
+		<RadioButton
+			android:id="@+id/menu_settings_night_but"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/menu_radio_bg_selector"
+			android:button="@null"
+			android:gravity="center"
+			android:padding="5dip"
+			android:text="@string/reader_menu_item_night_mode_tip"
+			android:textColor="@drawable/menu_radio_color_selector" />
+		<RadioButton
+			android:id="@+id/menu_settings_bright_but"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/menu_radio_bg_selector"
+			android:button="@null"
+			android:gravity="center"
+			android:padding="5dip"
+			android:text="@string/reader_menu_item_bright_mode_tip"
+			android:textColor="@drawable/menu_radio_color_selector" />
+	</RadioGroup>
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:paddingBottom="10dip"
+		android:paddingTop="10dip"
+		android:visibility="gone">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/menu_icon_brightness_auto" />
+		<TextView
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:paddingLeft="10dip"
+			android:paddingRight="10dip"
+			android:text="@string/reader_menu_item_brightness_auto_tip"
+			android:textSize="@dimen/font_common_num5"
+			android:textColor="@color/common_white_2" />
+		<ToggleButton 
+			android:id="@+id/brightness_auto_but"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:paddingBottom="10dip"
+		android:paddingTop="10dip" >
+		<ImageView
+			android:id="@+id/brightness_off_iv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/menu_icon_brightness_off" />
+		<SeekBar
+			android:id="@+id/brightness_seek"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:max="100"
+			android:progress="50" />
+		<ImageView
+			android:id="@+id/brightness_on_iv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/menu_icon_brightness_no" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/online_seek_id"
+	android:layout_width="fill_parent"
+	android:layout_height="40.0dip"
+	android:layout_alignParentBottom="true"
+	android:background="#99000000"
+	android:gravity="center_vertical"
+	android:visibility="gone" >
+	<!-- android:background="@drawable/tab_item_bg_hover" -->
+	<TextView
+		android:id="@+id/online_seek_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="12.0dip"
+		android:gravity="right|center"
+		android:paddingRight="10.0dip"
+		android:singleLine="true"
+		android:textColor="@android:color/white"
+		android:textSize="12.0dip" />
+	<SeekBar
+		android:id="@+id/online_seek_bar"
+		style="@style/style_reader_seek"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_toLeftOf="@id/online_seek_text"
+		android:gravity="center" />
+</RelativeLayout>

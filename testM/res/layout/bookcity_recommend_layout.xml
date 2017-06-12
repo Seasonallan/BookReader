@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fadingEdge="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/recommend_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+
+        <!-- 重磅推荐 -->
+        <RelativeLayout
+            android:id="@+id/recommend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_8dip">
+
+            <View
+                android:id="@+id/recommend_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/size_30dip"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/transparent" />
+            
+            <TextView
+                android:id="@+id/recommend_tag"
+                android:layout_width="@dimen/recommend_redsize_width"
+                android:layout_height="@dimen/recommend_redsize_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@+id/recommend_divider_line"
+                android:background="@color/red1"/>
+
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/recommend_tag"
+                android:layout_marginLeft="@dimen/size_4dip"
+                android:gravity="bottom"
+                android:layout_alignBottom="@+id/recommend_divider_line"
+                android:text="@string/bookcity_heavyrecommend_tip"
+                android:textColor="@color/common_text"
+                android:textSize="@dimen/font_common_num3" />
+
+            <ImageView
+                android:id="@+id/recommend_more_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size_8dip"
+                android:layout_alignBottom="@+id/recommend_divider_line"
+                android:src="@drawable/recommend_more"
+                binding:onClick="bRecommendMoreClick" 
+                android:visibility="gone"/>
+
+            <com.lectek.android.widget.ReaderListView
+                android:id="@+id/recommend_heavy_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:cacheColorHint="@color/transparent"
+                android:layout_marginTop="@dimen/size_8dip"
+                android:layout_below="@+id/recommend_divider_line"
+                android:divider="@null"
+                binding:itemSource="bHeavyRecommendItems"
+                binding:itemTemplate="@layout/listview_heavyrecommend_item_layout"
+                binding:onItemClicked="bHeavyRecommendItemClick" >
+            </com.lectek.android.widget.ReaderListView>
+        </RelativeLayout>
+
+        <!-- 新书抢先看 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_8dip" >
+
+            <View
+                android:id="@+id/newbook_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/size_30dip"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/line" />
+            
+            <TextView
+                android:id="@+id/newbook_tag"
+                android:layout_width="@dimen/recommend_redsize_width"
+                android:layout_height="@dimen/recommend_redsize_height"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:layout_alignBottom="@+id/newbook_divider_line"
+                android:background="@color/green1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/newbook_tag"
+                android:layout_alignBottom="@+id/newbook_divider_line"
+                android:layout_marginLeft="@dimen/size_4dip"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:text="@string/bookcity_newbook_tip"
+                android:textColor="@color/common_text"
+                android:textSize="@dimen/font_common_num3" />
+
+            <ImageView
+                android:id="@+id/newbook_more_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/newbook_divider_line"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:layout_marginRight="@dimen/size_8dip"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/recommend_more"
+                binding:onClick="bNewbookMoreClick" />
+
+            <com.lectek.android.widget.ReaderGridView
+                android:id="@+id/recommend_newbook_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:cacheColorHint="@color/transparent"
+                android:layout_marginTop="@dimen/size_8dip"
+                android:layout_below="@+id/newbook_divider_line"
+                android:numColumns="3"
+                binding:itemSource="bNewBookItems"
+                binding:itemTemplate="@layout/gridview_newbook_item_layout"
+                binding:onItemClicked="bNewBookItemClick" >
+            </com.lectek.android.widget.ReaderGridView>
+            
+            <com.lectek.android.widget.ReaderGridView
+                android:id="@+id/subject_recommend1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:cacheColorHint="@color/transparent"
+                android:layout_marginTop="@dimen/size_8dip"
+                android:layout_below="@+id/recommend_newbook_lv"
+                android:numColumns="2"
+                binding:itemSource="bSubjectItems1"
+                binding:itemTemplate="@layout/gridview_editorrecommend_item_layout"
+                binding:onItemClicked="bSubjectItems1Click"/>
+            
+        </RelativeLayout>
+
+        <!-- 大家都爱看 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_8dip" >
+
+            <View
+                android:id="@+id/alllove_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/size_30dip"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/line" />
+            
+            <TextView
+                android:id="@+id/alllovebook_tag"
+                android:layout_width="@dimen/recommend_redsize_width"
+                android:layout_height="@dimen/recommend_redsize_height"
+                android:layout_alignBottom="@+id/alllove_divider_line"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:layout_alignParentLeft="true"
+                android:background="@color/blue1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/alllovebook_tag"
+                android:layout_alignBottom="@+id/alllove_divider_line"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:layout_marginLeft="@dimen/size_4dip"
+                android:text="@string/bookcity_alllovebook_tip"
+                android:textColor="@color/common_text"
+                android:textSize="@dimen/font_common_num3" />
+
+            <ImageView
+                android:id="@+id/alllove_more_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size_8dip"
+                android:layout_alignBottom="@+id/alllove_divider_line"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:src="@drawable/recommend_more"
+                binding:onClick="bAllLoveMoreClick" />
+
+            <com.lectek.android.widget.ReaderGridView
+                android:id="@+id/recommend_alllove_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/size_8dip"
+                android:layout_below="@+id/alllove_divider_line"
+                android:numColumns="3"
+                android:cacheColorHint="@color/transparent"
+                binding:itemSource="bAllLoveItems"
+                binding:itemTemplate="@layout/gridview_newbook_item_layout"
+                binding:onItemClicked="bAllLoveItemClick" >
+            </com.lectek.android.widget.ReaderGridView>
+            
+          	<com.lectek.android.widget.ReaderGridView
+                android:id="@+id/subject_recommend2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:cacheColorHint="@color/transparent"
+                android:layout_marginTop="@dimen/size_8dip"
+                android:layout_below="@+id/recommend_alllove_lv"
+                android:numColumns="2"
+                binding:itemSource="bSubjectItems2"
+                binding:onItemClicked="bSubjectItems2Click"
+                binding:itemTemplate="@layout/gridview_editorrecommend_item_layout"/>
+            
+        </RelativeLayout>
+
+        <!-- 小编精选 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_8dip" >
+
+            <View
+                android:id="@+id/editorrecommend_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/size_30dip"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/line" />
+            
+            <TextView
+                android:id="@+id/editorrecommend_tag"
+                android:layout_width="@dimen/recommend_redsize_width"
+                android:layout_height="@dimen/recommend_redsize_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@+id/editorrecommend_divider_line"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:background="@color/yellow1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/editorrecommend_tag"
+                android:layout_alignBottom="@+id/editorrecommend_divider_line"
+                android:layout_marginBottom="@dimen/size_8dip"
+                android:layout_marginLeft="@dimen/size_4dip"
+                android:text="@string/bookcity_peopleselectedbook_tip"
+                android:textColor="@color/common_text"
+                android:textSize="@dimen/font_common_num3" />
+
+            <com.lectek.android.widget.ReaderGridView
+                android:id="@+id/recommend_editor_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/size_8dip"
+                android:layout_below="@+id/editorrecommend_divider_line"
+                android:numColumns="2"
+                android:cacheColorHint="@color/transparent"
+                android:scrollbars="none"
+                binding:itemSource="bEditorRecommendItems"
+                binding:onItemClicked="bEditorRecommendItems1Click"
+                binding:itemTemplate="@layout/gridview_editorrecommend_item_layout"
+                >
+            </com.lectek.android.widget.ReaderGridView>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

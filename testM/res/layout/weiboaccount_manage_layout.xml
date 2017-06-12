@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true"
+    android:background="@color/window_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/emailRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_top_bg"
+            android:padding="5dip" >
+
+            <ImageView
+                android:id="@+id/email_icon_iv"
+                android:layout_width="25dip"
+                android:layout_height="20dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/e_mail" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/email_icon_iv"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/email_text_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/weibo_email_value"
+                    android:textColor="@color/personal_text_color"
+                    android:textSize="16dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/email_nickname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+id/imageView4"
+                android:text="@string/no_bind_value"
+                android:textColor="@color/personal_blue_text_color"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/person_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/phoneRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom_bg"
+            android:padding="5dip" >
+
+            <ImageView
+                android:id="@+id/phone_icon_iv"
+                android:layout_width="25dip"
+                android:layout_height="20dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/phone_bind_icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/phone_icon_iv"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/phone_text_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/weibo_phone_value"
+                    android:textColor="@color/personal_text_color"
+                    android:textSize="16dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/phone_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+id/phone_bind_img"
+                android:text="@string/no_bind_value"
+                android:textColor="@color/personal_blue_text_color"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/phone_bind_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/person_arrow" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/sinaRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/border_top_bg"
+            android:padding="5dip" >
+
+            <ImageView
+                android:id="@+id/sina_icon_iv"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/weibo_qq" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/sina_icon_iv"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/sina_text_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weibo_sina_text"
+                    android:textColor="@color/personal_text_color"
+                    android:textSize="16dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sina_nickname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+id/imageView1"
+                android:text="@string/no_bind_value"
+                android:textColor="@color/personal_blue_text_color"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+            <!--
+                 <Button
+                android:id="@+id/sina_bind_btn"
+                style="@style/button_normal"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/font_menu_setting" />
+            -->
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/person_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/qqRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_middle_bg"
+            android:padding="5dip" >
+
+            <ImageView
+                android:id="@+id/qq_icon_iv"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/qq_icon_iv"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/qq_text_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weibo_qq_text"
+                    android:textColor="@color/personal_text_color"
+                    android:textSize="@dimen/font_catalog_name" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/qq_nickname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+id/imageView2"
+                android:text="@string/no_bind_value"
+                android:textColor="@color/personal_blue_text_color"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/person_arrow" />
+
+            <!--
+                 <Button
+                android:id="@+id/qq_bind_btn"
+                style="@style/button_normal"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/font_menu_setting" />
+            -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/renrenRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom_bg"
+            android:padding="5dip" >
+
+            <ImageView
+                android:id="@+id/renren_icon_iv"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/renren_icon_iv"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/renren_text_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/renren_text"
+                    android:textColor="@color/personal_text_color"
+                    android:textSize="@dimen/font_catalog_name" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/renren_nickname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+id/imageView3"
+                android:text="@string/no_bind_value"
+                android:textColor="@color/personal_blue_text_color"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/person_arrow" />
+
+            <!--
+                 <Button
+                android:id="@+id/renren_bind_btn"
+                style="@style/button_normal"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/font_menu_setting" />
+            -->
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

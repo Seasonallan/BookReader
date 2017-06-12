@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    >
+    
+    <ImageView 
+        android:id="@+id/iv_collect"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/btn_collect_bg"
+        binding:onClick="bCollectonClick"
+        />
+    
+    <com.lectek.android.binding.widget.BAsyncImageView
+           android:id="@+id/iv_book_cover"
+           android:layout_width="@dimen/common_cover_width"
+           android:layout_height="@dimen/common_cover_height"
+           android:adjustViewBounds="true"
+           android:background="@drawable/book_shelf_item_bg"
+           android:scaleType="fitXY"
+           binding:defaultImgRes="@drawable/book_default"
+           binding:imageUrl="bCollectCoverUrl" />
+    
+         
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dip"
+            android:layout_toLeftOf="@id/iv_collect"
+        	android:layout_toRightOf="@id/iv_book_cover"
+            
+            >
+            <!-- 书名  -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_1"
+                android:textSize="@dimen/font_common_num2"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="bookName"
+                binding:text="bCollectTitleText" />
+            <!-- 作者 -->
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_5"
+                android:textSize="@dimen/font_common_num6"
+                android:ellipsize="end"
+                android:text="Author"
+                android:singleLine="true"
+                android:paddingTop="3dip"
+                binding:text="bCollectAuthorText" />
+               <!-- 介绍 -->
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_5"
+                android:textSize="@dimen/font_common_num6"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="Descrip"
+                android:paddingTop="3dip"
+                binding:text="bCollectDescripText"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+	
+</RelativeLayout>

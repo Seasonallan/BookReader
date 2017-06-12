@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <DatePicker 
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border_single_bg"
+        android:clickable="true"
+        android:drawableRight="@drawable/arrow_left_account"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="@string/btn_text_modify_psw"
+        android:textColor="@color/black"
+        binding:onClick="bModifyPSWClick" />
+    -->
+    
+    <Button
+        style="@style/button_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="15dip"
+        android:gravity="center"
+        android:text="@string/btn_text_save"
+        binding:onClick="bSaveClick" />
+
+</LinearLayout>

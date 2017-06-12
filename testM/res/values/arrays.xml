@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="scroll_partten">
+        <item>逐页</item>
+    </string-array>
+    <string-array name="scroll_time">
+        <item>6秒</item>
+        <item>10秒</item>
+        <item>13秒</item>
+        <item>16秒</item>
+        <item>20秒</item>
+    </string-array>
+    <string-array name="read_theme">
+        <item>白天</item>
+        <item>夜间</item>
+        <item>护眼色</item>
+        <item>牛皮纸</item>
+        <item>粉色心情</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="read_turn_page_type">
+        <item>无</item>
+        <item>左右滚动</item>
+        <item>上下滚动</item>
+        <item>纸质翻页</item>
+    </string-array>
+    <string-array name="books_catalog_type">
+        <item>全部</item>
+        <item>完本</item>
+        <item>连载</item>
+    </string-array>
+    <string-array name="font_size">
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+        <item>32</item>
+        <item>34</item>
+        <item>36</item>
+        <item>38</item>
+        <item>40</item>
+        <item>42</item>
+        <item>44</item>
+        <item>46</item>
+        <item>48</item>
+        <item>50</item>
+        <item>52</item>
+        <item>54</item>
+        <item>56</item>
+        <item>58</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="font_spacing">
+        <item>常规</item>
+        <item>1.5倍</item>
+        <item>2倍</item>
+    </string-array>
+    <string-array name="word_spacing">
+        <item>常规</item>
+        <item>常规1</item>
+        <item>常规2</item>
+    </string-array>
+    <string-array name="ranking_type">
+        <item>点击</item>
+        <item>收藏</item>
+        <item>人气</item>
+        <item>搜索</item>
+    </string-array>
+    <string-array name="ranking_hot">
+        <item>日榜</item>
+        <item>周榜</item>
+        <item>月榜</item>
+        <item>总榜</item>
+    </string-array>
+    <string-array name="themes">
+        <item>酷炫时尚</item>
+        <item>金色沙滩</item>
+        <item>蔚蓝星空</item>
+    </string-array>
+    <string-array name="pay_mode_view">
+        <item>手机话费</item>
+        <item>\u0020\u0020\u0020\u0020阅点\u0020\u0020\u0020\u0020</item>
+    </string-array>
+    <string-array name="loading_view">
+        <item>\u0020\u0020\u0020\u0020书城\u0020\u0020\u0020\u0020</item>
+        <item>\u0020\u0020\u0020\u0020书架\u0020\u0020\u0020\u0020</item>
+    </string-array>
+    <string-array name="language">
+        <item>\u0020\u0020简体\u0020\u0020</item>
+        <item>\u0020\u0020繁體\u0020\u0020</item>
+    </string-array>
+    <string-array name="voice_back">
+        <item>后台播放</item>
+        <item>退出播放</item>
+    </string-array>
+    <string-array name="anim_type">
+        <item>纸质仿真</item>
+        <item>水平滚动</item>
+    </string-array>
+    <string-array name="auto_delayed">
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>20000</item>
+        <item>25000</item>
+        <item>30000</item>
+        <item>35000</item>
+        <item>40000</item>
+        <item>45000</item>
+        <item>50000</item>
+        <item>55000</item>
+        <item>60000</item>
+    </string-array>
+    <string-array name="auto_LR_delayed">
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>20000</item>
+        <item>25000</item>
+        <item>30000</item>
+        <item>35000</item>
+        <item>40000</item>
+        <item>45000</item>
+        <item>50000</item>
+        <item>55000</item>
+        <item>60000</item>
+    </string-array>
+    <string-array name="auto_LR_delayed_str">
+        <item>5秒</item>
+        <item>10秒</item>
+        <item>15秒</item>
+        <item>20秒</item>
+        <item>25秒</item>
+        <item>30秒</item>
+        <item>35秒</item>
+        <item>40秒</item>
+        <item>45秒</item>
+        <item>50秒</item>
+        <item>55秒</item>
+        <item>60秒</item>
+    </string-array>
+    <string-array name="timed_type">
+        <item>30分</item>
+        <item>45分</item>
+        <item>60分</item>
+        <item>75分</item>
+        <item>90分</item>
+    </string-array>
+    <string-array name="sex">
+        <item>\u0020\u0020\u0020\u0020男\u0020\u0020\u0020\u0020</item>
+        <item>\u0020\u0020\u0020\u0020女\u0020\u0020\u0020\u0020</item>
+        <item>\u0020\u0020\u0020\u0020保密\u0020\u0020\u0020\u0020</item>
+    </string-array>
+    <string-array name="keyword_type">
+        <item>全部</item>
+        <item>书名</item>
+        <item>作者</item>
+        <item>关键字</item>
+    </string-array>
+    <string-array name="search_type">
+        <item>看书</item>
+        <item>听书</item>
+    </string-array>
+    <string-array name="content_type">
+        <item>书籍</item>
+        <item>漫画</item>
+        <item>杂志</item>
+        <item>连载</item>
+    </string-array>
+    <!-- 推荐内容 -->
+    <string-array name="recommended_items">
+        <item>这本书看得我废寝忘食！</item>
+        <item>自定义</item>
+        <item>超爱这本书，你也来瞧瞧！</item>
+        <item>打发时间的佳作，准没错！</item>
+        <item>抽空看看这本书，很赞！</item>
+        <item>写得特真实，想再读一遍！</item>
+        <item>一口气读完的，着迷了！</item>
+        <item>看三遍了，想再看，特推！</item>
+        <item>熬夜看完了，真当赞。</item>
+        <item>绝对适合你看，一定要读！</item>
+        <item>这本书顺气！敞亮！超好！</item>
+    </string-array>
+    <!-- 推荐软件 -->
+    <string-array name="recommended_soft_items">
+        <item>这个软件看书超好用的！</item>
+        <item>这个阅读软件做的很专业！</item>
+        <item>这里有很多图书、杂志、漫画可以看！</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="book_digests_menu_one">
+        <item>高亮</item>
+        <item>复制</item>
+        <item>笔记</item>
+        <item>分享</item>
+    </string-array>
+    <string-array name="book_digests_menu_two">
+        <item>复制</item>
+        <item>笔记</item>
+        <item>分享</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="gift_blessing_arr_str">
+        <item>一本书，一声祝福，愿您一生幸福。</item>
+        <item>祝你生活节节登高，日子越过越好！</item>
+        <item>书中自有黄金屋，祝你开心！</item>
+        <item>送你一本书，祝你生日快乐！</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="wisdom_arr_str">
+        <item>努力加载中，请稍候...</item>
+        <item>努力加载中，请稍候...</item>
+        <item>努力加载中，请稍候...</item>
+        <item>努力加载中，请稍候...</item>
+    </string-array>
+    <string-array name="grade_rule_0_0">
+        <item>等级</item>
+    </string-array>
+    <string-array name="grade_rule_0_1">
+        <item>经验值</item>
+    </string-array>
+    <string-array name="grade_rule_0_2">
+        <item>级数</item>
+    </string-array>
+    <string-array name="grade_rule_1_0">
+        <item>童生</item>
+    </string-array>
+    <string-array name="grade_rule_1_1">
+        <item>0-100</item>
+        <item>101-200</item>
+        <item>201-400</item>
+        <item>401-600</item>
+        <item>601-800</item>
+        <item>801-1000</item>
+    </string-array>
+    <string-array name="grade_rule_1_2">
+        <item>LV1</item>
+        <item>LV2</item>
+        <item>LV3</item>
+        <item>LV4</item>
+        <item>LV5</item>
+        <item>LV6</item>
+    </string-array>
+    <string-array name="grade_rule_2_0">
+        <item>秀才</item>
+    </string-array>
+    <string-array name="grade_rule_2_1">
+        <item>1001-1100</item>
+        <item>1101-1200</item>
+        <item>1201-1400</item>
+        <item>1401-1600</item>
+        <item>1601-1800</item>
+        <item>1801-2000</item>
+    </string-array>
+    <string-array name="grade_rule_2_2">
+        <item>LV1</item>
+        <item>LV2</item>
+        <item>LV3</item>
+        <item>LV4</item>
+        <item>LV5</item>
+        <item>LV6</item>
+    </string-array>
+    <string-array name="grade_rule_3_0">
+        <item>举人</item>
+    </string-array>
+    <string-array name="grade_rule_3_1">
+        <item>2001-2500</item>
+        <item>2501-3000</item>
+        <item>3001-3500</item>
+        <item>3501-4000</item>
+        <item>4001-4500</item>
+        <item>4501-5000</item>
+    </string-array>
+    <string-array name="grade_rule_3_2">
+        <item>LV1</item>
+        <item>LV2</item>
+        <item>LV3</item>
+        <item>LV4</item>
+        <item>LV5</item>
+        <item>LV6</item>
+    </string-array>
+    <string-array name="grade_rule_4_0">
+        <item>解元</item>
+    </string-array>
+    <string-array name="grade_rule_4_1">
+        <item>5001-5500</item>
+        <item>5501-6000</item>
+        <item>6001-7000</item>
+        <item>7001-8000</item>
+        <item>8001-9000</item>
+        <item>9000-10000</item>
+    </string-array>
+    <string-array name="grade_rule_4_2">
+        <item>LV1</item>
+        <item>LV2</item>
+        <item>LV3</item>
+        <item>LV4</item>
+        <item>LV5</item>
+        <item>LV6</item>
+    </string-array>
+    <string-array name="grade_rule_5_0">
+        <item>贡士</item>
+    </string-array>
+    <string-array name="grade_rule_5_1">
+        <item>10001-11000</item>
+        <item>11001-12000</item>
+        <item>12001-14000</item>
+        <item>14001-16000</item>
+        <item>16001-18000</item>
+        <item>18001-20000</item>
+    </string-array>
+    <string-array name="grade_rule_5_2">
+        <item>LV1</item>
+        <item>LV2</item>
+        <item>LV3</item>
+        <item>LV4</item>
+        <item>LV5</item>
+        <item>LV6</item>
+    </string-array>
+    <string-array name="grade_rule_6_0">
+        <item>会元</item>
+    </string-array>
+    <string-array name="grade_rule_6_1">
+        <item>20001-25000</item>
+        <item>25001-30000</item>
+        <item>30001-35000</item>
+        <item>35001-40000</item>
+        <item>40001-45000</item>
+        <item>45001-50000</item>
+    </string-array>
+    <string-array name="grade_rule_6_2">
+        <item>LV1</item>
+        <item>LV2</item>
+        <item>LV3</item>
+        <item>LV4</item>
+        <item>LV5</item>
+        <item>LV6</item>
+    </string-array>
+    <string-array name="grade_rule_7_0">
+        <item>进士</item>
+    </string-array>
+    <string-array name="grade_rule_7_1">
+        <item>50001-55000</item>
+        <item>55001-60000</item>
+        <item>60001-70000</item>
+        <item>70001-80000</item>
+        <item>80001-90000</item>
+        <item>90001-100000</item>
+    </string-array>
+    <string-array name="grade_rule_7_2">
+        <item>LV1</item>
+        <item>LV2</item>
+        <item>LV3</item>
+        <item>LV4</item>
+        <item>LV5</item>
+        <item>LV6</item>
+    </string-array>
+    <string-array name="grade_rule_8_0">
+        <item>探花</item>
+    </string-array>
+    <string-array name="grade_rule_8_1">
+        <item>100001-110000</item>
+        <item>110001-120000</item>
+        <item>120001-140000</item>
+        <item>140001-160000</item>
+        <item>160001-180000</item>
+        <item>180000-200000</item>
+    </string-array>
+    <string-array name="grade_rule_8_2">
+        <item>LV1</item>
+        <item>LV2</item>
+        <item>LV3</item>
+        <item>LV4</item>
+        <item>LV5</item>
+        <item>LV6</item>
+    </string-array>
+    <string-array name="grade_rule_9_0">
+        <item>榜眼</item>
+    </string-array>
+    <string-array name="grade_rule_9_1">
+        <item>200001-250000</item>
+        <item>250001-300000</item>
+        <item>300001-350000</item>
+        <item>350001-400000</item>
+        <item>400001-450000</item>
+        <item>450001-500000</item>
+    </string-array>
+    <string-array name="grade_rule_9_2">
+        <item>LV1</item>
+        <item>LV2</item>
+        <item>LV3</item>
+        <item>LV4</item>
+        <item>LV5</item>
+        <item>LV6</item>
+    </string-array>
+    <string-array name="grade_rule_10_0">
+        <item>状元</item>
+    </string-array>
+    <string-array name="grade_rule_10_1">
+        <item>500001-</item>
+    </string-array>
+    <string-array name="grade_rule_10_2">
+        <item>--</item>
+    </string-array>
+    <string-array name="book_shelf_title_column">
+        <item>最近</item>
+        <item>订购</item>
+        <item>下载</item>
+        <item>收藏</item>
+        <item>本机</item>
+    </string-array>
+    <string-array name="voice_bit_rate_tip">
+        <item>标清</item>
+        <item>高清</item>
+    </string-array>
+    <string-array name="bookshelf_op1">
+        <item>进入书籍详情</item>
+        <item>删除书籍</item>
+        <item>清空书架</item>
+    </string-array>
+    <string-array name="bookshelf_op2">
+        <item>进入书籍详情</item>
+        <item>删除书籍</item>
+        <item>清空书架</item>
+        <item>下载书籍</item>
+    </string-array>
+    <string-array name="main_more_type">
+        <item>本地导入</item>
+        <item>意见反馈</item>
+        <item>关于</item>
+    </string-array>
+	<integer-array name="share_board_item_img">
+	    <!-- 易信 -->
+	    <item>@drawable/umeng_socialize_yixin</item>
+	    <!-- 易信朋友圈 -->
+	    <item>@drawable/umeng_socialize_yxcircle</item>
+	    <!-- 微信 -->
+	    <item>@drawable/umeng_socialize_wechat</item>
+	    <!-- 微信朋友圈 -->
+	    <item>@drawable/umeng_socialize_wxcircle</item>
+	    <!-- 新浪微博 -->
+	    <item>@drawable/umeng_socialize_sina_on</item>
+	    <!-- QQ好友-->
+	    <item>@drawable/umeng_socialize_qq_on</item>
+	   
+	    <!-- QQ空间 -->
+	    <!-- <item>@drawable/umeng_socialize_qzone_on</item> -->
+	    <!-- 腾讯微博 -->
+	    <!-- <item>@drawable/umeng_socialize_tx_on</item> -->
+	    <!-- 短信 -->
+	    <!-- <item>@drawable/umeng_socialize_sms</item> -->
+	    <!-- 邮件 -->
+	    <!-- <item>@drawable/umeng_socialize_gmail</item> -->
+	    <!-- 豆瓣 -->
+	    <!-- <item>@drawable/umeng_socialize_douban_on</item> -->
+	    <!-- 人人 -->
+	    <!-- <item>@drawable/umeng_socialize_renren_on</item> -->
+	</integer-array>
+	
+	<string-array name="share_board_item_text">
+	    <item>易信</item>
+	    <item>易信朋友圈</item>
+	    <item>微信</item>
+	    <item>微信朋友圈 </item>
+	    <item>新浪微博</item>
+	    <item>QQ好友</item>
+	   <!--  <item>QQ空间</item>
+	    <item>腾讯微博</item>
+	    <item>短信</item>
+	    <item>邮件</item>
+	    <item>豆瓣</item>
+	    <item>人人</item> -->
+	</string-array>
+	<!-- 乐阅内置书籍 -->
+	<integer-array name="built_in_books">
+	</integer-array>
+	<integer-array name="view_pager_pic">
+        <item>@drawable/guide_pic1</item>
+        <item>@drawable/guide_pic2</item>
+        <item>@drawable/guide_pic3</item>
+        <item>@drawable/guide_pic4</item>
+        <item>@drawable/guide_pic5</item>
+    </integer-array>
+
+    <array name="type">
+        <item>言情</item>
+        <item>网络文学</item>
+        <item>文学经典</item>
+        <item>都市</item>
+        <item>浪漫言情</item>
+        <item>励志</item>
+        <item>现代都市</item>
+        <item>历史</item>
+        <item>悬疑</item>
+        <item>健康养生</item>
+        <item>经管</item>
+        <item>社科</item>
+        <item>散文随笔</item>
+        <item>动漫</item>
+        <item>穿越幻想</item>
+        <item>教育</item>
+        <item>玄幻奇幻</item>
+        <item>武侠仙侠</item>
+        <item>生活时尚</item>
+        <item>历史军事</item>
+        <item>官场职场</item>
+        <item>中外名著</item>
+        <item>甜美青春</item>
+        <item>经管励志</item>
+        <item>影视剧本</item>
+        <item>社科教育</item>
+        <item>悬疑科幻</item>
+        <item>纪实传记</item>
+        <item>竞技游戏</item>
+    </array>
+</resources>

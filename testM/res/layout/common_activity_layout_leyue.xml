@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/book_city_bg" >
+	<FrameLayout
+		android:id="@+id/header_lay"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" />
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/header_lay" >
+		<FrameLayout
+			android:id="@+id/activity_content_lay"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" />
+		<ImageView
+			android:id="@+id/tab_top_shadow_lay"
+			android:layout_width="fill_parent"
+			android:layout_height="3dip"
+			android:background="@drawable/tab_top_shadow" />
+	</FrameLayout>
+	<include
+		android:id="@+id/load_and_retry_root"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/header_lay"
+		layout="@layout/load_and_retry_lay" />
+</RelativeLayout>

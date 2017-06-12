@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tonlin="http://schemas.android.com/apk/res/com.lectek.android.LYReader"
+    android:layout_width="match_parent"
+    android:layout_height="105dp" >
+    
+    <com.lectek.android.lereader.widgets.ReaderGallery
+		android:id="@+id/subject_activity_rg"
+	  	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:animationDuration="500" 
+        android:spacing="0dip" 
+		>
+	</com.lectek.android.lereader.widgets.ReaderGallery>
+    
+    <com.lectek.android.lereader.widgets.DotProgressBar
+		android:id="@+id/subject_activity_num_tv"
+		android:layout_width="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_alignBottom="@id/subject_activity_rg"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="2dip"
+	    android:paddingBottom="2dip"
+	    android:gravity="center"
+	    android:layout_marginBottom="5dp"
+	    tonlin:normalColor="@color/white"
+	    tonlin:focusColor="#0076ed"
+	    tonlin:dotRadius="3dip"
+		>
+	</com.lectek.android.lereader.widgets.DotProgressBar>
+</RelativeLayout>

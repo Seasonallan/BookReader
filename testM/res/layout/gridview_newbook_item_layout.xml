@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/list_selector_background" >
+
+    <com.lectek.android.binding.widget.BAsyncImageView
+        android:id="@+id/book_cover_iv"
+        android:layout_width="@dimen/common_cover_width"
+        android:layout_height="@dimen/common_cover_height"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/book_default"
+        binding:defaultImgRes="@drawable/book_default"
+        binding:imageUrl="bRecommendedCoverUrl" />
+
+    <TextView
+        android:id="@+id/book_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_cover_iv"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="书名"
+        android:textColor="@color/color_414141"
+        android:textSize="@dimen/font_common_num5"
+        binding:text="bRecommendedBookName" />
+
+    <TextView
+        android:id="@+id/book_author_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_name_tv"
+        android:layout_marginTop="7dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="作者"
+        android:textColor="@color/common_17"
+        android:textSize="@dimen/font_common_num7"
+        binding:text="bRecommendedBookAuthor" />
+
+    <TextView
+        android:id="@+id/book_discountprice_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="￥6.00"
+        android:textColor="#ed5145"
+        binding:textColor="bTextColor"
+        android:layout_below="@id/book_author_tv"
+        android:textSize="@dimen/font_common_num7"
+        binding:text="bRecommendedBookDiscountPrice" />
+
+    <com.lectek.android.widget.MiddleLineTextView
+        android:layout_marginLeft="4dp"
+        android:layout_alignBottom="@id/book_discountprice_tv"
+        android:layout_toRightOf="@id/book_discountprice_tv"
+        android:id="@+id/book_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="￥10.00"
+        android:textColor="@color/common_17"
+        android:textSize="@dimen/font_common_num7"
+        binding:text="bRecommendedBookPrice" 
+        binding:visibility="bOldPriceVisibility"/>
+
+</RelativeLayout>

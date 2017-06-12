@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<ListView
+		android:id="@+id/reader_catalog_lv"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:cacheColorHint="@color/transparent"
+		android:choiceMode="singleChoice"
+        android:layout_margin="12dp"
+		android:divider="@drawable/line_divider"
+		android:scrollbars="none"
+		android:fastScrollEnabled="true" />
+	<ImageView
+		android:id="@+id/reader_catalog_lv_bg"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scaleType="centerInside" />
+	<LinearLayout
+		android:id="@+id/reader_catalog_loading_lay"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:clickable="true"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:visibility="gone"
+		android:paddingBottom="10dip"
+		android:paddingTop="10dip" >
+		<ProgressBar
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:indeterminate="true"
+			android:indeterminateDrawable="@drawable/progress_medium_white"
+			android:indeterminateDuration="2000" />
+		<TextView
+			android:id="@+id/reader_catalog_loading_content_tv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="20dip"
+			android:text="@string/waitting_dialog_tip"
+			android:textColor="@color/dialog_content"
+			android:textSize="@dimen/font_common_num1" />
+		<!-- android:layout_below="@id/dialog_pb" -->
+	</LinearLayout>
+</FrameLayout>

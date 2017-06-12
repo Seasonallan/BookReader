@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="fill_parent" android:layout_height="wrap_content" >
+    
+    <com.lectek.android.binding.widget.BAsyncImageView
+        android:id="@+id/subject_item_iv"
+        android:layout_width="@dimen/subject_image_width"
+        android:layout_height="@dimen/subject_image_height"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/book_shelf_item_bg"
+        binding:defaultImgRes="@drawable/test_subject_1" 
+        android:scaleType="fitXY"
+        binding:imageUrl="bRecommendedCoverUrl" />
+</RelativeLayout>

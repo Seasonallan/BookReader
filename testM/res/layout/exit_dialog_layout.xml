@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip" >
+    <TextView
+        android:id="@+id/exit_dialog_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dialog_content"
+        android:textSize="@dimen/font_dialog_title"
+        android:text="@string/exit_tip"
+        android:gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:padding="7dip" >
+        <Button
+            android:id="@+id/dialog_ok"
+            style="@style/button_big"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dip"
+            android:text="@string/btn_text_confirm" />
+        <Button
+            android:id="@+id/dialog_cancel"
+            style="@style/button_normal_light_color"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dip"
+            android:text="@string/btn_text_cancel" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dialog_content"
+        android:textSize="@dimen/font_dialog_text"
+        android:text="@string/wonderful_recommendation_tip"
+        android:paddingLeft="5dip"
+        android:paddingTop="3dip"/>
+    <RelativeLayout
+        android:id="@+id/audio_recommend_ib"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dip"
+  	  	android:layout_alignParentLeft="true"
+  	  	android:clickable="true"
+  	  	android:visibility="visible" >
+        <ImageView
+            android:id="@+id/app_icon_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:id="@+id/ad_app_name_ib"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:textColor="@color/dark_gray"
+            android:text="@string/sfreader_audio_name_tip"
+        	android:textSize="@dimen/font_popup_menu"
+	  		android:layout_toRightOf="@id/app_icon_ib" />
+        <!-- android:textColor="@android:color/darker_gray" -->
+        
+        <TextView
+            android:id="@+id/ad_recommendation_tip_ib"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/sfreader_audio_ad_tip"
+            android:textColor="@drawable/more_links_color_selector"
+        	android:textSize="@dimen/font_popup_menu"
+            android:paddingLeft="10dip"
+            android:layout_below="@id/ad_app_name_ib"
+	  		android:layout_toRightOf="@id/app_icon_ib"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left_account"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

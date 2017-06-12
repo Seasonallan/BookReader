@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal" android:padding="@dimen/common_content_list_padding"
+    android:background="@drawable/list_item_deep_bg">
+    
+    <com.lectek.android.binding.widget.BAsyncImageView
+		android:layout_width="@dimen/common_cover_width"
+		android:layout_height="@dimen/common_cover_height"
+		android:adjustViewBounds="true"
+		android:background="@drawable/book_shelf_item_bg" android:scaleType="fitXY"
+		binding:defaultImgRes="@drawable/book_default"
+		binding:imageUrl="bItemDrawableUrl" />
+    
+	<LinearLayout 
+	    android:layout_width="match_parent" android:layout_height="wrap_content"
+	    android:orientation="vertical" android:layout_marginLeft="20dp">
+	    
+	    <TextView 
+	        android:layout_marginTop="@dimen/common_content_list_item_tagAB_top"  
+	        android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        android:singleLine="true" binding:text="bItemFirstTAG"
+	        android:textColor="@color/common_1" android:textSize="@dimen/font_common_num2"/>
+	    
+	    <TextView 
+	        android:layout_marginTop="@dimen/common_content_list_item_tagAB_top" 
+	        android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        android:singleLine="true" binding:text="bItemSecondTAG"
+	        android:textColor="@color/common_5" android:textSize="@dimen/font_common_num6"
+	        binding:visibility="bSecondTAGVisible"/>
+	    
+	    <TextView  
+	        android:layout_marginTop="@dimen/common_content_list_item_tagC_top" 
+	        android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        binding:text="bItemThridTAG" android:maxLines="2"    
+	        android:textColor="@color/common_5" android:textSize="@dimen/font_common_num6"/>
+	</LinearLayout>
+</LinearLayout>

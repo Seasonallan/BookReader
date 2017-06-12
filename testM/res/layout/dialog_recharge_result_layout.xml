@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dip"
+        android:textColor="@color/dialog_content"
+        android:textSize="@dimen/font_dialog_text" />
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="10dip"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+	    <Button
+	        android:id="@+id/i_see_btn"
+	        style="@style/button_big"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:text="@string/btn_text_i_see" 
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:layout_weight="1"/>
+	    <Button 
+	        android:id="@+id/go_to_book_city_btn"
+	        style="@style/button_big"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:text="@string/btn_text_go_to_book_city"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:layout_weight="1"/>
+	</LinearLayout>
+</LinearLayout>

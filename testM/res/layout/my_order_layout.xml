@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- binding的footerSource和footerTemplate属性必须放在itemSource和itemTemplate之前 -->
+    <ListView
+        android:id="@+id/order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@drawable/person_line"
+        android:footerDividersEnabled="false"
+        binding:footerSource="bFooterViewModel"
+    	binding:footerTemplate="@layout/list_loading_data_layout"
+        binding:itemSource="bItems"
+        binding:itemTemplate="@layout/my_order_item"
+        binding:onItemClicked="bOnItemClickCommand"
+        binding:onItemLongClicked="bOnItemLongClickedCommand"
+        binding:onScrollStateChanged="bOnScrollStateChangedCommand"
+        binding:visibility="bContentVisibility" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_non_purchased_book_tip"
+        android:layout_gravity="center"
+        binding:visibility="bNoDateVisibility" />
+
+</FrameLayout>

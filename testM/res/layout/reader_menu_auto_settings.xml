@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/reader_menu_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/menu_child_background"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            
+            
+            <CheckedTextView 
+                android:id="@+id/menu_auto_type_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="10dip"
+                android:text="@string/reader_menu_auto_ud"
+                />
+            
+			<ImageView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/menu_auto_divider"
+			    />
+            
+            <CheckedTextView 
+                android:id="@+id/menu_auto_type_lr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="10dip"
+                android:text="@string/reader_menu_auto_lr"
+                />
+            
+
+            <Button
+                android:id="@+id/cancle_auto_anim_btn"
+                style="@style/button_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/menu_autoread_btn_bg"
+                android:paddingTop="3dip"
+                android:paddingBottom="3dip"
+                android:paddingLeft="28dip"
+                android:paddingRight="28dip"
+                android:layout_marginLeft="25dip"
+                android:textSize="18dip"
+                android:text="@string/reader_menu_auto_close" />
+            
+        </LinearLayout>
+
+		<ImageView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/menu_divider"
+		    />	
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="11dip"
+            android:orientation="horizontal" >
+            
+            <Button
+                android:id="@+id/auto_anim_speed_add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:background="@drawable/menu_auto_btn_selector"
+                android:paddingLeft="23dip"
+                android:paddingRight="23dip"
+                android:text="@string/reader_menu_auto_add_speed"
+                android:textColor="@color/white"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/auto_anim_speed_level_tv"
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="12"
+                android:textColor="@color/white"
+                android:textSize="16dip" />
+            
+            <Button
+                android:id="@+id/auto_anim_speed_redu_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/menu_auto_btn_selector"
+                android:paddingLeft="23dip"
+                android:paddingRight="23dip"
+                android:text="@string/reader_menu_auto_redu_speed"
+                android:textColor="@color/white"
+                android:textSize="16dip" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/menu_book_content_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/reader_menu_lay" />
+
+</RelativeLayout>

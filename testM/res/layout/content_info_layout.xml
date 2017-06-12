@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <RelativeLayout 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+        	android:layout_marginLeft="@dimen/content_info_margin_left"
+        	android:layout_marginRight="@dimen/content_info_margin_right"
+        	android:layout_marginTop="10dip" android:layout_marginBottom="8dip">
+        	
+            <com.lectek.android.binding.widget.BAsyncImageView
+		        android:id="@+id/book_cover_iv"
+		        android:layout_width="@dimen/common_cover_width"
+		        android:layout_height="@dimen/common_cover_height"
+		        android:layout_gravity="center"
+		        android:adjustViewBounds="true"
+		        android:scaleType="fitXY"
+		        android:layout_marginRight="10dip"
+                binding:defaultImgRes="@drawable/book_default"
+		        binding:imageUrl="bCoverUrl"/>
+            
+		    <!-- 书名  -->
+		    <TextView android:id="@+id/book_name_tv"
+		        android:layout_width="fill_parent" android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:ellipsize="end" android:singleLine="true"
+		        android:textColor="@color/common_1" android:textSize="@dimen/font_common_num1"
+		        android:layout_toRightOf="@id/book_cover_iv" android:layout_marginTop="5dip"
+		        binding:text="bBookName"/>
+		    <!-- 评分 -->
+		    <LinearLayout android:id="@+id/rating_bar_layout"
+		        android:layout_width="match_parent" android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:layout_below="@id/book_name_tv" android:layout_toRightOf="@id/book_cover_iv">
+		        
+			    <com.lectek.android.lereader.widgets.ReaderRatingBar
+			        android:id="@+id/rating_bar"
+			        android:layout_width="wrap_content" android:layout_height="wrap_content"
+			        style="@style/bigRatingBarStyle" android:isIndicator="true"/>
+			    
+			    <TextView 
+			        android:layout_width="wrap_content" android:layout_height="wrap_content"
+			        binding:text="bBookMark" android:textColor="@color/common_3"
+			        android:layout_marginLeft="5dp" android:textSize="@dimen/font_common_num3"
+			        android:layout_gravity="bottom"/>
+		    </LinearLayout>
+		    <!-- 作者 -->
+		    <TextView android:id="@+id/author_tv"
+		        android:layout_width="fill_parent" android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal" android:layout_marginTop="3dip"
+		        android:ellipsize="end" android:singleLine="true"
+		        android:layout_toRightOf="@id/book_cover_iv" android:layout_below="@id/rating_bar_layout"
+		        android:textColor="@color/common_5" android:textSize="@dimen/font_common_num5"
+		        binding:text="bAuthorName"/>
+		    <!-- 阅读人数 -->
+		    <TextView
+		        android:layout_width="fill_parent" android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal" android:layout_marginTop="3dip"
+		        android:ellipsize="end" android:singleLine="true"
+		        android:layout_toRightOf="@id/book_cover_iv" android:layout_below="@id/author_tv"
+		        android:textColor="@color/common_5" android:textSize="@dimen/font_common_num5"
+		        binding:text="SPAN(bReaderNum,bNumSpan)" />
+        </RelativeLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="@dimen/content_info_margin_left"
+        	android:layout_marginRight="@dimen/content_info_margin_right">
+		    
+            <Button 
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+		        android:layout_weight="1" style="@style/button_white"
+		        android:text="@string/content_info_btn_try_read"
+		        binding:text="bReadBtn" binding:onClick="bReadClick"/>
+            
+            <Button 
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+		        android:layout_weight="1" style="@style/button_blue"
+		        android:layout_marginLeft="10dip" binding:text="bBuy"
+		        binding:visibility="bBuyBtnVisibility" binding:onClick="bBuyClick"/>
+        </LinearLayout>
+        
+        <!-- 包月信息 -->
+        <RelativeLayout 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" binding:visibility="bMonthlyInfoVisible"
+            android:padding="15dp" android:visibility="gone">
+            
+            <TextView
+                android:layout_alignParentLeft="true" 
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/common_1" android:textSize="@dimen/font_common_num5"
+                binding:text="bMonthlyInfo" android:text="dsada"/>
+            
+            <TextView 
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/common_3" android:textSize="@dimen/font_common_num5"
+                binding:text="bMonthlyOrderStatus" />
+            
+        </RelativeLayout>
+        <!-- 内容简介tag -->
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+        	android:background="@drawable/content_title_bg"
+        	android:text="@string/content_info_desc" android:gravity="center_vertical"
+        	android:textColor="@color/common_5" android:textSize="@dimen/font_common_num3"
+        	android:paddingLeft="@dimen/content_info_margin_left"
+        	android:paddingRight="@dimen/content_info_margin_right"
+            android:layout_marginTop="7dp"/>
+        
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+        	android:layout_margin="@dimen/content_info_margin_left"
+        	android:textColor="@color/common_5" android:textSize="@dimen/font_common_num5"
+        	binding:text="bDesc"/>
+        
+        <ImageView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+        	android:background="@drawable/split_line" 
+        	android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+       	<!-- 目录tag -->
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:paddingTop="15dip" android:paddingBottom="15dip"
+        	android:textColor="@color/common_5" android:textSize="@dimen/font_common_num3"
+        	binding:text="bCatalogNum" binding:onClick="bAllCatalogClick"/>
+        
+        <ImageView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+        	android:background="@drawable/split_line" 
+        	android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+    </LinearLayout>
+</ScrollView>

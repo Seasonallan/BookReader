@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/common_13">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="vertical" 
+        >
+    
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+        
+        <com.lectek.android.binding.widget.BAsyncImageView
+            android:id="@+id/iv_head_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            binding:onClick="bHeadPicClick"
+            android:layout_centerHorizontal="true"
+            binding:defaultImgRes="@drawable/icon_head_default"
+            binding:imageUrl="bHeadImageUrl"
+            binding:cornerDegree="@integer/user_icon_corner_degree"/>
+        
+        <ImageView 
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:src="@drawable/icon_ghtx"
+            android:layout_alignBottom="@id/iv_head_img"
+            android:layout_alignRight="@id/iv_head_img"
+            />
+    
+    
+    </RelativeLayout>
+    
+    <ImageView 
+        android:layout_height="1px"
+        android:layout_width="fill_parent"
+        android:background="#D0CFD3"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_nickname_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="@string/person_info_nickname"
+            android:textColor="@color/point_manager_text_normal_color"
+            android:textSize="@dimen/font_common_num2"
+            android:layout_centerVertical="true"
+            />
+        
+        
+        <EditText
+            android:background="@color/white"
+            android:layout_toRightOf="@id/tv_nickname_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="@color/common_5"
+            android:textSize="@dimen/font_common_num2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            binding:text="bNickName"
+            android:singleLine="true"
+            android:hint="@string/person_info_modify_nickname_hint"
+            />
+        
+    </RelativeLayout>
+    
+    <ImageView 
+        android:layout_height="1px"
+        android:layout_width="fill_parent"
+        android:background="#D0CFD3"
+        />
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        >
+        
+        <ImageView 
+         android:layout_height="1px"
+         android:layout_width="fill_parent"
+         android:background="#D0CFD3"
+         />
+        
+        <RelativeLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="40dp"
+	         android:orientation="vertical"
+	         binding:onClick="bSexClick"
+	         android:background="@color/white"
+	         >
+
+         <TextView
+             android:id="@+id/tv_sex_tip"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:clickable="true"
+             android:paddingLeft="10dip"
+             android:paddingRight="10dip"
+             android:text="@string/person_info_sex"
+             android:textColor="@color/point_manager_text_normal_color"
+             android:textSize="@dimen/font_common_num2"
+             android:layout_centerVertical="true"
+             />
+         
+         
+         <TextView
+             android:background="@color/white"
+             android:layout_toRightOf="@id/tv_sex_tip"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:textColor="@color/common_5"
+             android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="10dip"
+             android:textSize="@dimen/font_common_num2"
+             binding:text="bSex"
+             />
+         
+     </RelativeLayout>
+     
+        <ImageView 
+         android:layout_height="1px"
+         android:layout_width="fill_parent"
+         android:background="#D0CFD3"
+         />
+        
+        <ImageView 
+	         android:layout_height="1px"
+	         android:layout_width="fill_parent"
+	         android:background="#D0CFD3"
+	         android:layout_marginTop="15dp"
+	         />
+     
+        <RelativeLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="40dp"
+	         android:orientation="vertical"
+	         android:background="@color/white"
+	         >
+	
+	         <TextView
+	             android:id="@+id/tv_signature_tip"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:clickable="true"
+	             android:paddingLeft="10dip"
+	             android:paddingRight="10dip"
+	             android:text="@string/person_info_sign"
+	             android:textColor="@color/point_manager_text_normal_color"
+	             android:textSize="@dimen/font_common_num2"
+	             android:layout_centerVertical="true"
+	             />
+	         
+	         
+	         <EditText
+	             android:background="@color/white"
+	             android:layout_toRightOf="@id/tv_signature_tip"
+	             android:layout_width="fill_parent"
+	             android:layout_height="wrap_content"
+	             android:clickable="true"
+	             android:textColor="@color/common_5"
+	             android:layout_centerVertical="true"
+	             android:layout_alignParentRight="true"
+	             android:layout_marginRight="10dip"
+	             android:textSize="@dimen/font_common_num2"
+	             binding:text="bSignatureText"
+	             android:singleLine="true"
+	             android:hint="@string/person_info_modify_signature_hint"
+	             />
+	         
+	     </RelativeLayout>
+	     
+        <ImageView 
+	         android:layout_height="1px"
+	         android:layout_width="fill_parent"
+	         android:background="#D0CFD3"
+	         />
+        <ImageView 
+	         android:layout_height="1px"
+	         android:layout_width="fill_parent"
+	         android:background="#D0CFD3"
+	         android:layout_marginTop="15dp"
+	         />
+     
+        <RelativeLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="40dp"
+	         android:orientation="vertical"
+	         binding:onClick="bEditPasswordClick"
+	         android:background="@color/white"
+	         >
+	
+	         <TextView
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:clickable="true"
+	             android:paddingLeft="10dip"
+	             android:paddingRight="10dip"
+	             android:text="@string/person_info_edit_password"
+	             android:textColor="@color/point_manager_text_normal_color"
+	             android:textSize="@dimen/font_common_num2"
+	             android:layout_centerVertical="true"
+	             />
+	         
+	         
+	         <TextView
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:clickable="true"
+	             android:textColor="@color/common_5"
+	             android:layout_centerVertical="true"
+	             android:layout_alignParentRight="true"
+	             android:layout_marginRight="10dip"
+	             android:textSize="@dimen/font_common_num2"
+	             />
+	         
+	         <ImageView 
+	            android:layout_height="15dp"
+	            android:layout_width="15dp"
+	            android:src="@drawable/icon_arrow"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="10dp"
+	            android:layout_alignParentRight="true"
+	            />
+	         
+	     </RelativeLayout>
+	     
+        <ImageView 
+	         android:layout_height="1px"
+	         android:layout_width="fill_parent"
+	         android:background="#D0CFD3"
+	         />
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="账号绑定"
+        android:paddingLeft="10dip"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/common_17"
+        android:layout_marginBottom="5dp"
+        />
+    
+    <ImageView 
+         android:layout_height="1px"
+         android:layout_width="fill_parent"
+         android:background="#D0CFD3"
+         />
+    
+    <RelativeLayout 
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
+        <ImageView 
+            android:id="@+id/iv_tencent"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_qq_60"
+            android:layout_centerVertical="true"
+            />
+        <TextView 
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_tencent"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:text="@string/tip_qq"
+            android:textColor="@color/color_414141"
+            android:gravity="center"
+            android:textSize="@dimen/personal_account_manage_tip_text_size"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_personal_account_manage_binding"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            binding:text="bTencentBindingText"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/personal_account_manage_tip_text_size"
+            android:gravity="center"
+            android:textColor="@color/common_16"
+            binding:onClick="bOnBindTencentClick"
+            />
+        
+        <ImageView 
+            android:layout_toLeftOf="@id/tv_personal_account_manage_binding"
+            android:layout_height="15dp"
+            android:layout_width="15dp"
+            binding:src="bBindingTencentImage"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            
+            />
+    </RelativeLayout>
+    
+    <ImageView 
+         android:layout_height="1px"
+         android:layout_width="fill_parent"
+         android:background="#D0CFD3"
+         android:layout_marginLeft="10dp"
+         />
+    
+    <RelativeLayout 
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
+        <ImageView 
+            android:id="@+id/iv_sina"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_xinlangweibo_60"
+            android:layout_centerVertical="true"
+            />
+        <TextView 
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_sina"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:text="@string/sina_weibo"
+            android:gravity="center"
+            android:textColor="@color/color_414141"
+            android:textSize="@dimen/personal_account_manage_tip_text_size"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_personal_account_manage_binding_sina"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            binding:text="bSinaBindingText"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/personal_account_manage_tip_text_size"
+            android:gravity="center"
+            android:textColor="@color/common_16"
+            binding:onClick="bOnBindSinaClick"
+            />
+        
+        <ImageView 
+            android:layout_toLeftOf="@id/tv_personal_account_manage_binding_sina"
+            android:layout_height="15dp"
+            android:layout_width="15dp"
+            binding:src="bBindingSinaImage"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            />
+    </RelativeLayout>
+    
+    <ImageView 
+         android:layout_height="1px"
+         android:layout_width="fill_parent"
+         android:background="#D0CFD3"
+         android:layout_marginLeft="10dp"
+         />
+    
+    <RelativeLayout 
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        >
+        <ImageView 
+            android:id="@+id/iv_tyyd"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_tyyd"
+            android:layout_centerVertical="true"
+            />
+        <TextView 
+            
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_tyyd"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:text="@string/tianyi"
+            android:gravity="center"
+            android:textColor="@color/color_414141"
+            android:textSize="@dimen/personal_account_manage_tip_text_size"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_personal_account_manage_binding_tyyd"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            binding:text="bTianYiBindingText"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/personal_account_manage_tip_text_size"
+            android:gravity="center"
+            android:textColor="@color/common_16"
+            binding:onClick="bOnBindTianYiClick"
+            />
+        
+        <ImageView 
+            android:layout_toLeftOf="@id/tv_personal_account_manage_binding_tyyd"
+            android:layout_height="15dp"
+            android:layout_width="15dp"
+            binding:src="bBindingTianYiImage"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            />
+    </RelativeLayout>
+    
+    <ImageView 
+         android:layout_height="1px"
+         android:layout_width="fill_parent"
+         android:background="#D0CFD3"
+         />
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        binding:onClick="bLogoutClick"
+        >
+   		<ImageView 
+	         android:layout_height="1px"
+	         android:layout_width="fill_parent"
+	         android:background="#D0CFD3"
+	         />
+        <TextView 
+            android:layout_height="40dp"
+            android:layout_width="fill_parent"
+            android:text="@string/personal_account_manage_out"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:background="@color/white"
+            />
+        <ImageView 
+	         android:layout_height="1px"
+	         android:layout_width="fill_parent"
+	         android:background="#D0CFD3"
+	         />
+    </LinearLayout>
+    
+    </LinearLayout>
+    
+    
+</ScrollView>

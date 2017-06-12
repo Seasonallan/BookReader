@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    xmlns:tonlin="http://schemas.android.com/apk/res/com.lectek.android.LYReader"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    
+</RelativeLayout> -->
+<com.lectek.android.lereader.widgets.PullRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    xmlns:tonlin="http://schemas.android.com/apk/res/com.lectek.android.LYReader"
+    android:id="@+id/pull_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:scrollbars="vertical"
+    tonlin:actionViewId="@+id/action_view"
+    tonlin:toolViewId="@+id/tool_view" >
+
+    <include
+        android:id="@+id/action_view"
+        layout="@layout/refresh_layout" />
+
+    <include
+        android:id="@+id/tool_view"
+        layout="@layout/tool_layout" />
+
+</com.lectek.android.lereader.widgets.PullRefreshLayout>

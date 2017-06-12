@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- **********分辨率800x480********** -->
+    
+    <!-- 书城 -->
+    <!-- 底部分割线 -->
+    <dimen name="a_bottom_divider_line_height">20dp</dimen>
+    <!-- 顶部滑动条 -->
+    <dimen name="a_top_slide_bg_width">50dp</dimen>
+    <dimen name="a_top_slide_bg_height">3dp</dimen>
+    <dimen name="a_top_slide_bg_offset">5dp</dimen>
+    <!-- 底部滑动条 -->
+    <dimen name="a_bottom_slide_bg_radius">7dp</dimen>
+    <dimen name="a_bottom_slide_bg_width">72dp</dimen>
+    <dimen name="a_bottom_slide_bg_height">150dp</dimen>
+    <dimen name="a_bottom_slide_bg_offset">-1dp</dimen>
+    <!-- 底部滑动区域 -->
+    <dimen name="a_bottom_layout_height">55dp</dimen>
+    
+    <!-- 搜索界面 -->
+    <dimen name="b_pop_window_offset_x">-5dp</dimen>
+    <dimen name="b_pop_window_offset_y">70dp</dimen>
+    <!-- 书籍详情 -->
+    <dimen name="title_bar_height">47dp</dimen>
+    <dimen name="title_bar_btn_width">60dp</dimen>
+    <dimen name="title_bar_btn_height">31dp</dimen>
+    <dimen name="title_bar_btn_marginRight">17dp</dimen>
+</resources>

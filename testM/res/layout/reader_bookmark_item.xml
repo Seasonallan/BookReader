@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dip"
+    >
+
+    <TextView
+        android:id="@+id/bookmark_title_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:drawableRight="@drawable/icon_shuqian_small"
+        android:singleLine="true"
+        android:textColor="@color/common_5"
+        android:textSize="@dimen/font_common_num1" />
+    <TextView
+        android:id="@+id/bookmark_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_17"
+        android:paddingTop="8dp"
+        android:textSize="@dimen/font_catalog" />
+
+
+    <TextView
+        android:id="@+id/bookmark_time_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_17"
+        android:paddingTop="8dp"
+        android:textSize="14dip"
+        />
+
+</LinearLayout>

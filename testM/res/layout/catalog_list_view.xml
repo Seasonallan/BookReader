@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<ListView 
+	    android:layout_width="match_parent" android:layout_height="match_parent"
+	    android:scrollingCache="false" android:cacheColorHint="@color/transparent"
+	    binding:onItemClicked="bItemClickedCommand" android:scrollbars="none"
+	    android:divider="@drawable/divider_horizontal_line"
+	    binding:clickedItem="ClickedItem"   
+	    binding:itemSource="ADAPTER({source=bItems,template=@layout/catalog_list_item})"/>
+</LinearLayout>

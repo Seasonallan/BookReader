@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    binding:background="bClassifyItemBg"
+    >
+    
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="60dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="17dp"
+	    android:gravity="center_vertical"
+	    android:text="name"
+	    android:textColor="@color/common_text"
+	    android:textSize="@dimen/font_common_num4"
+	    binding:text="bClassifyName" />
+	
+	<TextView 
+	    android:layout_centerVertical="true"
+	    android:text="2222"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	    android:gravity="center_vertical"
+	    android:textColor="@color/common_17"
+	    android:textSize="@dimen/font_common_num4"
+	    binding:text="bBookCount"
+	    android:visibility="gone"/>
+</RelativeLayout>

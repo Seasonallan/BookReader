@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reader_menu_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/menu_header_layout"
+        android:layout_alignParentTop="true"
+        layout="@layout/menu_header" />
+
+    <com.lectek.android.widget.CheckedGridView
+	        android:id="@+id/reader_menu_gv"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:background="@drawable/menu_foot_background"
+	        android:cacheColorHint="@color/transparent"
+	        android:gravity="center"
+	        android:listSelector="@drawable/list_selector_background"
+	        android:numColumns="4"
+	        android:stretchMode="columnWidth" />
+    
+    <RelativeLayout
+        android:id="@+id/transparent_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/reader_menu_gv"
+        android:layout_below="@id/menu_header_layout" />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/reader_menu_gv"
+        android:orientation="horizontal"
+        >
+        
+        <View 
+            android:layout_width="0dip"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            />
+        
+	    <FrameLayout
+	        android:id="@+id/menu_child_interaction"
+	        android:layout_width="0dip"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom"
+	        android:background="@drawable/menu_child_background"
+	        android:clickable="true"/>
+    </LinearLayout>
+    
+    <FrameLayout
+        android:id="@+id/menu_child_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/reader_menu_gv"
+        android:clickable="true"
+        android:background="@drawable/menu_child_background" />
+    
+    <TextView 
+        android:id="@+id/page_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:layout_above="@id/menu_child_layout"
+        android:textColor="@color/white"
+        android:background="@drawable/menu_seektext_bg"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingBottom="10dip"
+        android:textSize="15dip"
+        android:visibility="gone"
+        />
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/menu_bottom_shadow"
+        android:layout_above="@id/reader_menu_gv"
+        />
+</RelativeLayout>

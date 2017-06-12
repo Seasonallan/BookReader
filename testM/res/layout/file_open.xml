@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp">
+        <EditText
+            android:id="@+id/open_edit_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:textColor="#414141"
+            android:singleLine="true"
+            android:focusable="true"
+            android:background="@drawable/bg_fenzumingming"
+            android:gravity="center"/>
+        <ImageView
+            android:id="@+id/open_edit_clear"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:src="@drawable/icon_qingkong"/>
+        </RelativeLayout>
+
+    <com.lectek.android.lereader.widgets.drag.DragScrollView
+        android:id="@+id/open_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#e7e7e7"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            <com.lectek.android.lereader.widgets.drag.DragGridView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/open_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/advert_split_line"
+                android:drawingCacheQuality="low"
+                android:fadeScrollbars="true"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:paddingBottom="@dimen/size_8dip"
+                android:paddingLeft="@dimen/size_8dip"
+                android:paddingRight="@dimen/size_8dip"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbarThumbVertical="@drawable/scroll"  />
+        </LinearLayout>
+    </com.lectek.android.lereader.widgets.drag.DragScrollView>
+</LinearLayout>

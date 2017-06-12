@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_45dip"
+    android:background="@color/common_16"
+    android:paddingLeft="@dimen/size_8dip"
+    android:paddingRight="@dimen/size_8dip"
+    android:paddingTop="@dimen/size_8dip"
+    android:paddingBottom="@dimen/size_8dip" >
+    
+    <!-- 中间标题 -->
+	<TextView android:id="@+id/title_text"
+	    android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"
+	   android:layout_centerInParent="true"
+	   android:text="@string/title_book_shelf"
+	   android:textColor="@color/white"
+	   android:textSize="@dimen/size_18dip" />
+	
+	<!-- 个人中心按钮 -->
+	<ImageView android:id="@+id/goto_personal_center"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:scaleType="centerInside"
+	    android:padding="@dimen/size_1dip"
+	    android:layout_alignParentLeft="true"
+	    android:layout_centerVertical="true"
+	    android:src="@drawable/icon_gerenzhongxin"/>
+	
+	<!-- 更多操作按钮 -->
+	<ImageView android:id="@+id/more_action"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_toRightOf="@+id/goto_personal_center"
+	    android:layout_centerVertical="true"
+	    android:padding="@dimen/size_1dip"
+	    android:layout_marginLeft="@dimen/size_4dip"
+	    android:scaleType="centerInside"
+	    android:src="@drawable/icon_gengduo"/>
+	
+	<!-- 书城按钮 -->
+	<ImageView android:id="@+id/goto_book_city"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:padding="@dimen/size_1dip"
+	    android:layout_marginRight="@dimen/size_8dip"
+	    android:scaleType="centerInside"
+	    android:src="@drawable/icon_shucheng"/>
+</RelativeLayout>

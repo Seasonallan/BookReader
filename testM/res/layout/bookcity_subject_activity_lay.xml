@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white">
+    
+	<TextView
+	    android:id="@+id/subject_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="@dimen/font_common_num1"
+	    android:textColor="@color/color_414141"
+	    android:layout_margin="15dp"
+	    binding:text = "bSubjectTitle"
+	    />
+	
+	<TextView 
+	    android:id="@+id/subject_des"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/subject_title"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:textColor="@color/common_17"
+	    android:textSize="@dimen/font_common_num3"
+	    binding:text ="bSubjectContent"
+	    />
+	
+	<ListView
+	    android:layout_below="@id/subject_des" 
+	    android:layout_marginTop="10dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:cacheColorHint="@color/transparent"
+		android:divider="@drawable/line" 
+		android:scrollbars="none" 
+		binding:itemSource="bBookItems" 
+		binding:itemTemplate="@layout/listview_second_view_item_layout"
+		binding:onItemClicked="bBookCityItemClickCommand"
+	    />
+</RelativeLayout>
